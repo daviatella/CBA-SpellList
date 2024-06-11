@@ -15,7 +15,7 @@
                     </v-checkbox>
                 </div>
                 <br class="mt-4">
-                <div class="title">
+                <div class="title" style="margin-top: -2em;">
                     <p> Advanced Arcane Elements</p>
                 </div>
                 <div class="options">
@@ -89,7 +89,7 @@ export default {
         updateSpells(element) {
             this.spellsToLoad = []
             for (let el of this.checkboxElements) {
-                this.spellsToLoad.push(...this.spells[el].spells)
+                this.spellsToLoad.push(...this.spells[el].spells.map(el=>el.split("public/")[1]))
             }
             if (this.checkboxElements.length > 1) {
                 for (let el of this.multi) {
@@ -101,10 +101,11 @@ export default {
                         }
                     }
                     if (show == true) {
-                        this.spellsToLoad.push(...this.spells[el].spells)
+                        this.spellsToLoad.push(...this.spells[el].spells.map(el=>el.split("public/")[1]))
                     }
                 }
             }
+            console.log(this.spellsToLoad)
         }
     }
 };
@@ -134,6 +135,7 @@ export default {
     background-color: #422214;
     color: #F7E8D0;
     width: 100%;
+    margin-bottom: 1em;
 }
 
 .spells {
@@ -160,6 +162,7 @@ export default {
 .elements {
     float: left;
     margin-left: 1.2em;
+    margin-top: -1em;
 }
 
 .options {
