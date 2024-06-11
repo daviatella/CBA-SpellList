@@ -70,7 +70,7 @@ export default {
             if (!this.spells[element]["enabled"]) {
                 for (let el in this.spells[element].spells) {
                     let spell = {
-                        url: this.spells[element].spells[el],
+                        url: this.spells[element].spells[el].split("public/")[1],
                         element: element
                     }
                     this.spellsToLoad.push(spell)
