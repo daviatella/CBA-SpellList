@@ -9,7 +9,7 @@
         </div>
         <div class="spells">
             <div v-for="spell in spellsToLoad" class="ml-2">
-                <img v-if="spells[spell.element].enabled" class="spell" :src='spell.url'></img>
+                <img v-if="enabled(spell)" class="spell" :src='spell'></img>
             </div>
         </div>
 
@@ -24,12 +24,12 @@ export default {
         return {
             spells: {},
             spellsToLoad: [],
-            checkboxElements: []
+            checkboxElements: [],
+            multi: []
         };
     },
     mounted() {
         const files = import.meta.glob('../public/spells/**/*.png')
-        console.log(files)
         let spells = {}
         let checkboxElements = []
         for (let f in files) {
@@ -42,6 +42,8 @@ export default {
             spells[element].spells.push(f)
             if (element.split("_").length == 1) {
                 checkboxElements.push(element)
+            } else {
+                this.multi.push(element)
             }
         }
         this.spells = spells;
@@ -51,33 +53,40 @@ export default {
         }, []);
     },
     methods: {
-        getImagePath(url) {
-            const baseUrl = new URL(import.meta.url).href;
-            let newUrl = new URL(url, baseUrl).href;
-            console.log(newUrl)
-            return newUrl
-        },
-        singleElement(el) {
-
-            if (el.split("_").length > 1) {
-                console.log(el.split("_").length)
-                return false
-            }
-            return true
+        enabled(spell) {
+            let el = spell.split("/")[1]
+            return this.spells[el].enabled
         },
         updateSpells(element) {
-            console.log(element, this.spells[element]["enabled"])
+            let update = [element]
             if (!this.spells[element]["enabled"]) {
-                for (let el in this.spells[element].spells) {
-                    let spell = {
-                        url: this.spells[element].spells[el].split("public/")[1],
-                        element: element
+                for (let el of this.multi) {
+                    let names = el.split('_')
+                    let show = true
+                    for (let name of names) {
+                        if (this.spells[name].enabled == false && name != element) {
+                            show = false
+                            this.spells[el].enabled = false;
+                        }
                     }
-                    this.spellsToLoad.push(spell)
+                    if (show) {
+                        update.push(el)
+                        this.spells[el].enabled = true;
+                    }
+                }
+                for (let element of update) {
+                    for (let el in this.spells[element].spells) {
+                        this.spellsToLoad.push(this.spells[element].spells[el].split("public/")[1])
+                    }
+
                 }
             } else {
-                this.spellsToLoad = this.spellsToLoad.filter(el => el.element != element)
+                this.spellsToLoad = this.spellsToLoad.filter(url => !url.includes(element))
             }
+            this.spellsToLoad = this.spellsToLoad.reduce(function (a, b) {
+                if (a.indexOf(b) < 0) a.push(b);
+                return a;
+            }, []);
         }
     }
 };
@@ -102,7 +111,7 @@ export default {
     border-radius: 10px;
 }
 
-.spell{
+.spell {
     float: left;
     margin-top: 1em;
 }
