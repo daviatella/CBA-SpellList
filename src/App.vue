@@ -1,41 +1,71 @@
 <template>
-    <v-app>
+    <v-app style="background-color: #422214;">
         <v-container class="body">
-            <v-navigation-drawer location="left" class="sidebar" width="5rem">
+            <v-navigation-drawer location="left" color="#DBD4C8" class="sidebar" width="5rem">
+                <div class="title">
+                    <p > Basic Arcane Elements</p>
+                </div>
+                <v-divider></v-divider>
                 <div class="options">
+                    <v-checkbox v-for="el in basicArcaneElements" :value="el" class="elements" @change="updateSpells(el)"
+                        v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
+                        <template v-slot:append="{ props }">
+                            <img class="img" v-bind="props" :src="'../public/icons/' + el + '.png'" />
+                        </template>
+                    </v-checkbox>
+                </div>
+                <br class="mt-4">
+                <div class="title">
+                    <p> Advanced Arcane Elements</p>
+                </div>
+                <div class="options">
+                    <v-checkbox v-for="el in advancedArcaneElements" :value="el"  class="elements" @change="updateSpells(el)"
+                        v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
+                        <template v-slot:append="{ props }">
+                            <img class="img" v-bind="props" :src="'../public/icons/' + el + '.png'" />
+                        </template>
+                    </v-checkbox>
+                </div>
+                <div class="title" style="margin-top: -1.5em;">
+                    <p> Basic Cosmic Elements</p>
+                </div>
+                <v-divider></v-divider>
+            
 
-                <v-checkbox v-for="el in checkboxElements" :key="el" class="spell" @update:modelValue="updateSpells(el)"
-                    v-model="spells[el]['enabled']" :label="el[0].toUpperCase() + el.substring(1)">
-                </v-checkbox>
-            </div>
-
+                <div class="options">
+                    <v-checkbox v-for="el in basicCosmicElements" :value="el"  class="elements" @change="updateSpells(el)"
+                        v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
+                        <template v-slot:append="{ props }">
+                            <img class="img" v-bind="props" :src="'../public/icons/' + el + '.png'" />
+                        </template>
+                    </v-checkbox>
+                </div>
             </v-navigation-drawer>
             <div class="spells">
                 <div v-for="spell in spellsToLoad" class="ml-2">
-                    <img v-if="enabled(spell)" class="spell" :src='spell'></img>
+                    <img class="spell" :src='spell'></img>
                 </div>
             </div>
-
         </v-container>
     </v-app>
 </template>
 
 <script>
-
-
 export default {
     data() {
         return {
             spells: {},
             spellsToLoad: [],
             checkboxElements: [],
+            basicArcaneElements: ['water', 'fire', 'wood', 'earth', 'wind', 'metal'],
+            advancedArcaneElements: ['lightning', 'toxic', 'ice'],
+            basicCosmicElements: ['order', 'chaos', 'astral'],
             multi: []
         };
     },
     mounted() {
         const files = import.meta.glob('../public/spells/**/*.png')
         let spells = {}
-        let checkboxElements = []
         for (let f in files) {
             let element = f.split('../public/spells/').join().split('/')[0].split(',')[1]
             if (!spells[element]) {
@@ -45,16 +75,11 @@ export default {
             }
             spells[element].spells.push(f)
             if (element.split("_").length == 1) {
-                checkboxElements.push(element)
             } else {
                 this.multi.push(element)
             }
         }
         this.spells = spells;
-        this.checkboxElements = checkboxElements.reduce(function (a, b) {
-            if (a.indexOf(b) < 0) a.push(b);
-            return a;
-        }, []);
     },
     methods: {
         enabled(spell) {
@@ -62,35 +87,24 @@ export default {
             return this.spells[el].enabled
         },
         updateSpells(element) {
-            let update = [element]
-            if (!this.spells[element]["enabled"]) {
+            this.spellsToLoad = []
+            for (let el of this.checkboxElements) {
+                this.spellsToLoad.push(...this.spells[el].spells)
+            }
+            if (this.checkboxElements.length > 1) {
                 for (let el of this.multi) {
                     let names = el.split('_')
-                    let show = true
-                    for (let name of names) {
-                        if (this.spells[name].enabled == false && name != element) {
+                    let show = true;
+                    for (let n of names) {
+                        if (!this.checkboxElements.includes(n)) {
                             show = false
-                            this.spells[el].enabled = false;
                         }
                     }
-                    if (show) {
-                        update.push(el)
-                        this.spells[el].enabled = true;
+                    if (show == true) {
+                        this.spellsToLoad.push(...this.spells[el].spells)
                     }
                 }
-                for (let element of update) {
-                    for (let el in this.spells[element].spells) {
-                        this.spellsToLoad.push(this.spells[element].spells[el].split("public/")[1])
-                    }
-
-                }
-            } else {
-                this.spellsToLoad = this.spellsToLoad.filter(url => !url.includes(element))
             }
-            this.spellsToLoad = this.spellsToLoad.reduce(function (a, b) {
-                if (a.indexOf(b) < 0) a.push(b);
-                return a;
-            }, []);
         }
     }
 };
@@ -103,7 +117,23 @@ export default {
 
 .sidebar {
     text-align: left;
-    width: 12rem;
+    width: 17rem;
+    background-color: #DBD4C8;
+    transform: scale(4.375);
+}
+
+.img {
+    width: 30px;
+    margin-left: -0.7em;
+}
+
+.title {
+    text-align: center;
+    display: block;
+    font-size: x-large;
+    background-color: #422214;
+    color: #F7E8D0;
+    width: 100%;
 }
 
 .spells {
@@ -111,7 +141,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     align-items: top;
-    margin: auto;
+    margin-left: 12vw;
     justify-content: center;
     padding: 3em;
     width: 70vw;
@@ -119,6 +149,7 @@ export default {
     margin-top: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
+    background-color: #DBD4C8;
 }
 
 .spell {
@@ -126,11 +157,17 @@ export default {
     margin-top: 1em;
 }
 
-.options {
-    margin-top: 50%;
+.elements {
+    float: left;
+    margin-left: 1.2em;
 }
 
-.body {
-    display: flex;
+.options {
+    margin-bottom: 12em;
 }
+
+body {
+    
+}
+
 </style>
