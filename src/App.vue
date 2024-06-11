@@ -3,12 +3,13 @@
         <v-container class="body">
             <v-navigation-drawer location="left" color="#DBD4C8" class="sidebar" width="5rem">
                 <div class="title">
-                    <p > Basic Arcane Elements</p>
+                    <p> Basic Arcane Elements</p>
                 </div>
                 <v-divider></v-divider>
                 <div class="options">
-                    <v-checkbox v-for="el in basicArcaneElements" :value="el" class="elements" @change="updateSpells(el)"
-                        v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
+                    <v-checkbox v-for="el in basicArcaneElements" :value="el" class="elements"
+                        @change="updateSpells(el)" v-model="checkboxElements"
+                        :label="el[0].toUpperCase() + el.substring(1)">
                         <template v-slot:append="{ props }">
                             <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
                         </template>
@@ -19,8 +20,9 @@
                     <p> Advanced Arcane Elements</p>
                 </div>
                 <div class="options">
-                    <v-checkbox v-for="el in advancedArcaneElements" :value="el"  class="elements" @change="updateSpells(el)"
-                        v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
+                    <v-checkbox v-for="el in advancedArcaneElements" :value="el" class="elements"
+                        @change="updateSpells(el)" v-model="checkboxElements"
+                        :label="el[0].toUpperCase() + el.substring(1)">
                         <template v-slot:append="{ props }">
                             <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
                         </template>
@@ -30,19 +32,23 @@
                     <p> Basic Cosmic Elements</p>
                 </div>
                 <v-divider></v-divider>
-            
+
 
                 <div class="options">
-                    <v-checkbox v-for="el in basicCosmicElements" :value="el"  class="elements" @change="updateSpells(el)"
-                        v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
+                    <v-checkbox v-for="el in basicCosmicElements" :value="el" class="elements"
+                        @change="updateSpells(el)" v-model="checkboxElements"
+                        :label="el[0].toUpperCase() + el.substring(1)">
                         <template v-slot:append="{ props }">
                             <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
                         </template>
                     </v-checkbox>
                 </div>
             </v-navigation-drawer>
+            <v-text-field v-model="searchQuery" class="search-box"
+                append-inner-icon="mdi-magnify" density="compact" placeholder="Search" 
+             variant="solo" @input="updateSearch"></v-text-field>
             <div class="spells">
-                <div v-for="spell in spellsToLoad" class="ml-2">
+                <div v-for="spell in filteredSpells" class="ml-2">
                     <img class="spell" :src='spell'></img>
                 </div>
             </div>
@@ -60,7 +66,9 @@ export default {
             basicArcaneElements: ['water', 'fire', 'wood', 'earth', 'wind', 'metal'],
             advancedArcaneElements: ['lightning', 'toxic', 'ice'],
             basicCosmicElements: ['order', 'chaos', 'astral'],
-            multi: []
+            filteredSpells: [],
+            multi: [],
+            searchQuery: ''
         };
     },
     mounted() {
@@ -82,6 +90,15 @@ export default {
         this.spells = spells;
     },
     methods: {
+        updateSearch(){
+            if(this.searchQuery&&this.spellsToLoad.length){
+                let name = this.spellsToLoad[0].split("_").join(" ").split("/")[2]
+                this.filteredSpells=this.spellsToLoad.filter(el=>el.split("_").join(" ").split("/")[2].includes(this.searchQuery))
+            } else {
+                this.filteredSpells = this.spellsToLoad
+            }
+            console.log(this.filteredSpells)
+        },
         enabled(spell) {
             let el = spell.split("/")[1]
             return this.spells[el].enabled
@@ -89,7 +106,7 @@ export default {
         updateSpells(element) {
             this.spellsToLoad = []
             for (let el of this.checkboxElements) {
-                this.spellsToLoad.push(...this.spells[el].spells.map(el=>el.split("public/")[1]))
+                this.spellsToLoad.push(...this.spells[el].spells.map(el => el.split("public/")[1]))
             }
             if (this.checkboxElements.length > 1) {
                 for (let el of this.multi) {
@@ -101,11 +118,12 @@ export default {
                         }
                     }
                     if (show == true) {
-                        this.spellsToLoad.push(...this.spells[el].spells.map(el=>el.split("public/")[1]))
+                        this.spellsToLoad.push(...this.spells[el].spells.map(el => el.split("public/")[1]))
                     }
                 }
             }
-            this.spellsToLoad=[...new Set(this.spellsToLoad)];
+            this.spellsToLoad = [...new Set(this.spellsToLoad)];
+            this.filteredSpells=this.spellsToLoad
         }
     }
 };
@@ -154,6 +172,11 @@ export default {
     background-color: #DBD4C8;
 }
 
+.search-box {
+    margin-left: 15vw;
+    width: 20em;
+}
+
 .spell {
     float: left;
     margin-top: 1em;
@@ -167,10 +190,6 @@ export default {
 
 .options {
     margin-bottom: 12em;
-}
-
-body {
-    
 }
 
 </style>
