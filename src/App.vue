@@ -10,7 +10,7 @@
                     <v-checkbox v-for="el in basicArcaneElements" :value="el" class="elements" @change="updateSpells(el)"
                         v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
                         <template v-slot:append="{ props }">
-                            <img class="img" v-bind="props" :src="'../public/icons/' + el + '.png'" />
+                            <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
                         </template>
                     </v-checkbox>
                 </div>
@@ -22,7 +22,7 @@
                     <v-checkbox v-for="el in advancedArcaneElements" :value="el"  class="elements" @change="updateSpells(el)"
                         v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
                         <template v-slot:append="{ props }">
-                            <img class="img" v-bind="props" :src="'../public/icons/' + el + '.png'" />
+                            <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
                         </template>
                     </v-checkbox>
                 </div>
@@ -36,7 +36,7 @@
                     <v-checkbox v-for="el in basicCosmicElements" :value="el"  class="elements" @change="updateSpells(el)"
                         v-model="checkboxElements" :label="el[0].toUpperCase() + el.substring(1)">
                         <template v-slot:append="{ props }">
-                            <img class="img" v-bind="props" :src="'../public/icons/' + el + '.png'" />
+                            <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
                         </template>
                     </v-checkbox>
                 </div>
