@@ -8,17 +8,14 @@
             <v-spacer></v-spacer>
         </div>
         <div class="spells">
-            <div v-for="spell in spellsToLoad" class="ml-2">
-                <img v-if="spells[spell.element].enabled" class="spell" :src='getImagePath(spell.url)'></img>
+            <div v-for="spell in spellsToLoad" :key="spell.url" class="ml-2">
+                <img v-if="spells[spell.element].enabled" class="spell" :src="spell.url" />
             </div>
         </div>
-
     </v-container>
 </template>
 
 <script>
-
-
 export default {
     data() {
         return {
@@ -28,12 +25,12 @@ export default {
         };
     },
     mounted() {
-        const files = import.meta.glob('../public/spells/**/*.png')
+        const files = import.meta.glob('/spells/**/*.png')
         console.log(files)
         let spells = {}
         let checkboxElements = []
         for (let f in files) {
-            let element = f.split('../public/spells/').join().split('/')[0].split(',')[1]
+            let element = f.split('/spells/').join().split('/')[0].split(',')[1]
             if (!spells[element]) {
                 spells[element] = {}
                 spells[element].enabled = false;
@@ -51,20 +48,6 @@ export default {
         }, []);
     },
     methods: {
-        getImagePath(url) {
-            const baseUrl = new URL(import.meta.url).href;
-            let newUrl = new URL(url, baseUrl).href;
-            console.log(newUrl)
-            return newUrl
-        },
-        singleElement(el) {
-
-            if (el.split("_").length > 1) {
-                console.log(el.split("_").length)
-                return false
-            }
-            return true
-        },
         updateSpells(element) {
             console.log(element, this.spells[element]["enabled"])
             if (!this.spells[element]["enabled"]) {
@@ -85,7 +68,7 @@ export default {
 
 <style>
 .buttons {
-    display: flexbox;
+    display: flex;
 }
 
 .spells {
@@ -102,7 +85,7 @@ export default {
     border-radius: 10px;
 }
 
-.spell{
+.spell {
     float: left;
     margin-top: 1em;
 }
