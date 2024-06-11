@@ -1,1 +1,0 @@
-export const files = require.context('@/spells', false,)
