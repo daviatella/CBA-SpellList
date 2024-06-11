@@ -105,7 +105,7 @@ export default {
                     }
                 }
             }
-            console.log(this.spellsToLoad)
+            this.spellsToLoad=[...new Set(this.spellsToLoad)];
         }
     }
 };
