@@ -29,6 +29,7 @@ export default {
     },
     mounted() {
         const files = import.meta.glob('../assets/spells/**/*.png')
+        console.log(files)
         let spells = {}
         let checkboxElements = []
         for (let f in files) {
@@ -52,7 +53,9 @@ export default {
     methods: {
         getImagePath(url) {
             const baseUrl = new URL(import.meta.url).href;
-            return new URL(url, baseUrl).href;
+            let newUrl = new URL(url, baseUrl).href;
+            console.log(newUrl)
+            return newUrl
         },
         singleElement(el) {
 
