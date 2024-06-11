@@ -28,12 +28,12 @@ export default {
         };
     },
     mounted() {
-        const files = import.meta.glob('/spells/**/*.png')
+        const files = import.meta.glob('../public/spells/**/*.png')
         console.log(files)
         let spells = {}
         let checkboxElements = []
         for (let f in files) {
-            let element = f.split('/spells/').join().split('/')[0].split(',')[1]
+            let element = f.split('../public/spells/').join().split('/')[0].split(',')[1]
             if (!spells[element]) {
                 spells[element] = {}
                 spells[element].enabled = false;
