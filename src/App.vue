@@ -44,11 +44,10 @@
                     </v-checkbox>
                 </div>
             </v-navigation-drawer>
-            <v-text-field v-model="searchQuery" class="search-box"
-                append-inner-icon="mdi-magnify" density="compact" placeholder="Search" 
-             variant="solo" @input="updateSearch"></v-text-field>
+            <v-text-field v-model="searchQuery" class="search-box" append-inner-icon="mdi-magnify" density="compact"
+                placeholder="Search" variant="solo" @input="updateSearch"></v-text-field>
             <div class="spells">
-                <div v-for="spell in filteredSpells" class="ml-2">
+                <div v-for="spell in filteredSpells" class="ml-2 grid-item">
                     <img class="spell" :src='spell'></img>
                 </div>
             </div>
@@ -57,6 +56,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
@@ -90,10 +90,10 @@ export default {
         this.spells = spells;
     },
     methods: {
-        updateSearch(){
-            if(this.searchQuery&&this.spellsToLoad.length){
+        updateSearch() {
+            if (this.searchQuery && this.spellsToLoad.length) {
                 let name = this.spellsToLoad[0].split("_").join(" ").split("/")[2]
-                this.filteredSpells=this.spellsToLoad.filter(el=>el.split("_").join(" ").split("/")[2].includes(this.searchQuery))
+                this.filteredSpells = this.spellsToLoad.filter(el => el.split("_").join(" ").split("/")[2].includes(this.searchQuery.toLowerCase()))
             } else {
                 this.filteredSpells = this.spellsToLoad
             }
@@ -123,7 +123,7 @@ export default {
                 }
             }
             this.spellsToLoad = [...new Set(this.spellsToLoad)];
-            this.filteredSpells=this.spellsToLoad
+            this.filteredSpells = this.spellsToLoad
         }
     }
 };
@@ -138,7 +138,6 @@ export default {
     text-align: left;
     width: 17rem;
     background-color: #DBD4C8;
-    transform: scale(4.375);
 }
 
 .img {
@@ -170,6 +169,7 @@ export default {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     background-color: #DBD4C8;
+    grid-auto-flow: row dense;
 }
 
 .search-box {
@@ -191,5 +191,4 @@ export default {
 .options {
     margin-bottom: 12em;
 }
-
 </style>
