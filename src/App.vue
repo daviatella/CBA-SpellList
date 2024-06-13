@@ -109,7 +109,7 @@ export default {
             this.updateSpells(el)
         },
         getFilterStyle(el) {
-            return this.checkboxElements.includes(el) ? ';' : 'filter: opacity(0.5) drop-shadow(0 0 0 blue);';
+            return this.checkboxElements.includes(el) ? ';' : 'filter: opacity(0.5);';
         },
         updateSearch() {
             if (this.searchQuery && this.spellsToLoad.length) {
@@ -236,7 +236,7 @@ export default {
 
 .options {
     display: grid;
-    grid-template-columns: repeat(2, 6em); /* Two columns */
-    gap: 0.2em; /* Adjust as needed */
+    grid-template-columns: repeat(2, 6em); 
+    gap: 0.2em; 
 }
 </style>
