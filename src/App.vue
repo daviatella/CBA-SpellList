@@ -1,7 +1,7 @@
 <template>
     <v-app style="background-color: #422214;">
         <v-container class="body">
-            <v-navigation-drawer location="left" color="#DBD4C8" class="sidebar" width="5rem">
+            <v-navigation-drawer :touchless="true" location="left" color="#DBD4C8" class="sidebar" width="5rem">
                 <div class="title">
                     <p> Basic Arcane Elements</p>
                 </div>
