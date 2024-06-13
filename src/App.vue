@@ -13,7 +13,7 @@
                                 <div class="element-wrapper">
                                     <img class="img" @click="toggleElement(el)" :src="'/icons/' + el + '.png'"
                                         :style="getFilterStyle(el)" />
-                                        <p class="label">{{ el }}</p>
+                                        <p @click="toggleElement(el)" class="label cursor-pointer">{{ el }}</p>
 
                                 </div>
                             </div>
@@ -29,7 +29,7 @@
                                 <div class="element-wrapper ">
                                     <img class="img" @click="toggleElement(el)" :src="'/icons/' + el + '.png'"
                                         :style="getFilterStyle(el)" />
-                                        <p class="label">{{ el }}</p>
+                                        <p @click="toggleElement(el)" class="label cursor-pointer">{{ el }}</p>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                                 <div class="element-wrapper">
                                     <img class="img" @click="toggleElement(el)" :src="'/icons/' + el + '.png'"
                                         :style="getFilterStyle(el)" />
-                                        <p class="label">{{ el }}</p>
+                                        <p  @click="toggleElement(el)" class="label cursor-pointer">{{ el }}</p>
                                 </div>
                             </div>
                         </div>
@@ -209,6 +209,7 @@ export default {
     justify-content: center;
     padding: 3em;
     width: 100%;
+    align-items: flex-start;
     max-width: 100%;
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
