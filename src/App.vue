@@ -1,47 +1,50 @@
 <template>
-    <v-app style="background-color: #422214;">
+    <v-app style="background-color: #2D323F;">
         <v-container class="body" fluid>
             <v-row no-gutters>
                 <v-col cols="auto">
-                    <v-navigation-drawer :permanent="true" location="left" color="#DBD4C8" class="sidebar">
-                        <div class="title">
+                    <v-navigation-drawer floating="true" :permanent="true" height="1" location="left" color="#DBD4C8"
+                        class="sidebar">
+                        <div class="title" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
                             <p> Basic Arcane Elements</p>
                         </div>
-                        <v-divider></v-divider>
                         <div class="options">
-                            <v-checkbox v-for="el in basicArcaneElements" :key="el" :value="el" class="elements"
-                                @change="updateSpells(el)" v-model="checkboxElements"
-                                :label="el[0].toUpperCase() + el.substring(1)">
-                                <template v-slot:append="{ props }">
-                                    <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
-                                </template>
-                            </v-checkbox>
+                            <div v-for="el in basicArcaneElements" class="elements">
+                                <div class="element-wrapper">
+                                    <img class="img" @click="toggleElement(el)" :src="'/icons/' + el + '.png'"
+                                        :style="getFilterStyle(el)" />
+                                        <p class="label">{{ el }}</p>
+
+                                </div>
+                            </div>
                         </div>
-                        <br class="mt-4">
+                        <v-spacer></v-spacer>
+                        <br class="mt-12">
+
                         <div class="title" style="margin-top: -2em;">
                             <p> Advanced Arcane Elements</p>
                         </div>
                         <div class="options">
-                            <v-checkbox v-for="el in advancedArcaneElements" :key="el" :value="el" class="elements"
-                                @change="updateSpells(el)" v-model="checkboxElements"
-                                :label="el[0].toUpperCase() + el.substring(1)">
-                                <template v-slot:append="{ props }">
-                                    <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
-                                </template>
-                            </v-checkbox>
+                            <div v-for="el in advancedArcaneElements" class="elements">
+                                <div class="element-wrapper ">
+                                    <img class="img" @click="toggleElement(el)" :src="'/icons/' + el + '.png'"
+                                        :style="getFilterStyle(el)" />
+                                        <p class="label">{{ el }}</p>
+                                </div>
+                            </div>
                         </div>
+                        <br class="mt-7">
                         <div class="title" style="margin-top: -1.5em;">
                             <p> Basic Cosmic Elements</p>
                         </div>
-                        <v-divider></v-divider>
                         <div class="options">
-                            <v-checkbox v-for="el in basicCosmicElements" :key="el" :value="el" class="elements"
-                                @change="updateSpells(el)" v-model="checkboxElements"
-                                :label="el[0].toUpperCase() + el.substring(1)">
-                                <template v-slot:append="{ props }">
-                                    <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
-                                </template>
-                            </v-checkbox>
+                            <div v-for="el in basicCosmicElements" class="elements">
+                                <div class="element-wrapper">
+                                    <img class="img" @click="toggleElement(el)" :src="'/icons/' + el + '.png'"
+                                        :style="getFilterStyle(el)" />
+                                        <p class="label">{{ el }}</p>
+                                </div>
+                            </div>
                         </div>
                     </v-navigation-drawer>
                 </v-col>
@@ -95,9 +98,21 @@ export default {
         this.spells = spells;
     },
     methods: {
+        toggleElement(el) {
+            let i = this.checkboxElements.findIndex(element => element === el)
+            if (i > -1) {
+                this.checkboxElements.splice(i,1)
+                console.log(this.checkboxElements)
+            } else {
+                this.checkboxElements.push(el)
+            }
+            this.updateSpells(el)
+        },
+        getFilterStyle(el) {
+            return this.checkboxElements.includes(el) ? ';' : 'filter: opacity(0.5) drop-shadow(0 0 0 blue);';
+        },
         updateSearch() {
             if (this.searchQuery && this.spellsToLoad.length) {
-                let name = this.spellsToLoad[0].split("_").join(" ").split("/")[2]
                 this.filteredSpells = this.spellsToLoad.filter(el => el.split("_").join(" ").split("/")[2].includes(this.searchQuery.toLowerCase()))
             } else {
                 this.filteredSpells = this.spellsToLoad
@@ -138,23 +153,44 @@ export default {
 .body {
     display: flex;
     height: 100vh;
-    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-x: auto;
 }
 
 .sidebar {
     text-align: left;
     width: 17rem;
+    margin-top: 1rem;
+    max-height: 63vh;
+    border-radius: 10px;
     background-color: #DBD4C8;
 }
 
 .content-col {
     flex: 1;
-    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-x: auto;
+}
+
+.element-wrapper {
+    display: flex;
+    margin-top: 2em;
+    margin-left: 0.3em;
+    gap: 0.5em;
 }
 
 .img {
     width: 30px;
-    margin-left: -0.7em;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.img:hover {
+    filter: brightness(1.2);
+}
+
+.label {
+    font-size: large;
+    color: #5f513b;
+    margin-top: 0.1em;
 }
 
 .title {
@@ -164,7 +200,6 @@ export default {
     background-color: #422214;
     color: #F7E8D0;
     width: 100%;
-    margin-bottom: 1em;
 }
 
 .spells {
@@ -193,12 +228,15 @@ export default {
 }
 
 .elements {
-    float: left;
-    margin-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
     margin-top: -1em;
 }
 
 .options {
-    margin-bottom: 12em;
+    display: grid;
+    grid-template-columns: repeat(2, 6em); /* Two columns */
+    gap: 0.2em; /* Adjust as needed */
 }
 </style>
