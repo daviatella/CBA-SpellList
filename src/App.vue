@@ -1,62 +1,67 @@
 <template>
     <v-app style="background-color: #422214;">
-        <v-container class="body">
-            <v-navigation-drawer location="left" color="#DBD4C8" class="sidebar" width="5rem">
-                <div class="title">
-                    <p> Basic Arcane Elements</p>
-                </div>
-                <v-divider></v-divider>
-                <div class="options">
-                    <v-checkbox v-for="el in basicArcaneElements" :value="el" class="elements"
-                        @change="updateSpells(el)" v-model="checkboxElements"
-                        :label="el[0].toUpperCase() + el.substring(1)">
-                        <template v-slot:append="{ props }">
-                            <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
-                        </template>
-                    </v-checkbox>
-                </div>
-                <br class="mt-4">
-                <div class="title" style="margin-top: -2em;">
-                    <p> Advanced Arcane Elements</p>
-                </div>
-                <div class="options">
-                    <v-checkbox v-for="el in advancedArcaneElements" :value="el" class="elements"
-                        @change="updateSpells(el)" v-model="checkboxElements"
-                        :label="el[0].toUpperCase() + el.substring(1)">
-                        <template v-slot:append="{ props }">
-                            <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
-                        </template>
-                    </v-checkbox>
-                </div>
-                <div class="title" style="margin-top: -1.5em;">
-                    <p> Basic Cosmic Elements</p>
-                </div>
-                <v-divider></v-divider>
-
-
-                <div class="options">
-                    <v-checkbox v-for="el in basicCosmicElements" :value="el" class="elements"
-                        @change="updateSpells(el)" v-model="checkboxElements"
-                        :label="el[0].toUpperCase() + el.substring(1)">
-                        <template v-slot:append="{ props }">
-                            <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
-                        </template>
-                    </v-checkbox>
-                </div>
-            </v-navigation-drawer>
-            <v-text-field v-model="searchQuery" class="search-box" append-inner-icon="mdi-magnify" density="compact"
-                placeholder="Search" variant="solo" @input="updateSearch"></v-text-field>
-            <div class="spells">
-                <div v-for="spell in filteredSpells" class="ml-2 grid-item">
-                    <img class="spell" :src='spell'></img>
-                </div>
-            </div>
+        <v-container class="body" fluid>
+            <v-row no-gutters>
+                <v-col cols="auto">
+                    <v-navigation-drawer :permanent="true" location="left" color="#DBD4C8" class="sidebar">
+                        <div class="title">
+                            <p> Basic Arcane Elements</p>
+                        </div>
+                        <v-divider></v-divider>
+                        <div class="options">
+                            <v-checkbox v-for="el in basicArcaneElements" :key="el" :value="el" class="elements"
+                                @change="updateSpells(el)" v-model="checkboxElements"
+                                :label="el[0].toUpperCase() + el.substring(1)">
+                                <template v-slot:append="{ props }">
+                                    <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
+                                </template>
+                            </v-checkbox>
+                        </div>
+                        <br class="mt-4">
+                        <div class="title" style="margin-top: -2em;">
+                            <p> Advanced Arcane Elements</p>
+                        </div>
+                        <div class="options">
+                            <v-checkbox v-for="el in advancedArcaneElements" :key="el" :value="el" class="elements"
+                                @change="updateSpells(el)" v-model="checkboxElements"
+                                :label="el[0].toUpperCase() + el.substring(1)">
+                                <template v-slot:append="{ props }">
+                                    <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
+                                </template>
+                            </v-checkbox>
+                        </div>
+                        <div class="title" style="margin-top: -1.5em;">
+                            <p> Basic Cosmic Elements</p>
+                        </div>
+                        <v-divider></v-divider>
+                        <div class="options">
+                            <v-checkbox v-for="el in basicCosmicElements" :key="el" :value="el" class="elements"
+                                @change="updateSpells(el)" v-model="checkboxElements"
+                                :label="el[0].toUpperCase() + el.substring(1)">
+                                <template v-slot:append="{ props }">
+                                    <img class="img" v-bind="props" :src="'/icons/' + el + '.png'" />
+                                </template>
+                            </v-checkbox>
+                        </div>
+                    </v-navigation-drawer>
+                </v-col>
+                <v-col class="content-col">
+                    <v-main>
+                        <v-text-field v-model="searchQuery" class="search-box" append-inner-icon="mdi-magnify"
+                            density="compact" placeholder="Search" variant="solo" @input="updateSearch"></v-text-field>
+                        <div class="spells">
+                            <div v-for="spell in filteredSpells" :key="spell" class="ml-2 grid-item">
+                                <img class="spell" :src='spell'></img>
+                            </div>
+                        </div>
+                    </v-main>
+                </v-col>
+            </v-row>
         </v-container>
     </v-app>
 </template>
 
 <script>
-
 export default {
     data() {
         return {
@@ -130,14 +135,21 @@ export default {
 </script>
 
 <style>
-.buttons {
-    display: block;
+.body {
+    display: flex;
+    height: 100vh;
+    overflow-x: auto; /* Allow horizontal scrolling */
 }
 
 .sidebar {
     text-align: left;
     width: 17rem;
     background-color: #DBD4C8;
+}
+
+.content-col {
+    flex: 1;
+    overflow-x: auto; /* Allow horizontal scrolling */
 }
 
 .img {
@@ -156,14 +168,12 @@ export default {
 }
 
 .spells {
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: top;
-    margin-left: 12vw;
     justify-content: center;
     padding: 3em;
-    width: 70vw;
+    width: 100%;
     max-width: 90em;
     margin-top: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -173,7 +183,7 @@ export default {
 }
 
 .search-box {
-    margin-left: 15vw;
+    margin-left: 1rem;
     width: 20em;
 }
 
