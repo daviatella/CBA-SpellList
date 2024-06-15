@@ -2,11 +2,11 @@ import { registerPlugins } from '@/plugins'
 import App from './App.vue'
 import { createApp } from 'vue'
 import './styles.css'; 
-import VueBinpackerPlugin from 'vue-binpacker-plugin'
+import router from '../routes.js'
 
 const app = createApp(App)
-app.use(VueBinpackerPlugin)
 app.config.productionTip = false;
+app.use(router)
 
 app.config.devtools = false;
 

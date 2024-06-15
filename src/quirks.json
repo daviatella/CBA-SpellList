@@ -1,0 +1,278 @@
+{
+    "quirks": [
+      {
+        "name": "Adventurous",
+        "subquirks": [
+          {
+            "name": "Explorer",
+            "description": "When you are at a crossroads or out in the open, you can ask the Game Master which direction is the quickest route to your destination, which can be a creature, location, or the exit. The answer does not account for the dangers you will encounter."
+          },
+          {
+            "name": "Peak Performance",
+            "description": "You can roll your Brute or Sports Skills with Edge."
+          },
+          {
+            "name": "Survivalist",
+            "description": "When you are reduced to 0 HP by falls, hazards, or any damage source not directly caused by a creature’s attack, effect, or feature, you can choose to drop to 1 HP instead. This does not work on Epic Traps."
+          }
+        ]
+      },
+      {
+        "name": "Calm",
+        "subquirks": [
+          {
+            "name": "Ignored",
+            "description": "As long as you’re not being actively observed by any creature and remain silent and stationary, you can make a Thievery Roll to hide in the open."
+          },
+          {
+            "name": "Cause Paranoia",
+            "description": "After spending five minutes observing a creature within 30m (3 zones) of you, the creature will feel the stress of being observed and may look for the source of the stress. While looking for you or interacting with you, the creature will make Awareness and Empathy related Skill Rolls with Setback."
+          },
+          {
+            "name": "Focused",
+            "description": "While your character is not in a Combat Situation and hasn’t spoken for 1 minute, you enter a serene state of heightened focus. All effects that cause you to roll with Setbacks are ignored, while you can still benefit from Edge Rolls. This state ends when your character speaks or enters a Combat Situation."
+          }
+        ]
+      },
+      {
+        "name": "Cautious",
+        "subquirks": [
+          {
+            "name": "Sense Danger",
+            "description": "You can ask the Game Master whether there is any danger within 30m (3 zones) of you. This danger includes enemies, traps and other hazards, including dangers that are invisible or located behind doors and other objects. The answer you will receive is a simple yes or no."
+          },
+          {
+            "name": "Prey Sense",
+            "description": "You can ask the Game Master whether there are any creatures or objects actively looking for you within 100m (10 zones). They can be pursuers, ambushers, guards, and even security cameras. The answer you receive is a simple yes or no."
+          },
+          {
+            "name": "Pusillanimous",
+            "description": "You can ask the Game Master which direction is the safest and most efficient escape route for your character. While you’re following the escape directions, you have Edge on your single next Task Roll."
+          }
+        ]
+      },
+      {
+        "name": "Clingy",
+        "subquirks": [
+          {
+            "name": "Friendship",
+            "description": "You always know the general direction of a PC or NPC you share at least 1 Bond Point with. You can also use this Subquirk on someone you have interacted or spoken with for 5 minutes in the last 24 hours."
+          },
+          {
+            "name": "Premonition",
+            "description": "You can choose to feel the emotion of a PC or NPC you share at least 5 Bond Points with. You know if it’s currently experiencing fear, happiness, anxiety, danger etc."
+          },
+          {
+            "name": "There you are!",
+            "description": "When you are within 100m (10 zones) of a creature you share at least 10 Bond Points with, you can choose to miraculously appear within a 5m radius (1 zone), of that creature, or a location the GM deems to be appropriate."
+          }
+        ]
+      },
+      {
+        "name": "Geeky",
+        "subquirks": [
+          {
+            "name": "Trivia Trove",
+            "description": "Your knowledge of trivial information becomes miraculously relevant to a piece of information you want to know. You can choose to succeed in an Information Skill Roll at the lowest point needed for success."
+          },
+          {
+            "name": "Too Much Info",
+            "description": "You can prattle trivial nonsense at any non-hostile creature within 30m (3 zones) from you that’s capable of speech. After five minutes of talking, all Awareness & Empathy related Skills rolled by those creatures will be made with Setback. This effect lasts for five minutes after you stop talking."
+          },
+          {
+            "name": "Eureka",
+            "description": "You can choose to gain Mastery in a Toolkit for your next Toolkit Roll."
+          }
+        ]
+      },
+      {
+        "name": "Greedy",
+        "subquirks": [
+          {
+            "name": "Materialistic",
+            "description": "You and each of your party members earn an extra 10% Cred for every mission reward and bonus. (You need to be present throughout the mission.) You also make Information Skill Rolls with Edge to appraise the value of objects."
+          },
+          {
+            "name": "Treasure Sense",
+            "description": "You can ask the Game Master if there are any treasures or objects important to your mission located within 100m (10 zones) of you. If there are multiple, your instinct will tell you the direction and distance of the single most important object."
+          },
+          {
+            "name": "My Precious",
+            "description": "After seeing an object or its image, you can spend your Full Rest thinking about it and develop an obsession over it. During a game session, you can ask the Game Master to alert you when you are within 100m of the object and when it has left that range. You also know its general direction at all times. You can obsess over 1 object at a time."
+          }
+        ]
+      },
+      {
+        "name": "Haughty",
+        "subquirks": [
+          {
+            "name": "Judgmental",
+            "description": "You always roll with Edge to determine an NPC’s social status and background. This applies to your Detect, Information, Reason, and Psychology Skill Rolls."
+          },
+          {
+            "name": "Aggravating",
+            "description": "When you and another creature lock eyes, you may make that creature hostile towards you at will. That creature will be distracted while you’re still in its field of vision and make its Awareness and Empathy related Skill Rolls with Setback."
+          },
+          {
+            "name": "Boss Around",
+            "description": "You can roll your Intimidation and Appeal Skills with Edge against any creature capable of speech. Failure will turn that creature immediately hostile towards you."
+          }
+        ]
+      },
+      {
+        "name": "Cheat At Life",
+        "subquirks": [
+          {
+            "name": "I Win",
+            "description": "When you fail a Task Roll, you can choose to succeed at the lowest point needed for success."
+          }
+        ]
+      },
+      {
+        "name": "Cheat Fate",
+        "subquirks": [
+          {
+            "name": "Tamper Dice",
+            "description": "When a Task Roll is made by you, another player, or the GM, you can choose to manipulate one of the dice rolled. You can change the value on its face to any number or even remove it for that roll."
+          }
+        ]
+      },
+      {
+        "name": "Imaginary Friend",
+        "subquirks": [
+          {
+            "name": "Imaginary Friend",
+            "description": "You can gain Bond Points and Fond Memories with an imaginary friend at the end of a mission or chapter as if that person is a party member. For other quirk purposes, the location of your imaginary friend is in your brain. You need to know the name of your friend."
+          },
+          {
+            "name": "Imaginary Friends",
+            "description": "You now have a second imaginary friend you can bond with. You need to be able to describe the physical appearance of your two friends."
+          },
+          {
+            "name": "Imaginary Party",
+            "description": "You now have a third imaginary friend you can bond with. You need to be able to describe your friends’ backstory."
+          }
+        ]
+      },
+      {
+        "name": "Intuitive",
+        "subquirks": [
+          {
+            "name": "Lie Detector",
+            "description": "You can make Psychology Skill Rolls with Edge when determining whether a creature is lying."
+          },
+          {
+            "name": "Mystery Instinct",
+            "description": "When you are trying to solve a problem or mystery, you can ask the Game Master whether there is an answer or solution to the problem and if the solution is nearby. The answers you will get are yes/no/unknown and near (within 30m radius) or far (outside)."
+          },
+          {
+            "name": "Sense Conspiracy",
+            "description": "You can ask the Game Master for the affiliations of all NPCs within 30m (3 zones) of you. The Game Master will tell you how many factions there are, who belongs to which group, and whether they mean you harm. You are also told the name of the faction if you are familiar with it."
+          }
+        ]
+      },
+      {
+        "name": "Kind",
+        "subquirks": [
+          {
+            "name": "Soothing",
+            "description": "When you console a creature for five minutes, you can make a Psychology or Reason Skill Roll to end a Mind Effect on the creature. If the creature cannot understand you, you roll with Setback."
+          },
+          {
+            "name": "Harmless",
+            "description": "You can attempt to appear non-threatening to NPCs for 1 hour. NPCs that look at you are less likely to see you as a threat."
+          },
+          {
+            "name": "Good Karma",
+            "description": "You and your party members have Edge on one of their next three Task Rolls while they are in your presence. You cannot give Edge to a Task Roll that already has Edge."
+          }
+        ]
+      },
+      {
+        "name": "Klutz",
+        "subquirks": [
+          {
+            "name": "Fall on Clues",
+            "description": "You stumble, fall, or knock over objects that reveal important clues. You can ask the Game Master whether there is any vital information or clue within 5m (1 zone) of you. If the answer is yes, you will accidentally reveal that clue."
+          },
+          {
+            "name": "Drop Danger",
+            "description": "When you fall, trip, or get knocked over, you can make a Thievery or Acrobatics Roll with Edge. If you succeed, you accidentally disarm all enemies within 1m (1 zone) of you."
+          },
+          {
+            "name": "Klutz Contagion",
+            "description": "When you fall, trip, or get knocked over, you can make a Thievery or Acrobatics Roll with Edge. If you succeed, you infect all enemies within 10m (1 zone) of you with the same level of klutziness."
+          }
+        ]
+      },
+      {
+        "name": "Mysterious",
+        "subquirks": [
+          {
+            "name": "Chit Chat",
+            "description": "You can use your charm and ambiguity to get an NPC to reveal more information than they intended. You can make an Information or Detect Skill Roll with Edge."
+          },
+          {
+            "name": "Misremember",
+            "description": "After conversing with an NPC for five minutes, you can manipulate their memory slightly. You can make an Intimidation or Appeal Skill Roll to change the NPC’s memory of a specific event."
+          },
+          {
+            "name": "Verbal Trickery",
+            "description": "You can use your ambiguous nature to lead an NPC into making a decision they wouldn’t normally make. You can make an Intimidation or Appeal Skill Roll with Edge."
+          }
+        ]
+      },
+      {
+        "name": "Observant",
+        "subquirks": [
+          {
+            "name": "Perfect Memory",
+            "description": "You can recall any detail you’ve observed or heard within the last 24 hours with perfect clarity. You can make an Information or Detect Skill Roll with Edge."
+          },
+          {
+            "name": "Sense Secret",
+            "description": "You can ask the Game Master if there are any hidden secrets or important information within 30m (3 zones) of you. The answer you will receive is a simple yes or no."
+          },
+          {
+            "name": "Hyperaware",
+            "description": "When you enter a new area, you can ask the Game Master for a detailed description of the environment, including hidden objects, traps, and creatures. You make all Awareness Skill Rolls with Edge."
+          }
+        ]
+      },
+      {
+        "name": "Protective",
+        "subquirks": [
+          {
+            "name": "Sense Trouble",
+            "description": "You can ask the Game Master if any of your party members are in immediate danger. The answer you will receive is a simple yes or no."
+          },
+          {
+            "name": "Sense Malice",
+            "description": "You can ask the Game Master if any creature within 30m (3 zones) of you has harmful intentions towards you or your party. The answer you will receive is a simple yes or no."
+          },
+          {
+            "name": "Self Sacrifice",
+            "description": "When a party member within 30m (3 zones) of you is targeted by an attack, you can choose to take the damage or effect of the attack instead."
+          }
+        ]
+      },
+      {
+        "name": "Vindictive",
+        "subquirks": [
+          {
+            "name": "Grudge",
+            "description": "You can choose a creature that has wronged you in some way and hold a grudge against them. You gain Edge on all Skill Rolls made against that creature."
+          },
+          {
+            "name": "Unreasonable",
+            "description": "You can become unreasonably fixated on a creature that has wronged you. You make all Awareness and Empathy related Skill Rolls against that creature with Edge."
+          },
+          {
+            "name": "Time Bomb",
+            "description": "When a creature that has wronged you is within 30m (3 zones) of you, you can choose to explode in a fit of rage. You gain Edge on all Combat Rolls made against that creature for the next 10 minutes."
+          }
+        ]
+      }
+    ]
+  }
+  
