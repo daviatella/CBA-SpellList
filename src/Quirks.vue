@@ -6,11 +6,14 @@
         <v-card-title class="title" style="background-color: #422214; color: white; text-align: center;">
           {{ quirk.name }}
         </v-card-title>
-        <div v-for="(subquirk, subindex) in quirk.subquirks" class="cursor-pointer" :key="subquirk.name" @click="toggleQuirk(quirk, subquirk, subindex)">
+        <div v-for="(subquirk, subindex) in quirk.subquirks" class="cursor-pointer" :key="subquirk.name"
+          @click="toggleQuirk(quirk, subquirk, subindex)">
           <v-card-subtitle class="title" style="background-color: #422214; color: white; text-align: center;">
-            Rank {{ subindex + 1 }} - {{ subquirk.name }}
+            <div class="mt-2 mb-2" :class="{ 'selected': subquirk.selected}">
+              Rank {{ subindex + 1 }} - {{ subquirk.name }}
+            </div>
           </v-card-subtitle>
-          <v-card-text :class="{'selected': subquirk.selected}">
+          <v-card-text :class="{ 'selected': subquirk.selected, 'descrip': true }">
             {{ subquirk.description }}
           </v-card-text>
         </div>
@@ -20,25 +23,45 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue';
-  import quirkJson from './quirks.json';
+import { ref } from 'vue';
+import quirkJson from './quirks.json';
 
-  const points = ref(2);
-  const quirks = quirkJson.quirks;
+const points = ref(2);
+const quirks = quirkJson.quirks;
 
-  function toggleQuirk(quirk, subquirk, subindex) {
-    if(subquirk.selected==false){
-      points.value -= (subindex + 1);
-    } else {
-      points.value += (subindex + 1);
+function toggleQuirk(quirk, subquirk, subindex) {
+  let newStatus = !subquirk.selected;
+  let pointsChange = 0;
+
+  // Calculate points change
+  if (newStatus) {
+    for (let i = 0; i <= subindex; i++) {
+      if (!quirk.subquirks[i].selected) {
+        pointsChange -= 1;
+      }
     }
-    for(let s of quirk.subquirks){
-      s.selected = !s.selected;
-      if(s.name==subquirk.name){
-        break;
+  } else {
+    for (let i = subindex; i < quirk.subquirks.length; i++) {
+      if (quirk.subquirks[i].selected) {
+        pointsChange += 1;
       }
     }
   }
+
+  // Apply points change
+  points.value += pointsChange;
+
+  // Update selection status
+  if (newStatus) {
+    for (let i = 0; i <= subindex; i++) {
+      quirk.subquirks[i].selected = true;
+    }
+  } else {
+    for (let i = subindex; i < quirk.subquirks.length; i++) {
+      quirk.subquirks[i].selected = false;
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -52,6 +75,7 @@
 .selected {
   color: white;
   background-color: black;
+  /* display: none; */
 }
 
 .points {
@@ -64,12 +88,12 @@
 
 .quirk-card {
   width: 18em;
-  height: 25em;
+  height: fit-content;
   margin: auto;
 }
 
 .descrip {
   font-family: 'Acre-Semibold', sans-serif;
-  color: rgb(78, 71, 71);
+  /* color: rgb(78, 71, 71); */
 }
 </style>
