@@ -2,7 +2,7 @@
     <v-container class="body">
       <v-stepper editable :model-value="1">
         <v-stepper-header class="stepheader">
-          <v-stepper-item edit-icon="" class="step" title="Lifeform" value="1"></v-stepper-item>
+          <v-stepper-item  edit-icon="" class="step" title="Lifeform" value="1"></v-stepper-item>
           <v-divider color="black" :thickness="5"></v-divider>
           <v-stepper-item edit-icon="" class="step" title="Quirks" value="2"></v-stepper-item>
           <v-divider color="black" :thickness="5"></v-divider>
@@ -22,7 +22,7 @@
               </div>
             </v-stepper-window-item>
             <v-stepper-window-item value="2">
-                <Quirks :quirks="quirks" @toggle-selection="toggleLifeSelection(index)" />
+                <Quirks :points="2" @toggle-selection="toggleLifeSelection(index)" />
             </v-stepper-window-item>
           </v-stepper-window>
         </v-card>
@@ -37,7 +37,6 @@
   import { PDFDocument } from 'pdf-lib'
   import { saveAs } from 'file-saver';
   import racesJson from './races.json'
-  import quirkJson from './quirks.json'
 
   export default {
     components: {
