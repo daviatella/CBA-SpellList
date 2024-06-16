@@ -418,8 +418,128 @@
                 "Healing Powder (0.5)",
                 "Wand (0.5)"
             ],
+            "class_1": "Spellweaver",
+            "class_2": "Glamour Guard",
             "strengths": "Arcanists are versatile spellcasters who can attune to the Arcane Elements. They have access to a plethora of Arcane Spells that can help them solve virtually any adventuring problem and devastate multiple enemies at once. Spellweavers can blast enemy groups without needing to worry about friendly fire, while Glamour Guards are more defensive.",
             "weaknesses": "Arcanists are glass cannons. They hit hard but can’t withstand much enemy punishment. Enemies that can flank or bypass the frontline pose great danger to them.",
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Arcane Attunement",
+                            "description": "You have received training in the manipulation of Arcane Elements. You can attune to Arcane Elements, such as Fire, Water, Wood, Wind, Earth, Metal, and other elements derived from their combinations. Using your minor action, you can create a Spellglyph Token. You may choose to enter combat or other Critical Situations with 3 Spellglyph Tokens."
+                        },
+                        {
+                            "name": "Attunement Slot +2",
+                            "description": "You gain +2 additional Attunement Slots. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Spell Sensitivity",
+                            "class": "1",
+                            "description": "You become highly sensitive to the flow of magical currents. You can sense any spells cast within 100m and the lingering effects of spells on any creatures or objects up to 30m away from you."
+                        },
+                        {
+                            "name": "Arcane Reflow",
+                            "class": "1",
+                            "description": "None of the spells you cast can affect or deal damage to your allies unless you allow them to. This includes spells you are actively focusing on."
+                        },
+                        {
+                            "name": "Glamour",
+                            "class": "2",
+                            "description": "Using your minor action, you cocoon yourself in a ball of shimmering light and replicate the look of a costume you have seen before or designed yourself. Lasts for 1 hour or until you use your minor action to dispel it. Reverts to your original clothing at the end of this effect."
+                        },
+                        {
+                            "name": "Glamour Gear",
+                            "class": "2",
+                            "description": "Using your minor action, you manifest and wear your imagined combat costume in a flash of transmogrifying light. You gain 1 Barrier Token if you currently don’t have any. You can choose to enter combat or other Critical Situations in your Glamour Gear with 1 Barrier Token."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Quick Casting",
+                            "description": "By spending 3 Spirit Tokens as a Free Action on your turn, you can use your minor action to cast spells that require a Major Action to cast. The restriction on only casting two spells per turn still applies. This effect lasts until the end of your turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Arcane Profiling",
+                            "description": "You ignore a target’s resistance to your Arcane Spell’s damage, dealing full damage instead of half. (This feature does not override immunity.)"
+                        }
+                    ]
+                },
+                {
+                    "rank": 4,
+                    "features": [
+                        {
+                            "name": "Arcane Shift",
+                            "description": "Using your minor action, you can swap an Arcane Element you’re attuned with for another Arcane Element. This feature can be used twice and is reusable after taking a Full Rest."
+                        }
+                    ]
+                },
+                {
+                    "rank": 5,
+                    "features": [
+                        {
+                            "name": "Attunement Slot +2",
+                            "description": "You gain +2 additional Attunement Slots. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Spell Sensitivity +",
+                            "class": "1",
+                            "description": "Your arcane sensitivity allows you to know whether a creature is a spellcaster on sight. You can also see any area that’s being affected or surveilled by magic even if the magic is invisible to the naked eye."
+                        },
+                        {
+                            "name": "Arcane Reflow +",
+                            "class": "1",
+                            "description": "Extend the range of your spells by 20m (2 zones). This only works with spells that originally have a range of 10m (1 zone) and above."
+                        },
+                        {
+                            "name": "Glamour +",
+                            "class": "2",
+                            "description": "When you use your minor action to dress yourself in a costume, you can also adjust your physical appearance to resemble a person you’re imagining. Alternatively, you can transform into a person you are looking at within 30m (3 zones) of you. This transformation lasts for 1 hour or until you use your minor action to dismiss it."
+                        },
+                        {
+                            "name": "Glamour Gear +",
+                            "class": "2",
+                            "description": "While wearing your glamour gear, you also get a +1 bonus to your Defense. Using your minor action, you can instantly swap the Spell Garb or attire you’re wearing with another one in your inventory. This feature can be used three times and is reusable after taking a Full Rest."
+                        }
+                    ]
+                },
+                {
+                    "rank": 6,
+                    "features": [
+                        {
+                            "name": "Arcane Profiling +",
+                            "description": "When a creature is weak to any of your Arcane Elements spells, you deal it three times the damage instead of double."
+                        }
+                    ]
+                },
+                {
+                    "rank": 7,
+                    "features": [
+                        {
+                            "name": "Arcane Shift +",
+                            "description": "You now have the option to use your minor action and spend 15 MP to swap an Arcane Element you’re attuned with for another Arcane Element."
+                        }
+                    ]
+                },
+                {
+                    "rank": 8,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Quick Casting +",
+                            "description": "By spending 3 Spirit Tokens as a Free Action on your turn, you can use your minor action to cast spells that require a Major Action. The 2 spells per turn limit is raised to 3 until the end of the turn."
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
