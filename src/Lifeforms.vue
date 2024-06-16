@@ -1,4 +1,3 @@
-<!-- LifeformCard.vue -->
 <template>
     <div>
       <v-card style="margin-top: 1em;" @click="toggleLifeSelection">

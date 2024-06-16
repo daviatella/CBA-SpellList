@@ -120,24 +120,6 @@
         ]
       },
       {
-        "name": "Cheat At Life",
-        "subquirks": [
-          {
-            "name": "I Win",
-            "description": "When you fail a Task Roll, you can choose to succeed at the lowest point needed for success."
-          }
-        ]
-      },
-      {
-        "name": "Cheat Fate",
-        "subquirks": [
-          {
-            "name": "Tamper Dice",
-            "description": "When a Task Roll is made by you, another player, or the GM, you can choose to manipulate one of the dice rolled. You can change the value on its face to any number or even remove it for that roll."
-          }
-        ]
-      },
-      {
         "name": "Imaginary Friend",
         "subquirks": [
           {
@@ -270,6 +252,26 @@
           {
             "name": "Time Bomb",
             "description": "When a creature that has wronged you is within 30m (3 zones) of you, you can choose to explode in a fit of rage. You gain Edge on all Combat Rolls made against that creature for the next 10 minutes."
+          }
+        ]
+      },
+      {
+        "name": "Cheat At Life",
+        "special":"true",
+        "subquirks": [
+          {
+            "name": "I Win",
+            "description": "When you fail a Task Roll, you can choose to succeed at the lowest point needed for success."
+          }
+        ]
+      },
+      {
+        "name": "Cheat Fate",
+        "special":"true",
+        "subquirks": [
+          {
+            "name": "Tamper Dice",
+            "description": "When a Task Roll is made by you, another player, or the GM, you can choose to manipulate one of the dice rolled. You can change the value on its face to any number or even remove it for that roll."
           }
         ]
       }

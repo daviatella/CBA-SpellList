@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: 'Mosherif';
-    src: url('@/Mosherif.ttf') format('truetype');
+    src: url('../assets/Mosherif.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Acre-Semibold';
-    src: url('@/Acre-Semibold.ttf') format('truetype');
+    src: url('../assets/Acre-Semibold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Acre';
-    src: url('@/Acre.otf') format('truetype');
+    src: url('../assets/Acre.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

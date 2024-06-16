@@ -22,7 +22,7 @@
               </div>
             </v-stepper-window-item>
             <v-stepper-window-item value="2">
-                <Quirks :points="2" @toggle-selection="toggleLifeSelection(index)" />
+                <Quirks :points="2" @update-chosen-quirks="updateQuirks" />
             </v-stepper-window-item>
           </v-stepper-window>
         </v-card>
@@ -36,7 +36,7 @@
 
   import { PDFDocument } from 'pdf-lib'
   import { saveAs } from 'file-saver';
-  import racesJson from './races.json'
+  import racesJson from './data/races.json'
 
   export default {
     components: {
@@ -53,7 +53,6 @@
       const formUrl = '../public/CBA Character Sheet Playtest Fillable.pdf';
       try {
         this.lifeforms = racesJson.races
-        this.quirks = quirkJson.quirks
   
         console.log(this.quirks)
         for (let l of this.lifeforms) {
@@ -66,6 +65,10 @@
     methods: {
       toggleLifeSelection(index) {
         this.selected = index;
+      },
+      updateQuirks(quirks) {
+        this.chosenQuirks = quirks
+        console.log(quirks)
       }
     }
   };

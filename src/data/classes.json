@@ -1,0 +1,425 @@
+{
+    "basic_disciplines": [
+        {
+            "name": "Soldier",
+            "class_1": "Peacekeeper",
+            "class_2": "Ranger",
+            "starting_items": [
+                "Camping Gear (1)",
+                "Climbing Kit (1)",
+                "Healing Powder (0.5)",
+                "Platemail (1)",
+                "Shield (0.5)",
+                "Longsword (0.5)"
+            ],
+            "leftover_cred": "WIP",
+            "strengths": "Soldiers are simple, they hit hard and their Spirit Burst lets them hit hard some more. Peacekeepers are more durable due to their ability to use more medication, while Rangers have more utility and mobility options to keep them out of harm’s way.",
+            "weaknesses": "Soldiers don’t have many Mind Points, making them vulnerable to MP damage.",
+            "features": [
+                {
+                    "rank": "1",
+                    "features": [
+                        {
+                            "name": "identify_threat",
+                            "class": "1",
+                            "description": "When you’re examining a wound, you can immediately know if it’s caused by a weapon and its type. You immediately recognize the weapon when you see it."
+                        },
+                        {
+                            "name": "scout_operative",
+                            "class": "2",
+                            "description": "You only need the bare essentials to survive and have learned to pack light. You gain an additional Item Slot as long as you have this feature."
+                        },
+                        {
+                            "name": "weapon_drill",
+                            "description": "If your favored weapon has either the Machinarm A or Machinarm B tag, add an additional +2 to the weapon’s base damage. This bonus stacks with the original Weapon Drill feature."
+                        }
+                    ]
+                },
+                {
+                    "rank": "2",
+                    "features": [
+                        {
+                            "name": "multistrike",
+                            "sb": "true",
+                            "description": "When you make a Major Attack, you can spend 3 Spirit Tokens to make an additional Major Attack. After spending the initial 3 Spirit Tokens, the cost of each subsequent Major Attack is reduced to 2 Spirit Tokens until the end of the turn. You can make as many additional Major Attacks as you want, as long as you fulfill the Spirit Token cost."
+                        }
+                    ]
+                },
+                {
+                    "rank": "3",
+                    "features": [
+                        {
+                            "name": "emergency_medication",
+                            "class": "1",
+                            "description": "When receiving the effects of medicines, such as Healing Powder or Refresh Dust of any grade, your HP or MP recovery is increased by +10."
+                        },
+                        {
+                            "name": "adaptable_shot",
+                            "class": "2",
+                            "description": "Using your Major Action, you can perform the Run & Gun action, allowing you to make a Ranged Attack and move, in whichever order you prefer. A target hit by this Ranged Attack cannot make an Opportunity Strike until the end of the turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": "4",
+                    "features": [
+                        {
+                            "name": "Weapon Drill +",
+                            "description": "(This feature augments the Weapon Drill feature with new functions.) You can now have 2 Item Slot’s worth of favored weaponry at a time (increased from 1)."
+                        }
+                    ]
+                },
+                {
+                    "rank": "5",
+                    "features": [
+                        {
+                            "name": "Weapon Drill ++",
+                            "description": "(Instant) (This feature augments the Weapon Drill+ feature with new functions.) You can switch between your favored weapons at any instance with a Free Action even outside of your turn. (For example, if you are wielding your favored greatsword and a monster attacks you, you can switch to your favored sword and shield instantly.)"
+                        },
+                        {
+                            "name": "Identify Threat +",
+                            "class": "1",
+                            "description": "(Adventuring Feature) (This feature augments the Identify Threat feature with new functions.) When you’re examining a wound, you can immediately know if it’s caused by a weapon and its type. You immediately recognize the weapon when you see it."
+                        },
+                        {
+                            "name": "Scout Operative +",
+                            "class": "2",
+                            "description": "(Adventuring Feature) (This feature augments the Scout Operative feature with new functions.) You only need the bare essentials to survive and have learned to pack light. You gain an additional Item Slot as long as you have this feature."
+                        }
+                    ]
+                },
+                {
+                    "rank": "6",
+                    "features": [
+                        {
+                            "name": "Emergency Medication +",
+                            "class": "1",
+                            "description": "(Instant) (This feature augments the Emergency Medication feature with new functions.) When receiving the effects of medicines, such as Healing Powder or Refresh Dust of any grade, your HP or MP recovery is increased by +10."
+                        },
+                        {
+                            "name": "Adaptable Shot +",
+                            "class": "2",
+                            "description": "(This feature augments the Adaptable Shot feature with new functions.) Using your Major Action, you can perform the Run & Gun action, allowing you to make a Ranged Attack and move, in whichever order you prefer. A target hit by this Ranged Attack cannot make an Opportunity Strike until the end of the turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": "7",
+                    "features": [
+                        {
+                            "name": "Weapon Drill +++",
+                            "description": "(This feature augments the Weapon Drill++ feature with new functions.) If your favored weapon has either the Machinarm A or Machinarm B tag, add an additional +2 to the weapon’s base damage. This bonus stacks with the original Weapon Drill feature."
+                        }
+                    ]
+                },
+                {
+                    "rank": "8",
+                    "features": [
+                        {
+                            "name": "Multistrike + (3 Spirit Tokens)",
+                            "sb": "true",
+                            "description": "(This feature overwrites the Multistrike feature and doesn’t stack with it.) When you make a Major Attack, you can spend 3 Spirit Tokens to make an additional Major Attack. After spending the initial 3 Spirit Tokens, the cost of each subsequent Major Attack is reduced to 2 Spirit Tokens until the end of the turn. You can make as many additional Major Attacks as you want, as long as you fulfill the Spirit Token cost. You also get a temporary minor action for each multistrike, which you can use before or after the attack. The unused temporary minor action is forfeited if you make another multistrike or your turn ends."
+                        }
+                    ]
+                }
+            ],
+            "advanced_path": "Weapon Master Discipline or Commander Discipline when you reach rank 4 in either of the Classes above.",
+            "turn_speed": "5",
+            "defense": "6 + Mastery",
+            "weapon_mastery": "Light, Medium & Heavy",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "5 + Mastery",
+            "armor_mastery": "Light & Medium",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "5 + Mastery",
+            "maneuver_mastery": "Scuffle & Cheap Shot"
+        },
+        {
+            "name": "Champion",
+            "class_1": "Templar",
+            "class_2": "Samurai",
+            "starting_items": [
+                "Camping Gear (1)",
+                "Climbing Kit (1)",
+                "Healing Powder (0.5)",
+                "Platemail (1)",
+                "Shield (0.5)",
+                "Longsword (0.5)"
+            ],
+            "strengths": "Champions are durable and versatile team players and defenders. They improve the effectiveness of their wards and have the toughness to absorb plenty of damage for their comrades. Templar’s protection improves damage, while Samurai’s improves accuracy.",
+            "weaknesses": "Champions work best in a group and struggle when alone. They can’t deal burst damage, so they will have trouble fighting enemies that grow progressively more powerful over time.",
+            "features": [
+                {
+                    "rank": "1",
+                    "features": [
+                        {
+                            "name": "Classical Education",
+                            "class": "1",
+                            "description": "(Adventuring Feature) You are educated in the arts and history of various nations and had to attend choir classes. You can make Information Skill Rolls with Edge to figure out the history of relics and ruins. You can also make Artistry Skill Rolls with Edge to sing or mimic sounds."
+                        },
+                        {
+                            "name": "Templar’s Protection",
+                            "class": "1",
+                            "description": "Using your minor action, you can provide protection bonuses to a target creature other than yourself within 30m (3 zones) of you. The target gains a +1 Defense and +2 Damage Bonus to all damage dealt. A target cannot benefit from the effects of multiple Templar’s Protections even when they come from multiple sources. Your protection lasts for 5 minutes (25 turns) or ends early if the target moves out of range or you are downed."
+                        },
+                        {
+                            "name": "Graceful Envoy",
+                            "class": "2",
+                            "description": "(Adventuring Feature) You are highly trained in the arts of diplomacy. You can always identify the leader or highest ranked persons or monsters within 50m (5 zones) from you (Ask your GM). You can know the rank of monsters you can see (Normal, Captain or Boss) without needing to analyze them."
+                        },
+                        {
+                            "name": "Samurai’s Protection",
+                            "class": "2",
+                            "description": "Using your minor action, you can provide protection bonuses to a target creature other than yourself within 30m (3 zones) of you. The target gains a +1 Defense and +1 Combat Roll Bonus. A target cannot benefit from the effects of multiple Samurai’s Protections even when they come from multiple sources. Your protection lasts for 5 minutes (25 turns) or ends early if the target moves out of range or you are downed."
+                        }
+                    ]
+                },
+                {
+                    "rank": "2",
+                    "features": [
+                        {
+                            "name": "Arcane Attunement",
+                            "description": "You can attune to Arcane Elements, such as Fire, Water, Wood, Wind, Earth, Metal, and other elements derived from their combinations. Using your minor action, you can create a Spellglyph Token. You may choose to enter combat or other Critical Situations, with 3 Spellglyph Tokens."
+                        },
+                        {
+                            "name": "Attunement Slot +1",
+                            "description": "You gain +1 additional Attunement Slot. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Warcasting",
+                            "description": "When you cast spells that enchant only yourself or your equipment, those spells cannot be disrupted by taking damage."
+                        }
+                    ]
+                },
+                {
+                    "rank": "3",
+                    "features": [
+                        {
+                            "name": "Relentless Challenger",
+                            "description": "When you attack with your melee weapon, you can place a Mark of Challenge on your target even if the attack misses. When your marked target uses its action to attack or effect any target besides yourself, you can use your Free Action to make a Major Melee Weapon attack on it after it completes its action. You can only mark one target at a time."
+                        }
+                    ]
+                },
+                {
+                    "rank": "4",
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Aegis Shroud",
+                            "description": "(2 Spirit Tokens) (Instant) Protect your ward with a magical shroud and transfer the damage to yourself. You can spend 2 Spirit Tokens at any time and use your Free Action to place an Aegis Shroud on your target. Additionally, you may also move your class’ (Templar/Samurai) protection feature to the target. The next time the target affected by Aegis Shroud takes any HP, MP, or Resolve damage, the damage is absorbed by the shroud and reallocated to you as HP damage. This reallocated damage cannot be reduced. The Aegis Shroud loses its effect after it has absorbed damage once or after 5 minutes (25 turns). Alternatively, you can dismiss this effect at any time with your Free Action."
+                        }
+                    ]
+                },
+                {
+                    "rank": "5",
+                    "features": [
+                        {
+                            "name": "Classical Education +",
+                            "class": "1",
+                            "description": "(Adventuring Feature) (This feature augments the Classical Education feature with new functions.) You gain a +1 to both your Information & Artistry Skills."
+                        },
+                        {
+                            "name": "Templar’s Protection +",
+                            "class": "1",
+                            "description": "(This feature augments the Templar’s Protection feature with new functions.) The target now gains a +1 Defense and gets +4 Damage Bonus for every instance of damage dealt. (Does not stack with the previous version.)"
+                        },
+                        {
+                            "name": "Graceful Envoy +",
+                            "class": "2",
+                            "description": "(Adventuring Feature) (This feature augments the Graceful Envoy feature with new functions.) You gain +1 to both your Psychology & Appeal Skills."
+                        },
+                        {
+                            "name": "Samurai’s Protection +",
+                            "class": "2",
+                            "description": "(This feature augments the Samurai’s Protection feature with new functions.) The target now gains a +1 Defense and +2 Combat Roll Bonus. (Does not stack with the previous version)"
+                        }
+                    ]
+                },
+                {
+                    "rank": "6",
+                    "features": [
+                        {
+                            "name": "Attunement Slot +1",
+                            "description": "You gain +1 additional Attunement Slot. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Warcasting +",
+                            "description": "You can use your minor action to enchant non-machinarm weapons you are wielding to make them deal the damage Type of an element you’re attuned to and change the damage Method to Spell instead of Weapon. This feature overrides the weapon’s damage Type even if it was already enhanced by spells, but it retains the spell’s bonuses. This feature lasts for 1 hour and you can dismiss this effect with your minor action."
+                        }
+                    ]
+                },
+                {
+                    "rank": "7",
+                    "features": [
+                        {
+                            "name": "Relentless Challenger +",
+                            "description": "(This feature augments the Relentless Challenger feature with new functions.) If a target is hit by your Opportunity Strike while moving, you can choose to cancel the associated unit’s movement and stop it in your zone. The action it used to move is expended, and it cannot use its actions to move until the start of its next turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": "8",
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Aegis Shroud +",
+                            "description": "(This feature augments the Aegis Shroud feature with new functions.) When a target affected by your Aegis Shroud takes any HP, MP, or Resolve damage, the damage is absorbed by the shroud and you can reallocate the damage to your HP and MP at any ratio. This reallocated damage cannot be reduced."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Thaumathurgist",
+            "advanced_path": "Paragon Discipline or Sage Discipline when you reach rank 4 in either of the Classes above.",
+            "turn_speed": "2",
+            "defense": "6 + Mastery",
+            "weapon_mastery": "Spell Catalyst, Light & Medium",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "4 + Mastery",
+            "armor_mastery": "Spell Garb",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "6 + Mastery",
+            "maneuver_mastery": "None",
+            "class_1": "Healer",
+            "class_2": "Cultist",
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Cosmic Attunement",
+                            "description": "You can attune to Cosmic Elements, such as Order, Chaos, and Astral. Using your minor action, you can create a Spellglyph Token. You may choose to enter combat or other Critical Situations, with 3 Spellglyph Tokens."
+                        },
+                        {
+                            "name": "Attunement Slot +2",
+                            "description": "You gain +2 additional Attunement Slots. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Physician",
+                            "class": "1",
+                            "description": "You have Edge on Chemist Kit Rolls. You can immediately know if a creature you see is sick or affected by any substance, ailment, or spell and you know what caused it."
+                        },
+                        {
+                            "name": "Potent Healing",
+                            "class": "1",
+                            "description": "Improve the potency of your healing. You can use a recovery item (such as Healing Powder) on a target without giving it the Medicated condition or you can use a recovery item on an already Medicated target. This feature can be used once and is reusable after taking a Full Rest."
+                        },
+                        {
+                            "name": "Seance",
+                            "class": "2",
+                            "description": "When you touch the corpse or remains of a creature that is not an undead, you can use your minor action to raise its lingering spirit and talk to it. The spirit is not necessarily cooperative and may be hostile towards you. This effect lasts for 10 minutes. This feature can be used once and is reusable after taking a Long Break."
+                        },
+                        {
+                            "name": "Dogmatism",
+                            "class": "2",
+                            "description": "Whenever your focus on a spell is disrupted, you can use your Free Action to instantly repay the MP cost of the spell and renew your focus. The duration of the spell is also renewed."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: War Chant",
+                            "description": "(2 Spirit Tokens) (Instant) Manipulate fate and turn crisis into opportunity. This feature is only usable in Critical Situations. When you see a friendly or willing target within 30m (3 zones) of you making a Task or a Combat Roll, you can instantly spend 2 Spirit Tokens to ignore the result and let the target reroll its dice. The new roll ignores Edge and Setback, but the result must be used. This burst can be used in succession if you have the Spirit Tokens to spend."
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Cosmic Profiling",
+                            "description": "Your deep knowledge of the Cosmic Elements allows you to enhance their prowess. You ignore a target’s resistance to your Cosmic Spell’s damage, dealing full damage instead of half. (This feature does not override immunity.)"
+                        }
+                    ]
+                },
+                {
+                    "rank": 4,
+                    "features": [
+                        {
+                            "name": "Cosmic Shift",
+                            "description": "Your familiarity with the pillars of Cosmic Elements allows you to swap your Cosmic Attunements in an emergency. You can use your minor action to swap a Cosmic Element you’re attuned with for another Cosmic Element. This feature can be used twice and is reusable after taking a Full Rest."
+                        }
+                    ]
+                },
+                {
+                    "rank": 5,
+                    "features": [
+                        {
+                            "name": "Attunement Slot +2",
+                            "description": "You gain +2 additional Attunement Slots. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Physician +",
+                            "class": "1",
+                            "description": "(Adventuring Feature) While taking a break, you can provide therapeutic care to other targets. While taking a Short or Long Break, you can spend your own Resolve Points to recover other characters’ HP & MP."
+                        },
+                        {
+                            "name": "Potent Healing +",
+                            "class": "1",
+                            "description": "(This feature augments the Potent Healing feature with new functions.) Whenever you recover the HP or MP of a target through spells, features, or items, increase the result by +5."
+                        },
+                        {
+                            "name": "Seance +",
+                            "class": "2",
+                            "description": "(Adventuring Feature) When you touch the corpse or remains of a creature that is not undead, you can use your minor action, and experience the last 5 minutes of its life. While you’re experiencing this, you share all the dead creature’s senses. This experience is so unsettling, you lose 2d6 MP whenever you use this feature."
+                        },
+                        {
+                            "name": "Dogmatism +",
+                            "class": "2",
+                            "description": "(This feature augments the Dogmatism feature with new functions.) You can focus on two ongoing spells at once. When your focus is disrupted, both spells lose their effects. You can repay the MP costs of the spells to renew your focus on one or both. For example, you can have both Rigid Mind and Dissipate Force active at the same time."
+                        }
+                    ]
+                },
+                {
+                    "rank": 6,
+                    "features": [
+                        {
+                            "name": "Cosmic Profiling +",
+                            "description": "(This feature augments the Cosmic Profiling feature with new functions.) When a creature is weak to any of your Cosmic Elements spells, you deal it three times the damage instead of double."
+                        }
+                    ]
+                },
+                {
+                    "rank": 7,
+                    "features": [
+                        {
+                            "name": "Cosmic Shift +",
+                            "description": "(This feature augments the Cosmic Shift feature with new functions.) You now have the option to use your minor action and spend 15MP to swap a Cosmic Element you’re attuned with for another Cosmic Element."
+                        }
+                    ]
+                },
+                {
+                    "rank": 8,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: War Chant +",
+                            "description": "(2 Spirit Tokens) (Instant) (This feature augments the War Chant feature with new functions.) This feature can now be used on enemies and other unwilling targets in combat and other Critical Situations."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arcanist",
+            "advanced_path": "Sage Discipline or Martial Arcanist Discipline when you reach rank 4 in either of the Classes above.",
+            "turn_speed": 3,
+            "defense": "6 + Mastery",
+            "weapon_mastery": "Spell Catalyst & Light",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "4 + Mastery",
+            "armor_mastery": "Spell Garb",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "6 + Mastery",
+            "maneuver_mastery": "None",
+            "starting_equipment": [
+                "Camping Gear (1)",
+                "Arcanist Kit (1)",
+                "Healing Powder (0.5)",
+                "Wand (0.5)"
+            ],
+            "strengths": "Arcanists are versatile spellcasters who can attune to the Arcane Elements. They have access to a plethora of Arcane Spells that can help them solve virtually any adventuring problem and devastate multiple enemies at once. Spellweavers can blast enemy groups without needing to worry about friendly fire, while Glamour Guards are more defensive.",
+            "weaknesses": "Arcanists are glass cannons. They hit hard but can’t withstand much enemy punishment. Enemies that can flank or bypass the frontline pose great danger to them.",
+        }
+    ]
+}
