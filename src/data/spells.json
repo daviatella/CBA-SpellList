@@ -194,7 +194,6 @@
                     "duration": "Instant",
                     "effect": "See above (Rank 2). But you can choose any number of targets in range."
                 }
-
             ]
         },
         {
@@ -1529,7 +1528,9 @@
                     "effect": "See above (Rank 1). Additionally, reduce any HP or MP damage dealt by that spell by 10 points."
                 }
             ]
-        },
+        }
+    ],
+    "water_earth": [
         {
             "name": "Golem",
             "attunement": "Water & Earth",
@@ -2105,7 +2106,7 @@
             ]
         }
     ],
-    "fire_lightning_high": [
+    "fire_water_wind_metal_high": [
         {
             "name": "Skyfire Redwood Uppercut",
             "attunement": "Fire & Lightning",
@@ -2125,7 +2126,7 @@
             ]
         }
     ],
-    "wood_earth_lightning_high": [
+    "wood_earth_water_wind_metal_high": [
         {
             "name": "Redwood Uppercut",
             "attunement": "Wood, Earth, & Lightning",

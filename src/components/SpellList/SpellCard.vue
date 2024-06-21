@@ -46,14 +46,14 @@
 <script>
 
 export default {
-    props: ['spell'],
+    props: ['spell', 'high'],
     data() {
         return {
 
         };
     },
     mounted() {
-
+        console.log(this.high)
     },
     methods: {
         getElementIcons(el) {
@@ -67,7 +67,6 @@ export default {
             } else if(JSON.stringify(list)==JSON.stringify(["water","wind","metal"])){
                 list = ["lightning"]
             }
-            console.log(list)
             return list
         }
     },

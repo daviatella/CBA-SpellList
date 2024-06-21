@@ -52,7 +52,7 @@
                     <div class="spells-container">
                         <div v-for="column in distributedSpells" :key="column" class="spells-column">
                             <div v-for="sp in column" :key="sp" class="spell-item ml-2">
-                                <SpellCard :spell="sp"></SpellCard>
+                                <SpellCard :spell="sp" :high="sp.high"></SpellCard>
                             </div>
                         </div>
                     </div>
@@ -128,35 +128,65 @@ export default {
         },
         updateSpells() {
             this.spellsToLoad = [];
-            let lightning = ["water","wind","metal"]
-            let toxic = ["fire","wood","earth"]
-            let ice = [...lightning, ...toxic]
+            let lightning = "water_wind_metal"
+            let toxic = "fire_wood_earth"
+            let ice = "fire_water_wood_wind_earth_metal"
             for (let el of this.checkboxElements) {
-                let load = []
-                if(el=="lightning"){
-                    load = lightning
-                } else if(el=="toxic"){
-                    load = toxic
-                } else if(el=="ice"){
-                    load = ice
+                if (el == "lightning") {
+                    el = lightning
+                } else if (el == "toxic") {
+                    el = toxic
+                } else if (el == "ice") {
+                    el = ice
                 }
-                if(load.length) {
-                    for(let e of load){
-                        this.spellsToLoad.push(...this.spells[e]);
-                    }
-                } else {
-                    this.spellsToLoad.push(...this.spells[el]);
-                }
+
+                this.spellsToLoad.push(...this.spells[el]);
+
             }
             if (this.checkboxElements.length > 1) {
                 for (let el of this.multi) {
-                    let names = el.split('_');
+                    let mult = el.replace(lightning, "lightning")
+                    mult = mult.replace(toxic, "toxic")
+
+                    let names = mult.split('_');
                     let show = true;
+                    let totalEls = []
+
                     for (let n of names) {
-                        if (!this.checkboxElements.includes(n)) {
-                            show = false;
+                        if (!this.checkboxElements.includes(n) && n != "high") {
+                            if(!(this.checkboxElements.join("_").includes(lightning)&&n=="lightning")&&
+                            !(this.checkboxElements.join("_").includes(toxic)&&n=="toxic")
+                        )
+                            show = false
+                        } else if(n=='high'){
+                            this.spells[el].map(sp=>sp.high=true)
                         }
                     }
+                    // if (this.checkboxElements.includes('lightning')) {
+                    //     show = true
+                    //     totalEls = lightning.split("_")
+                    //     totalEls.push(...names)
+                    //     for (let i of totalEls) {
+                           
+                    //         if (!this.checkboxElements.includes(i)&&!lightning.includes(i)&&i!="high") {
+                                
+                    //             show = false
+                    //         }
+                    //     }
+                    // }  
+                    // if (this.checkboxElements.includes('toxic')) {
+                    //     show = true
+                    //     totalEls = toxic.split("_")
+                    //     totalEls.push(...names)
+                    //     for (let i of totalEls) {
+                           
+                    //         if (!this.checkboxElements.includes(i)&&!toxic.includes(i)&&i!="high") {
+                                
+                    //             show = false
+                    //         }
+                    //     }
+                    // }
+
                     if (show == true) {
                         this.spellsToLoad.push(...this.spells[el]);
                     }
