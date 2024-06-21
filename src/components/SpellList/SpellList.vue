@@ -52,9 +52,7 @@
                     <div class="spells container">
                             <div v-for="sp in filteredSpells" :key="spell" class="ml-2">
                                 <SpellCard :spell="sp" ></SpellCard>
-                         
                         </div>
-
                     </div>
                 </v-main>
             </v-col>
@@ -89,8 +87,12 @@ export default {
         };
     },
     async mounted() {
-        console.log(spellsJson)
         this.spells = spellsJson
+        for(let els in spellsJson){
+            if(els.split("_").length>1){
+                this.multi.push(els)
+            }
+        }
         // let spellsPath ='../../../public/spells/'
         // const files = import.meta.glob('../../../public/spells/**/*.png')
         // console.log(files)
@@ -166,6 +168,7 @@ export default {
             for (let el of this.checkboxElements) {
                 this.spellsToLoad.push(...this.spells[el])
             }
+
             if (this.checkboxElements.length > 1) {
                 for (let el of this.multi) {
                     let names = el.split('_')
@@ -234,7 +237,7 @@ export default {
     border-radius: 10px;
     background-color: #F3F2F2;
     border: 2px solid black;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 0px;
 }
 

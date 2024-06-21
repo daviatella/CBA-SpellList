@@ -1220,7 +1220,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 6,
                     "range": "0-3 (Zone)",
                     "duration": "5 min (Focus)",
@@ -1228,7 +1228,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 12,
                     "range": "0-3 (Zone +1)",
                     "duration": "5 min (Focus)",
@@ -1236,7 +1236,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 18,
                     "range": "0-3 (Zone +2)",
                     "duration": "5 min (Focus)",
@@ -1256,7 +1256,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 4,
                     "range": "0-3",
                     "duration": "1 Round",
@@ -1264,7 +1264,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 8,
                     "range": "0-3",
                     "duration": "1 Round",
@@ -1272,7 +1272,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 12,
                     "range": "0-3",
                     "duration": "1 Round",
@@ -1292,7 +1292,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 8,
                     "range": "0-3 (Zone)",
                     "duration": "-",
@@ -1300,7 +1300,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 16,
                     "range": "0-3 (Zone)",
                     "duration": "-",
@@ -1308,7 +1308,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 20,
                     "range": "0-3 (Zone +1)",
                     "duration": "-",
@@ -1328,7 +1328,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 8,
                     "range": "0-3",
                     "duration": "-",
@@ -1336,7 +1336,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 16,
                     "range": "0-3",
                     "duration": "-",
@@ -1344,7 +1344,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 24,
                     "range": "0-3 (Zone)",
                     "duration": "-",
@@ -1364,7 +1364,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 4,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1372,7 +1372,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 8,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1380,7 +1380,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 12,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1400,7 +1400,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 3,
                     "range": "0-3",
                     "duration": "-",
@@ -1408,7 +1408,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 6,
                     "range": "0-3 (Zone)",
                     "duration": "-",
@@ -1416,7 +1416,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 12,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1434,7 +1434,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 10,
                     "range": "0-3",
                     "duration": "-",
@@ -1442,7 +1442,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 15,
                     "range": "0-3",
                     "duration": "-",
@@ -1450,7 +1450,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 20,
                     "range": "0-3",
                     "duration": "-",
@@ -1470,7 +1470,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 4,
                     "range": "0-1",
                     "duration": "5 min (Focus)",
@@ -1478,7 +1478,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 8,
                     "range": "0-1",
                     "duration": "5 min (Focus)",
@@ -1486,7 +1486,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 16,
                     "range": "0-1",
                     "duration": "5 min (Focus)",
@@ -1506,7 +1506,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 4,
                     "range": "0-3 (Sight)",
                     "duration": "Instant",
@@ -1514,7 +1514,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 8,
                     "range": "0-3",
                     "duration": "Instant",
@@ -1522,7 +1522,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 16,
                     "range": "0-3",
                     "duration": "Instant",
@@ -1540,7 +1540,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 8,
                     "range": "0-1",
                     "duration": "5 min (Focus)",
@@ -1548,7 +1548,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 16,
                     "range": "0-1",
                     "duration": "5 min (Focus)",
@@ -1556,7 +1556,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 24,
                     "range": "0-1",
                     "duration": "5 min (Focus)",
@@ -1576,7 +1576,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 5,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1584,7 +1584,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 10,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1592,7 +1592,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 15,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1612,7 +1612,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 4,
                     "range": "Self",
                     "duration": "5 min (Focus)",
@@ -1620,7 +1620,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 8,
                     "range": "Self",
                     "duration": "5 min (Focus)",
@@ -1628,7 +1628,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 16,
                     "range": "Self",
                     "duration": "5 min (Focus)",
@@ -1648,7 +1648,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 10,
                     "range": "0-3",
                     "duration": "-",
@@ -1656,7 +1656,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 15,
                     "range": "0-3",
                     "duration": "-",
@@ -1664,7 +1664,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 20,
                     "range": "0-3",
                     "duration": "-",
@@ -1684,7 +1684,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 10,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1692,7 +1692,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 15,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1700,7 +1700,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 20,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1720,7 +1720,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 7,
                     "range": "0-3",
                     "duration": "-",
@@ -1728,7 +1728,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 14,
                     "range": "0-3",
                     "duration": "-",
@@ -1736,7 +1736,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 21,
                     "range": "0-3",
                     "duration": "-",
@@ -1754,7 +1754,7 @@
             "ranks": [
                 {
                     "rank": 0,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 0,
                     "range": "0 (Touch)",
                     "duration": "Continuous",
@@ -1762,7 +1762,7 @@
                 },
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 6,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1770,7 +1770,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 15,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1778,7 +1778,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 15,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1798,7 +1798,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 4,
                     "range": "0",
                     "duration": "5 min (Focus)",
@@ -1806,7 +1806,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 8,
                     "range": "0",
                     "duration": "5 min (Focus)",
@@ -1814,7 +1814,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 12,
                     "range": "0",
                     "duration": "5 min (Focus)",
@@ -1870,7 +1870,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 10,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1878,7 +1878,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 15,
                     "range": "0-3 (Zone)",
                     "duration": "5 min (Focus)",
@@ -1886,7 +1886,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 20,
                     "range": "0-3 (Zone +1)",
                     "duration": "5 min (Focus)",
@@ -1904,7 +1904,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 6,
                     "range": "0-3",
                     "duration": "5 min (Focus)",
@@ -1912,7 +1912,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 12,
                     "range": "0-3 (Zone)",
                     "duration": "5 min (Focus)",
@@ -1920,7 +1920,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 18,
                     "range": "0-3 (Zone +1)",
                     "duration": "5 min (Focus)",
@@ -1940,7 +1940,7 @@
             "ranks": [
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 12,
                     "range": "0-5 (Zone)",
                     "duration": "-",
@@ -1948,7 +1948,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 22,
                     "range": "0-5 (Zone +1)",
                     "duration": "-",
@@ -1956,7 +1956,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 30,
                     "range": "0-5 (Zone +2)",
                     "duration": "-",
@@ -1974,7 +1974,7 @@
             "ranks": [
                 {
                     "rank": 0,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 0,
                     "range": "0 (Touch)",
                     "duration": "15 minutes",
@@ -1982,7 +1982,7 @@
                 },
                 {
                     "rank": 1,
-                    "level": "LEVEL 1+",
+                    "level": "1+",
                     "mp": 8,
                     "range": "0-1",
                     "duration": "5 min (Focus)",
@@ -1990,7 +1990,7 @@
                 },
                 {
                     "rank": 2,
-                    "level": "LEVEL 5+",
+                    "level": "5+",
                     "mp": 16,
                     "range": "0 (Touch)",
                     "duration": "5 min (Focus)",
@@ -1998,7 +1998,7 @@
                 },
                 {
                     "rank": 3,
-                    "level": "LEVEL 9+",
+                    "level": "9+",
                     "mp": 32,
                     "range": "0-1",
                     "duration": "Instant",
@@ -2061,7 +2061,7 @@
             ]
         }
     ],
-    "order_astral_high": [
+    "order_chaos_astral": [
         {
             "name": "Revival",
             "attunement": "Order, Chaos & Astral",

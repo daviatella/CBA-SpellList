@@ -1,6 +1,6 @@
 <template>
     <v-app style="background-color: #2F2D3E;">
-      <TopBar></TopBar>
+      <!-- <TopBar></TopBar> -->
       <v-main>
         <RouterView />
       </v-main>
