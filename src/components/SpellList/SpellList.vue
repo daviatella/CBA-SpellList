@@ -49,9 +49,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="spells container">
-                            <div v-for="sp in filteredSpells" :key="spell" class="ml-2">
-                                <SpellCard :spell="sp" ></SpellCard>
+                    <div class="spells-container">
+                        <div v-for="column in distributedSpells" :key="column" class="spells-column">
+                            <div v-for="sp in column" :key="sp" class="spell-item ml-2">
+                                <SpellCard :spell="sp"></SpellCard>
+                            </div>
                         </div>
                     </div>
                 </v-main>
@@ -71,7 +73,7 @@ import spellsJson from '../../data/spells.json'
 import SpellCard from './SpellCard.vue'
 
 export default {
-    components: { Accordion, AccordionContent, AccordionPanel, AccordionHeader },
+    components: { Accordion, AccordionContent, AccordionPanel, AccordionHeader, SpellCard },
     data() {
         return {
             spells: {},
@@ -83,111 +85,89 @@ export default {
             filteredSpells: [],
             titles: ["Basic Arcane Elements", "Advanced Arcane Elements", "Basic Cosmic Elements"],
             multi: [],
-            searchQuery: ''
+            searchQuery: '',
+            numColumns: 2 // New property to specify the number of columns
         };
     },
+    computed: {
+        distributedSpells() {
+            const columns = Array.from({ length: this.numColumns }, () => []);
+            this.filteredSpells.forEach((spell, index) => {
+                columns[index % this.numColumns].push(spell);
+            });
+            return columns;
+        }
+    },
     async mounted() {
-        this.spells = spellsJson
-        for(let els in spellsJson){
-            if(els.split("_").length>1){
-                this.multi.push(els)
+        this.spells = spellsJson;
+        for (let els in spellsJson) {
+            if (els.split("_").length > 1) {
+                this.multi.push(els);
             }
         }
-        // let spellsPath ='../../../public/spells/'
-        // const files = import.meta.glob('../../../public/spells/**/*.png')
-        // console.log(files)
-        // let spells = {}
-        // for (let f in files) {
-        //     let element = f.split(spellsPath).join().split('/')[0].split(',')[1]
-        //     if (!spells[element]) {
-        //         spells[element] = {}
-        //         spells[element].enabled = false;
-        //         spells[element].spells = []
-        //     }
-        //     spells[element].spells.push(f)
-        //     if (element.split("_").length == 1) {
-        //     } else {
-        //         this.multi.push(element)
-        //     }
-        // }
-        // this.spells = spells;
-        // const formUrl = '../public/CBA Character Sheet Playtest Fillable.pdf';
-
-        // try {
-        //     const response = await fetch(formUrl);
-
-        //     if (!response.ok) {
-        //         throw new Error(`HTTP error! status: ${response.status}`);
-        //     }
-
-        //     const formPdfBytes = await response.arrayBuffer();
-        //     const pdfDoc = await PDFDocument.load(formPdfBytes);
-        //     const form = pdfDoc.getForm();
-        //     const fields = form.getFields();
-
-        //     fields.forEach(field => {
-        //         const type = field.constructor.name;
-        //         const name = field.getName();
-        //         if (type == 'PDFTextField2') {
-        //             form.getTextField(name).setText(name);
-        //         }
-        //     });
-
-        //     const pdfBytes = await pdfDoc.save();
-        //     saveAs(new Blob([pdfBytes], { type: 'application/pdf' }), 'pdf-lib_form_creation_example.pdf');
-        // } catch (error) {
-        //     console.error('Error fetching or processing PDF:', error);
-        // }
     },
     methods: {
         toggleElement(el) {
-            let i = this.checkboxElements.findIndex(element => element === el)
+            let i = this.checkboxElements.findIndex(element => element === el);
             if (i > -1) {
-                this.checkboxElements.splice(i, 1)
+                this.checkboxElements.splice(i, 1);
             } else {
-                this.checkboxElements.push(el)
+                this.checkboxElements.push(el);
             }
-            this.updateSpells()
+            this.updateSpells();
         },
         getFilterStyle(el) {
             return this.checkboxElements.includes(el) ? ';' : 'filter: opacity(0.5);';
         },
         updateSearch() {
             if (this.searchQuery && this.spellsToLoad.length) {
-                this.filteredSpells = this.spellsToLoad.filter(el => el.split("_").join(" ").split("/")[2].includes(this.searchQuery.toLowerCase()))
+                this.filteredSpells = this.spellsToLoad.filter(el => el.split("_").join(" ").split("/")[2].includes(this.searchQuery.toLowerCase()));
             } else {
-                this.filteredSpells = this.spellsToLoad
+                this.filteredSpells = this.spellsToLoad;
             }
-        },
-        enabled(spell) {
-            let el = spell.split("/")[1]
-            return this.spells[el].enabled
         },
         updateSpells() {
-            this.spellsToLoad = []
+            this.spellsToLoad = [];
+            let lightning = ["water","wind","metal"]
+            let toxic = ["fire","wood","earth"]
+            let ice = [...lightning, ...toxic]
             for (let el of this.checkboxElements) {
-                this.spellsToLoad.push(...this.spells[el])
+                let load = []
+                if(el=="lightning"){
+                    load = lightning
+                } else if(el=="toxic"){
+                    load = toxic
+                } else if(el=="ice"){
+                    load = ice
+                }
+                if(load.length) {
+                    for(let e of load){
+                        this.spellsToLoad.push(...this.spells[e]);
+                    }
+                } else {
+                    this.spellsToLoad.push(...this.spells[el]);
+                }
             }
-
             if (this.checkboxElements.length > 1) {
                 for (let el of this.multi) {
-                    let names = el.split('_')
+                    let names = el.split('_');
                     let show = true;
                     for (let n of names) {
                         if (!this.checkboxElements.includes(n)) {
-                            show = false
+                            show = false;
                         }
                     }
                     if (show == true) {
-                        this.spellsToLoad.push(...this.spells[el])
+                        this.spellsToLoad.push(...this.spells[el]);
                     }
                 }
             }
             this.spellsToLoad = [...new Set(this.spellsToLoad)];
-            this.filteredSpells = this.spellsToLoad
+            this.filteredSpells = this.spellsToLoad;
         }
     }
 };
+
 </script>
 
 <style scoped>
@@ -224,21 +204,23 @@ export default {
     margin-left: 1em;
 }
 
-.spells {
-    display: grid;
-    /* align-items: top;
-    justify-content: center;
-    padding: 3em; */
+.spells-container {
+    display: flex;
     width: 95%;
-    max-width: 100%;
-    min-height: 50em;
+    max-width: 95%;
+    min-height: 4em;
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     background-color: #F3F2F2;
     border: 2px solid black;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 0px;
+}
+
+.spells-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .search-box {

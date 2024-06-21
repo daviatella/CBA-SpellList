@@ -59,6 +59,14 @@ export default {
         getElementIcons(el) {
             let list = []
             list = el.split(/[&,]/).map(el => el.trim().toLowerCase());
+            list = list.filter(el=> el!="")
+            if(list[0].includes("all 6")){
+                list = ["ice"]
+            }  else if (JSON.stringify(list)==JSON.stringify(["fire","wood","earth"])){
+                list = ["toxic"]
+            } else if(JSON.stringify(list)==JSON.stringify(["water","wind","metal"])){
+                list = ["lightning"]
+            }
             console.log(list)
             return list
         }
@@ -71,7 +79,7 @@ export default {
 .card {
     width: 90%;
     border: 2px solid black;
-    margin: 1.2em;
+    margin: 2em;
 }
 
 .title {
