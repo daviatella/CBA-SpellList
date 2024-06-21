@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'Mosherif';
+    src: url('../assets/Mosherif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acre-Semibold';
+    src: url('../assets/Acre-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acre';
+    src: url('../assets/Acre.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #422214;
+}
