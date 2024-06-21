@@ -52,7 +52,7 @@
 
 <script setup>
 import { ref, watch, defineEmits } from 'vue';
-import quirkJson from './data/quirks.json';
+import quirkJson from '../../data/quirks.json';
 
 const points = ref(2);
 const quirks = quirkJson.quirks;

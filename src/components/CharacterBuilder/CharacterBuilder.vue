@@ -1,6 +1,6 @@
 <template>
     <v-container class="body">
-      <v-stepper editable :model-value="1">
+      <v-stepper editable :model-value="2">
         <v-stepper-header class="stepheader">
           <v-stepper-item  edit-icon="" class="step" title="Lifeform" value="1"></v-stepper-item>
           <v-divider color="black" :thickness="5"></v-divider>
@@ -36,7 +36,7 @@
 
   import { PDFDocument } from 'pdf-lib'
   import { saveAs } from 'file-saver';
-  import racesJson from './data/races.json'
+  import racesJson from '../../data/races.json'
 
   export default {
     components: {

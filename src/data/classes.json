@@ -540,6 +540,630 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Martial Artist",
+            "advanced_path": [
+                "Weapon Master",
+                "Martial Arcanist"
+            ],
+            "class_1": "Dragon Soul",
+            "class_2": "Tangling Rose",
+            "turn_speed": 7,
+            "defense": "7 + Mastery",
+            "weapon_mastery": "None",
+            "movement": "20m (2 zones / minor action)",
+            "physical_fortitude": "7 + Mastery",
+            "armor_mastery": "Unarmored Toughness",
+            "max_movement": "40m (4 zones / turn)",
+            "mental_fortitude": "7 + Mastery",
+            "maneuver_mastery": "Scuffle & Cheap Shot",
+            "starting_equipment": [
+                "Camping Gear (1)",
+                "Infiltration Kit (1)",
+                "Thaumaturgist Kit (1)",
+                "Healing Powder (0.5)",
+                "Healing Powder (0.5)",
+                "Healing Powder (0.5)"
+            ],
+            "strengths": "Martial Artists are problem solvers who can move twice as far as other Disciplines and bring plenty of useful items. They are also above-average damage dealers in combat. Dragon Souls can shoot ki blasts from a safe distance while Tangling Rose can redirect attacks that miss them at the units they are grappling.",
+            "weaknesses": "Martial Artists have below-average hit points and little to no way of damaging apparitions. When they encounter ghosts, the best option is to run.",
+            "gear_suggestions": {
+                "weapon": "None",
+                "armor": "None",
+                "others": "Without the need for weapons and armor, the Martial Artists can carry more Toolkits and items. They can also use Martial Manuals."
+            },
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Martial Arts",
+                            "description": "Your training in the martial arts enhances the destructive power of your Unarmed Combat. Your Unarmed Combat Rolls are considered as Martial Arts Combat Rolls and you have Mastery in them. Your base Martial Arts damage is 4 HP. When you deal damage with your Unarmed Combat Attacks, you can choose to deal the attack’s original damage (1 Blunt HP damage) or your Martial Arts damage. The damage Type is the same as your Unarmed Combat Attack (blunt)."
+                        },
+                        {
+                            "name": "Martial Arts Combo",
+                            "description": "After making a Martial Arts Attack with your Major Action, you can use your minor action to make a single Follow-Up Unarmed Combat Attack. This feature also applies to other Disciplines’ Martial Arts Attacks. You can make only 1 Follow-Up Attack now. But you can make more Follow-Up attacks when you get the improved version of this feature, Martial Arts Combo +."
+                        },
+                        {
+                            "name": "Sense Aura",
+                            "class": "1",
+                            "description": "(Adventuring Feature) Using your minor action, you can sense the aura of all living creatures and apparitions within 30m (3 zones) of you, even if they’re hidden behind objects. This feature lasts for 12 seconds (1 round). You roughly know the number of creatures, their sizes, and general locations (The zones they’re in), but invisible creatures remain invisible to you. Construct creature types are undetectable by this feature."
+                        },
+                        {
+                            "name": "Ki Blast",
+                            "class": "1",
+                            "description": "Your exceptional control over your ki allows you to throw devastating energy blasts. While you have a free hand, you can make Middle Ranged Ki Blast Attacks to replace your Unarmed Combat Attacks. This attack is a Martial Arts Attack and you deal your Martial Arts damage. The damage Type is Order and has a 10m (1 zone) range."
+                        },
+                        {
+                            "name": "Winding Ways",
+                            "class": "2",
+                            "description": "(Adventuring Feature) You have Edge when making Task Rolls against hazards, including neutralizing those hazards. This feature can be used three times and is reusable after taking a Full Rest."
+                        },
+                        {
+                            "name": "Tangling Hands",
+                            "class": "2",
+                            "description": "Your study of joint locks and geometry allows you to bind your enemy as you attack them. Whenever you successfully hit a target in the same zone as you with a Martial Arts Attack, you can choose to reduce the damage you deal by half (rounded down) and Grapple or Latch onto the target unit immediately, as long as it’s an eligible unit. Your damage is increased by +2 when attacking a target you’re grappling or latching onto. Additionally, when an opponent’s attack misses you, you can choose to make the attack hit one of the targets you’re grappling or latching onto. The target takes the base damage of the attack and any associated Bonus Damages, but the Excess Damage is ignored. This redirection also works with attacks made by a target you are currently grappling or latching onto, making it hit itself with its missed attack."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Clear Mind",
+                            "description": "By cleansing your mind from worldly distractions, you gain heightened reflexes and combat insights. On your turn, you can spend 2 Spirit Tokens as a Free Action to gain a +1 to your Combat Rolls, Defense, Physical Fortitude, and Mental Fortitude. This effect lasts for 5 minutes (25 rounds). Additionally, while this feature is active, any damage you deal with your Martial Arts Combat Rolls can’t be reduced by Barrier Tokens."
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Wind Step",
+                            "description": "Your mastery over the cosmic forces allows you to manipulate your mass and challenge the laws of physics around you. You can easily run up steep slopes and vertical walls, allowing you to ignore such obstacles. You start falling at the end of the turn or after you have moved as far as your maximum movement speed allows."
+                        }
+                    ]
+                },
+                {
+                    "rank": 4,
+                    "features": [
+                        {
+                            "name": "Martial Arts +",
+                            "description": "This feature augments the Martial Arts feature with new functions. Your base Martial Arts damage is now 6 HP (Blunt). (Replaces the 4 damage of your Martial Arts feature)."
+                        }
+                    ]
+                },
+                {
+                    "rank": 5,
+                    "features": [
+                        {
+                            "name": "Martial Arts Combo +",
+                            "description": "This feature augments the Martial Arts Combo feature with new functions. The maximum number of Follow-Up Attacks you can make with your Martial Arts Combo is now 2. You need to expend a minor action for each combo attack. This feature also increases the number of Martial Arcanist’s combo to 2. (Does not stack with previous features)."
+                        },
+                        {
+                            "name": "Sense Aura +",
+                            "class": "1",
+                            "description": "(Adventuring Feature) This feature augments the Sense Aura feature with new functions. Using your minor action, you gain astral sight for 12 seconds (1 round). Astral sight grants you the ability to see through material objects up to 30m (3 zones) away and see any invisible objects and creatures."
+                        },
+                        {
+                            "name": "Ki Blast +",
+                            "class": "1",
+                            "description": "This feature augments the Ki Blast feature with new functions. Using your minor action, you can build up your internal ki reserve and increase the damage of your single next Martial Arts Attack. For each minor action you expend, increase your base Martial Arts damage by +6 and the range of your ki blast is increased by +10m (1 zone). This build-up can be stacked up to three times, to a maximum of +18 base damage and +30m (3 zones). This effect disappears after you make your Martial Arts Attack regardless of whether it hits, or after 5 minutes (25 rounds)."
+                        },
+                        {
+                            "name": "Winding Ways +",
+                            "class": "2",
+                            "description": "(Adventuring Feature) This feature augments the Winding Ways feature with new functions. You can climb any solid surface and move on it as easily as a spider. You can even stand upside down on a ceiling with no adverse effects."
+                        },
+                        {
+                            "name": "Tangling Hands +",
+                            "class": "2",
+                            "description": "This feature augments the Tangling Hands feature with new functions. Targets 2 size categories larger than you are no longer immune to the negative effects of being Grappled by you. (If your size is medium, you can now Grapple Xtra Large targets). Maneuvers made against you are made with Setback. Whenever you attack a target you are grappling or latching onto, you can choose to make a Simultaneous Attack against all targets you are grappling or latching onto."
+                        }
+                    ]
+                },
+                {
+                    "rank": 6,
+                    "features": [
+                        {
+                            "name": "Martial Arts ++",
+                            "description": "This feature augments the Martial Arts + feature with new functions. Your base Martial Arts damage is now 8 HP (Blunt). (Replaces the damage of your Martial Arts and Superior Martial Arts feature)."
+                        }
+                    ]
+                },
+                {
+                    "rank": 7,
+                    "features": [
+                        {
+                            "name": "Wind Step +",
+                            "description": "This feature augments the Wind Step feature with new functions. When you use your minor action to move, you temporarily gain “flight” by stepping on air. You lose your “flight” and fall at the end of the turn or after you have moved as far as your Maximum Movement Range allows. All fall damage you receive is halved. You can also use your minor action to reduce your body weight to the weight of a feather until the start of your next turn. When your body weight is reduced by this feature, you don’t take fall damage and can stand on the surface of water or a leaf on a branch."
+                        }
+                    ]
+                },
+                {
+                    "rank": 8,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Clear Mind +",
+                            "description": "(1 Spirit Token) (Instant) This feature augments the Clear Mind feature with new functions. You can now instantly activate this Spirit Burst before you take your first turn using your Free Action. Additionally, the cost is reduced to just 1 Spirit Token. You can also do this even if you’re Surprised."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brute",
+            "advanced_path": [
+                "Assassin Discipline",
+                "Dominion Discipline"
+            ],
+            "class_1": "Berserker",
+            "class_2": "Spartan",
+            "turn_speed": 5,
+            "defense": "6 + Mastery (UT: 7 + Mastery)",
+            "weapon_mastery": "Light, Medium & Heavy",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "5 + Mastery",
+            "armor_mastery": "Light, Medium & Unarmored Toughness",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "3 + Mastery",
+            "maneuver_mastery": "Scuffle",
+            "suggested_starting_items_1": [
+                "Camping Gear (1)",
+                "Navigation Kit (1)",
+                "Healing Powder (0.5)",
+                "Thick Hide Armor (1)",
+                "Greataxe (1)"
+            ],
+            "suggested_starting_items_2": [
+                "Camping Gear (1)",
+                "Navigation Kit (1)",
+                "Healing Powder (0.5)",
+                "Healing Powder (0.5)",
+                "Healing Powder (0.5)",
+                "Shield (0.5)",
+                "Javelin (1)"
+            ],
+            "strengths": "Brutes are great defenders who can take damage for their allies and withstand more physical punishment than any other Discipline. Their Spirit Burst makes up for their initial low damage output. When your Primary Class is a Brute Discipline Class, you can choose to not wear any armor and gain the Defense & HP benefits of unarmored toughness.",
+            "weaknesses": "Brutes are great at absorbing HP damage but not MP damage. They also have low Mental Fortitude rendering them vulnerable to mind control spells and effects.",
+            "gear_suggestions": {
+                "weapon": "Extra Heavy Weapons are great for Berserkers and shields are essential for Spartans.",
+                "armor": "Medium Armor is better for enemies that deal effect damage. Unarmored Toughness is better for enemies that make Attack Rolls.",
+                "others": "-"
+            },
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Grit",
+                            "description": "(1 Spirit Token) Whenever you receive an instance of HP damage, you can spend 1 Spirit Token to reduce the damage you receive by half, rounded down. You can’t reduce the damage to below 1."
+                        },
+                        {
+                            "name": "Bear Power",
+                            "class": "1",
+                            "description": "(Adventuring Feature) Hone your brute strength to greater heights. You have Edge on all your Brute Skill Rolls."
+                        },
+                        {
+                            "name": "Violent Interpose",
+                            "class": "1",
+                            "description": "(Instant) Jump in front of an assailant and take the attack. You gain 1 Spirit Token when you use this feature. When a target within 10m (1 zone) of you attacks you or your allies, you can instantly use your minor action to leap into the attacker’s zone and redirect the attack to yourself. The attacker has to target you now, even if you’re not the original target. This traversal method neither counts toward your Maximum Movement Range nor provokes Opportunity Strike. After the attack is made, regardless of whether it hits you, the attacker takes half of your wielded melee weapon’s damage. (Weapon Required) This feature can be used outside of your own turn, and you can also use it on yourself when you’re attacked. It does not work against Effect Rolls or Simultaneous Attack Rolls."
+                        },
+                        {
+                            "name": "Adrenaline Rush",
+                            "class": "2",
+                            "description": "(Adventuring Feature) Your training made you a supreme athlete. You have Edge on all your Sports Skill Rolls."
+                        },
+                        {
+                            "name": "Defensive Interpose",
+                            "class": "2",
+                            "description": "(Instant) Jump in front of an attacked ally and take the attack yourself. You gain 1 Spirit Token when you use this feature. When an ally within 10m (1 zone) of you is being attacked, you can instantly use your minor action to gain a +1 Defense Bonus and leap into your ally’s zone to redirect the attack to yourself. The attacker has to target you now, even if you’re not the original target. Alternatively, you can use this feature on yourself if you’re the target of an attack. This traversal method neither counts towards your Maximum Movement Range nor provokes Opportunity Strike. (Shield Required) This feature can be used outside of your own turn and you can also use it on yourself when you’re attacked. It does not work against Effect Rolls or Simultaneous Attack Rolls."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "No Pain No Gain",
+                            "description": "Nothing is more invigorating than pain in battle! Whenever you receive HP damage, you gain 1 Spirit Token. (Tip: When an attack misses you, you can choose to take 1 damage instead to activate this feature.)"
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Scuffle Expert",
+                            "description": "You developed keen knowledge in the application of strength and violence. All Scuffle Maneuvers targeting you are made with Setback."
+                        }
+                    ]
+                },
+                {
+                    "rank": 4,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Brutal Rage",
+                            "description": "(3+ Spirit Tokens) (This feature overwrites the default Spirit Burst: Rage feature and doesn’t stack with it.) You have learned to channel your battle fever into greater rage. When you damage a target, you can spend Spirit Tokens to increase the damage you deal. For every Spirit Token you spend, you increase the damage you deal by 3 points. The minimum amount of spirit you need to spend to use this Spirit Burst feature is 3 Spirit Tokens."
+                        }
+                    ]
+                },
+                {
+                    "rank": 5,
+                    "features": [
+                        {
+                            "name": "Monstrous Strength",
+                            "description": "Increase your Primary Class’ Weapon Category Mastery by 1 weight class. For example, if you have Mastery in Heavy Weaponry, you gain Mastery of Xtra Heavy Weapons. Except for Xtra Heavy Weapons, you can now wield all two-handed melee weapons you have Mastery in with only 1 hand."
+                        },
+                        {
+                            "name": "Bear Power +",
+                            "class": "1",
+                            "description": "(Adventuring Feature) (This feature augments the Bear Power feature with new functions) You gain a +2 bonus to your Brute Skill Rolls."
+                        },
+                        {
+                            "name": "Adrenaline Rush +",
+                            "class": "2",
+                            "description": "(Adventuring Feature) (This feature augments the Adrenaline Rush feature with new functions) You gain a +2 bonus to your Sports Skill Rolls."
+                        }
+                    ]
+                },
+                {
+                    "rank": 6,
+                    "features": [
+                        {
+                            "name": "Violent Interpose +",
+                            "class": "1",
+                            "description": "(Instant) (This feature augments the Violent Interpose feature with new functions.) You can now leap up to 20m (2 zones) into an attacking opponent’s zone."
+                        },
+                        {
+                            "name": "Defensive Interpose +",
+                            "class": "2",
+                            "description": "(Instant) (This feature augments the Defensive Interpose feature with new functions.) Anytime an ally within 30m (3 zones) of you is being targeted by an attack, you can instantly use your minor action to gain a +1 Defense Bonus and throw the shield you’re wielding in front of that target. You do not lose the Defense Bonus from your shield when it’s thrown using this feature. (Shield Required) The target’s Defense is temporarily raised to be the same as yours, if your Defense is higher. If the target you’re defending with this feature receives HP damage, you can use your Spirit Burst: Grit feature to reduce the damage received. Your shield boomerangs back to you after using this feature. This feature does not work against attacks and spells that target zones or Simultaneous Attacks. You also immediately gain 1 Spirit Token when you use this feature."
+                        }
+                    ]
+                },
+                {
+                    "rank": 7,
+                    "features": [
+                        {
+                            "name": "Scuffle Expert +",
+                            "description": "(This feature augments the Scuffle Expert feature with new functions) You have Edge on your Scuffle Maneuvers."
+                        }
+                    ]
+                },
+                {
+                    "rank": 8,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Brutal Rage +",
+                            "description": "(3+ Spirit Tokens) (This feature augments the Brutal Rage feature with new functions.) For every Spirit Token you spend, you now deal additional 5 points of damage. (Does not stack with the previous version)."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "discipline": "Trickster",
+            "advanced_path": [
+                "Assassin Discipline",
+                "Mirage Discipline"
+            ],
+            "class_1": "Rogue",
+            "class_2": "Bard",
+            "turn_speed": 8,
+            "defense": "6 + Mastery",
+            "weapon_mastery": "Spell Catalyst, Light & Medium",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "4 + Mastery",
+            "armor_mastery": "Light",
+            "max_movement": "40m (4 zones / turn)",
+            "mental_fortitude": "7 + Mastery",
+            "maneuver_mastery": "Cheap Shot",
+            "suggested_starting_items_1": [
+                "Camping Gear (1)",
+                "Impersonation Kit (1)",
+                "Healing Powder (0.5)",
+                "Padded Silk (1)",
+                "Short Sword (1)",
+                "Short Sword (1)"
+            ],
+            "suggested_starting_items_2": [
+                "Camping Gear (1)",
+                "Impersonation Kit (1)",
+                "Healing Powder (0.5)",
+                "Padded Silk (1)",
+                "Longbow (1)"
+            ],
+            "strengths": "Tricksters are tremendously versatile high-speed supporters. Their Spirit Bursts allow them to disrupt and cancel enemy effects and actions, increasing the party’s survivability. Rogues are capable melee combatants while Bards are better supporters.",
+            "weaknesses": "Tricksters have below-average hit points. To survive combat, they need to rely on their spells, features, and all the other tricks in the book. They also lack the features to deal burst damage.",
+            "gear_suggestions": {
+                "weapon": "Dual wield weapons work best for Rogue. Spell Catalyst or ranged weapons are great for Bards.",
+                "armor": "Light Armor."
+            },
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Master Thievery",
+                            "class": "1",
+                            "description": "(Adventuring Feature) Your art of Thievery is honed to greater heights. By spending a minor action, you find all the traps, hidden doors, or other secret contraptions within a 30m (3 zones) radius around you. This feature can be used once and it’s reusable after taking a Full Rest."
+                        },
+                        {
+                            "name": "Dual Wielding Mastery",
+                            "class": "1",
+                            "description": "Your skill in dual wielded weaponry is unparalleled. When dual wielding, you can choose to calculate your base Defense as 7 + Mastery. Additionally, you do not need to use your minor action to make a Follow-Up Attack with your secondary weapon."
+                        },
+                        {
+                            "name": "Sharp Remark",
+                            "class": "2",
+                            "description": "(Adventuring Feature) Encourage a creature to perform its task better. Using your minor action, you can instantly allow a creature to make its Task Roll with Edge. That creature must be within 30m (3 zones) of you and see or hear you. You can make 3 sharp remarks and you regain all uses after taking a Full Rest."
+                        },
+                        {
+                            "name": "Rally",
+                            "class": "2",
+                            "description": "Sing, play an instrument, or say words of encouragement to lift a combatant’s spirit. While on your turn, you can use your minor action to grant 1 Spirit Token to a target of your choice besides yourself. You can’t grant more than 1 Spirit Token to a target per turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "Arcane Attunement",
+                            "description": "You have received training in the manipulation of Arcane Elements. You can attune to Arcane Elements, such as Fire, Water, Wood, Wind, Earth, Metal, and other elements derived from their combinations. Using your minor action, you can create a Spellglyph Token. You may choose to enter combat or other Critical Situations, with 3 Spellglyph Tokens."
+                        },
+                        {
+                            "name": "Attunement Slot +1",
+                            "description": "You gain +1 additional Attunement Slot. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Warcasting",
+                            "description": "When you cast spells that enchant only yourself or your equipment, those spells cannot be disrupted by taking damage."
+                        },
+                        {
+                            "name": "Dual Wielding Mastery +",
+                            "class": "1",
+                            "description": "(This feature augments the Dual Wielding Mastery feature with new functions.) While you’re dual wielding and applying an enchantment spell on your primary weapon, you can choose to apply the same effect to your secondary weapon at no cost."
+                        },
+                        {
+                            "name": "Rally +",
+                            "class": "2",
+                            "description": "(This feature augments the Rally feature with new functions.) Every time you use your Rally feature, you also gain a Spellglyph Token."
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Break Focus",
+                            "description": "Apply disruptive tricks into your combat style. When you deal any amount of HP or MP damage to a creature that is focusing on spells or other effects, you can choose to end their focus."
+                        }
+                    ]
+                },
+                {
+                    "rank": 4,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Cancel Action",
+                            "description": "(3 Spirit Tokens) (Instant) Disrupt and stop an enemy’s action by tactically throwing an object at it. You can spend 3 Spirit Tokens at any instant as a Free Action to throw a small object, such as a coin or a pebble, at a target within 30m (3 zones) of you to cancel its action. To do so, make a Middle Ranged Attack Roll with Mastery. Alternatively, you can make the attack with a thrown weapon you own and benefit from its bonuses. If your attack hits, the target takes no damage but its action is cancelled and expended. The target’s other resources for the action such as MP, Danger Token, or items are refunded. The target can’t make the same type of action (such as attacking, spellcasting, or moving) again for the rest of the turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": 5,
+                    "features": [
+                        {
+                            "name": "Master Thievery +",
+                            "class": "1",
+                            "description": "(Adventuring Feature) (This feature augments the Master Thievery feature with new functions.) You gain a +2 bonus to your Thievery Skill Rolls."
+                        },
+                        {
+                            "name": "Mirror Weapon",
+                            "class": "1",
+                            "description": "You can create a spectral duplicate of a weapon you are holding in one hand and dual wield them. Using a minor action, you can instantly create a duplicate of a weapon you hold in one hand in your other hand. This also means that you can dual wield any weapon that doesn’t require two hands to wield. The copy appears mirror-flipped and it will disappear the moment it leaves your hand. A copied magical weapon only retains the original’s Combat Roll Bonus, base damage, damage Type, and nothing else."
+                        },
+                        {
+                            "name": "Sharp Remark +",
+                            "class": "2",
+                            "description": "(Adventuring Feature) (This feature augments the Sharp Remark feature with new functions.) Instead of using your sharp remark to encourage, you can use it to instantly distract a creature within 30m (3 zones) of you. That creature has Setback on its Task Roll."
+                        },
+                        {
+                            "name": "Elemental Muse",
+                            "class": "2",
+                            "description": "Employ an elemental muse’s service to temporarily attune to an additional element. Using a minor action, you can temporarily attune to a single basic Arcane or Cosmic Element for 1 hour for the purpose of spellcasting. This temporary attunement does not increase your Max MP. This feature can be used once and is reusable after taking a Long Break or Full Rest."
+                        }
+                    ]
+                },
+                {
+                    "rank": 6,
+                    "features": [
+                        {
+                            "name": "Attunement Slot +1",
+                            "description": "You gain +1 additional Attunement Slot. Each Attunement Slot increases your maximum MP by 10. (Stacks with other Attunement Slots.)"
+                        },
+                        {
+                            "name": "Warcasting +",
+                            "description": "(This feature augments the Warcasting feature with new functions.) You can use your minor action to enchant non-machinarm weapons you are wielding to make them deal the damage Type of an element you’re attuned to and change the damage Method to Spell instead of Weapon. This feature overrides the weapon’s damage Type even if it was already enhanced by spells, but it retains the spell’s bonuses. This feature lasts for 1 hour and you can dismiss this effect with your minor action."
+                        }
+                    ]
+                },
+                {
+                    "rank": 7,
+                    "features": [
+                        {
+                            "name": "Break Focus +",
+                            "description": "(This feature augments the Break Focus feature with new functions.) Attacks you make on a target that’s focusing on spells or other effects are made with Edge."
+                        }
+                    ]
+                },
+                {
+                    "rank": 8,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Cancel Action +",
+                            "description": "(2 Spirit Tokens) (Instant)(This feature augments the Cancel Action feature with new functions.) The Cancel Action Attack Roll you make with this feature is made with Edge."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Channeler",
+            "advanced_path": [
+                "Dominion Discipline",
+                "Mirage Discipline"
+            ],
+            "class_1": "Phantasmancer",
+            "class_2": "Talismancer",
+            "turn_speed": 4,
+            "defense": "6 + Mastery",
+            "weapon_mastery": "None",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "5 + Mastery",
+            "armor_mastery": "Light",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "6 + Mastery",
+            "maneuver_mastery": "Cheap Shot",
+            "suggested_starting_items_1": [
+                "Camping Gear (1)",
+                "Chemist Kit (1)",
+                "Climbing Kit (1)",
+                "Healing Powder (0.5)",
+                "Padded Silk (1)",
+                "Eidolon Band (0)"
+            ],
+            "strengths": "Channelers can use their eidolons to provide the party with additional frontline defense while safely standing at the back. They can also use eidolons to attack apparitions. A Phantasmancer’s eidolon attacks with accuracy while a Talismancer’s eidolon accumulates damage over time.",
+            "weaknesses": "Channelers have below-average hit points and don’t have many Mind Points either. They need to always maintain a safe distance from their enemies.",
+            "gear_suggestions": {
+                "weapon": "None.",
+                "armor": "Light Armor.",
+                "others": "Without the need for weapons, you can bring more items with you."
+            },
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Command Eidolon",
+                            "description": "Channelers command spiritual manifestations known as eidolons. These eidolons have various forms and abilities based on the Channeler Class chosen. You can use actions to summon, dismiss, move, or attack with your eidolon."
+                        },
+                        {
+                            "name": "Phantasm Mastery",
+                            "class": "1",
+                            "description": "(Adventuring Feature) Your Class eidolon is called phantasm and you can only have 1 phantasm at a time. A phantasm is an invisible and incorporeal medium sized hovering spirit that can pass through walls and solid objects. Using your minor action, you can see and hear through its senses for 12 seconds (1 round)."
+                        },
+                        {
+                            "name": "Phantasm Combat",
+                            "class": "1",
+                            "description": "Your phantasm eidolon has specific attributes and abilities: Summoning range: 10m (1 zone) from eidolon vessel; Operating range: 10m (1 zone) from eidolon vessel; Movement: 10m (1 zone); Attack range: 0 (melee); Damage: 4 HP Astral Eidolon. It has 0 HP and Defense and Fortitudes that are identical to your own. It's immune to HP & MP damage. You possess Edge in your phantasm's eidolon Combat Rolls unless the target possesses astral vision or another method of detecting invisible beings. Phantasms are incorporeal and impervious to harm or influence. Each time you voluntarily move, your phantasm can also move the same distance as you as a Free Action."
+                        },
+                        {
+                            "name": "Talisman Spirit Mastery",
+                            "class": "2",
+                            "description": "(Adventuring Feature) Your Class eidolon is called talisman spirit and you can create as many copies of them as you can summon. Talisman spirits are small corporeal landbound elemental creatures. They have limited intelligence and can perform simple tasks."
+                        },
+                        {
+                            "name": "Spirit Combat",
+                            "class": "2",
+                            "description": "Summoning limit: 2 talisman spirits summoned at a time. Summoning range: 10m (1 zone) from eidolon vessel. Operating range: 100m (10 zones) from eidolon vessel. Movement: 10m (1 zone). Attack range: 0 (melee). Damage: 4 HP (chosen element) Eidolon. HP: 1, Defense and Fortitudes: same as the Channeler. It’s immune to HP & MP damage of the same element type. When your talisman spirit’s HP is reduced to 0, it vanishes back into its vessel. When you summon a talisman spirit, you can choose its element from the following choices: fire, water, and wood. The damage Type it deals is the same as its element and it is immune to damage of the same element. When you deal damage to a target with your talisman spirit, it latches onto the target and will move along with it, until you order it to attack another target. At the end of your turn, roll 1d6. Targets take that much HP Eidolon damage for each spirit latched on to it. The damage Type is the same as your talisman spirit’s element. You can use your minor action to change the element of a summoned talisman spirit."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Quick Command",
+                            "description": "(3 Spirit Tokens) By spending 3 Spirit Tokens as a Free Action on your turn, you have a temporary Major Action that you can use to command your eidolon with."
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Flurry Attack",
+                            "class": "1",
+                            "description": "Your phantasm utilizes the opening in your target’s Defense to overwhelm it with a flurry of attacks. When your phantasm deals Excess Damage, the Excess Damage is multiplied by 2."
+                        },
+                        {
+                            "name": "Spirit Combat +",
+                            "class": "2",
+                            "description": "(This feature augments the Spirit Combat feature with new functions.) You can now have up to a maximum of 3 talisman spirits summoned at a time. You can now summon talisman spirits of wind, earth, and metal elements. A target latched onto by a talisman spirit now takes 1d6 +4 damage at the end of your turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": 4,
+                    "features": [
+                        {
+                            "name": "Defender Eidolon",
+                            "description": "When any of your eidolons are in the same zone as you, you receive a +1 bonus to your Defense. This feature does not stack even if you have multiple eidolons in the same zone."
+                        }
+                    ]
+                },
+                {
+                    "rank": 5,
+                    "features": [
+                        {
+                            "name": "Phantasm Mastery +",
+                            "class": "1",
+                            "description": "(This feature augments the Phantasm Mastery feature with new functions.) When you see through your phantasm, you gain astral sight."
+                        },
+                        {
+                            "name": "Flurry Attack +",
+                            "class": "1",
+                            "description": "(This feature overwrites the Flurry Attack feature and doesn’t stack with it.) When your phantasm deals Excess Damage, the Excess Damage is multiplied by 3. You gain a +1 bonus to eidolon Combat Rolls when attacking with your phantasm."
+                        },
+                        {
+                            "name": "Talisman Spirit Mastery +",
+                            "class": "2",
+                            "description": "(This feature augments the Talisman Spirit Mastery feature with new functions.) Your talisman spirits can now fly and carry up to one Item Slot’s worth of objects or up to 5kg in weight."
+                        },
+                        {
+                            "name": "Spirit Combat ++",
+                            "class": "2",
+                            "description": "(This feature augments the Spirit Combat feature with new functions.) You can now have up to a maximum of 3 talisman spirits summoned at a time. You can now summon talisman spirits of wind, earth, and metal elements. A target latched onto by a talisman spirit now takes 1d6 +4 damage at the end of your turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": 6,
+                    "features": [
+                        {
+                            "name": "Defender Eidolon +",
+                            "description": "(Instant) (This feature augments the Defender Eidolon feature with new functions.) You can use your minor action at any time, even outside of your turn, to instantly make minor action commands to your eidolon."
+                        }
+                    ]
+                },
+                {
+                    "rank": 7,
+                    "features": [
+                        {
+                            "name": "Flurry Attack ++",
+                            "class": "1",
+                            "description": "(This feature overwrites the Flurry Attack + feature and doesn’t stack with it.) When your phantasm deals Excess Damage, the Excess Damage is multiplied by 4. You gain a +1 bonus to eidolon Combat Rolls when attacking with your phantasm. (Does not stack with previous version.) When your phantasm deals damage, you can choose to deal Order or Chaos damage Types instead of Astral."
+                        },
+                        {
+                            "name": "Spirit Guardian",
+                            "class": "2",
+                            "description": "You can use all your summoning power to summon a single powerful Medium sized spirit guardian of any Arcane Element. The spirit guardian operates similarly to talisman spirits but with enhanced capabilities."
+                        }
+                    ]
+                },
+                {
+                    "rank": 8,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Quick Command +",
+                            "description": "(3 Spirit Tokens) (Instant) (This feature augments the Quick Command feature with new functions.) You can now use this Spirit Burst at any instant, even outside of your turn. If you hit a target while it’s performing an action, the action is canceled and expended."
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

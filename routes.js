@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
-import SpellList from './src/SpellList'
-import CharacterBuilder from './src/CharacterBuilder'
+import SpellList from './src/components/SpellList/SpellList.vue'
+import CharacterBuilder from './src/components/CharacterBuilder/CharacterBuilder.vue'
 
 const routes = [
   { path: '/', component: SpellList },

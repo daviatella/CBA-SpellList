@@ -1,0 +1,2168 @@
+{
+    "fire": [
+        {
+            "name": "Fire Arrow",
+            "attunement": "Fire",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "This is the most basic Arcane Spell attack.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 4,
+                    "range": "0-3 (Curvable)",
+                    "duration": "-",
+                    "effect": "Make a Middle Ranged, Major Attack Roll at a target in range. This spell’s damage is 8 HP Fire Spell damage. A flammable object not worn or held by a creature will be set on fire upon contact."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 8,
+                    "range": "0-3 (Curvable)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell now deals 17 HP Fire Spell damage."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 15,
+                    "range": "0-3 (Curvable)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell now deals 25 HP Fire Spell damage."
+                }
+            ]
+        },
+        {
+            "name": "Flame Weapon",
+            "attunement": "Fire",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Enchant weapons with the element of fire.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 2,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "A target weapon in the spell’s range becomes enchanted with the fire element. Increase the weapon’s base damage by +2 and the weapon now deals Fire Spell damage. When a machinarms weapon is enchanted by this spell, the cinderblast trigger can’t be activated and it receives no spell bonuses."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 4,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can now choose 2 target weapons."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can now choose 3 target weapons."
+                }
+            ]
+        },
+        {
+            "name": "Circle of Fire",
+            "attunement": "Fire",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create circles of fire around zones to burn creatures leaving or entering them.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 0,
+                    "range": "Self",
+                    "duration": "Continuous",
+                    "effect": "You can create a mini circle of fire on your palm. You can use it to cook or burn objects."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 3,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create a fire circle around a zone within the spell’s range harmlessly. But when any target leaves or enters the zone, it takes 5 HP Fire Spell Damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell now deals 10 HP Fire Spell Damage."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 9,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can create two separate fire circles around two different zones within the spell’s range. Any creature leaving or entering the zone will take 10 HP Fire Spell Damage."
+                }
+            ]
+        }
+    ],
+    "water": [
+        {
+            "name": "Slide Stream",
+            "attunement": "Water",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Harness the arcane torrents to extend the reach of your Melee Attacks or slide out of danger.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 2,
+                    "range": "Self",
+                    "duration": "1 Round",
+                    "effect": "Your melee weapon attacks produce destructive torrents of water. Your melee weapon range is extended by 10m (1 zone) and deals Water Spell damage until the start of your next turn. This spell doesn’t work on Machinarms."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 4,
+                    "range": "Self",
+                    "duration": "-",
+                    "effect": "You slide 1 zone away without provoking Opportunity Strikes and you are released from units grappling you. This traversal method does not count towards your Maximum Movement Range."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 8,
+                    "range": "Self",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But you may bring a passenger with you from the zone you are moving away from to your destination. That passenger can be a willing unit or an unwilling unit that you grapple, but it can be no more than one size category larger than you."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 16,
+                    "range": "Self",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But you may bring any number of passengers with you from the zone you are moving away from to your destination. The passengers can be a combination of any number of willing units or unwilling units grappled by you, but they can be no more than one size category larger than you."
+                }
+            ]
+        },
+        {
+            "name": "Illusion",
+            "attunement": "Water",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Shape water vapor to create illusions of yourself and your allies as decoys against enemy attacks.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 2,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create a silent and stationary Medium sized illusory image within range. This image appears exactly as you imagined it, but objects can pass through it."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 4,
+                    "range": "Self",
+                    "duration": "Instant",
+                    "effect": "Instantly raise your Defense by +2. This temporary effect lasts until the end of the turn."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 8,
+                    "range": "0-3",
+                    "duration": "Instant",
+                    "effect": "Instantly raise the Defense of a target in range by +2. This temporary effect lasts until the end of the turn."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 16,
+                    "range": "0-3",
+                    "duration": "Instant",
+                    "effect": "See above (Rank 2). But you can choose any number of targets in range."
+                }
+
+            ]
+        },
+        {
+            "name": "Hydrokinesis",
+            "attunement": "Water",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Exert control over water for your convenience.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 0,
+                    "range": "0-1",
+                    "duration": "Continuous",
+                    "effect": "You can move liquid through air at will within the spell’s range as if controlling an invisible bucket."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 3,
+                    "range": "0 (Touch)",
+                    "duration": "1 min (Focus)",
+                    "effect": "Purify all water within 1 m radius of your hand into drinkable water. If used on a large body of water, it purifies the water in the sphere while the spell lasts."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "1 Hour",
+                    "effect": "Grant the ability to breathe underwater to any number of willing units you choose in range."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 9,
+                    "range": "0-3",
+                    "duration": "1 Hour",
+                    "effect": "Grant the ability to walk on water to any number of willing units you choose in range."
+                }
+            ]
+        }
+    ],
+    "wood": [
+        {
+            "name": "Vine Whip",
+            "attunement": "Wood",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Create a versatile magical vine for combat and moving units.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 2,
+                    "range": "0-3 (Curvable)",
+                    "duration": "-",
+                    "effect": "Make a Middle Ranged Major Attack Roll at a target in range. This spell’s damage is 5 HP Wood Spell damage but you can choose to not deal any damage. You can pull the hit unit or object 10m (1 zone) toward you as long as its size is Medium (M) or smaller. Units pulled this way do not provoke Opportunity Strikes."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 4,
+                    "range": "0-3 (Curvable)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell’s damage is now 8 HP Wood Spell damage. You can now pull a Large (L) or smaller sized unit up to 10m (1 zone) toward you."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 6,
+                    "range": "0-3 (Curvable)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell’s damage is now 12 HP Wood Spell damage. You can now pull an Extra Large (XL) or smaller sized unit up to 20m (2 zones) toward you."
+                }
+            ]
+        },
+        {
+            "name": "Vegetation",
+            "attunement": "Wood",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Grow entangling plants to hamper your enemy’s movement and aid survival.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 0,
+                    "range": "Self",
+                    "duration": "Full Rest",
+                    "effect": "Make dying plants flourish or grow fruit out of season. You can forage in harsh terrain using your spellcasting Combat Roll with Edge."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 4,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create towering entangling bushes in 1 zone that hamper the movement of all units in it, including flying units. Units moving out of the zone need to use 2 movement actions. The bush has 8 DEF, 8 P.Fort, 15 HP, and no MP. The spell ends early if the bushes are reduced to 0 HP. Fire damage on the bush is doubled."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 8,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But now, units trying to move out of the zone need to use 3 movement actions. Additionally, the bush has 9 DEF, 9 P.Fort, & 20 HP."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 16,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But now, units trying to move out of the zone need to use 4 movement actions. Additionally, the bush has 10 DEF, 10 P.Fort, & 25 HP."
+                }
+            ]
+        },
+        {
+            "name": "Heal Wound",
+            "attunement": "Wood",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Your basic healing spell, eternally useful.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 7,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Recover the HP of a target in range by 2d6 HP."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Recover the HP of a target in range by 2d6 + 4 HP. Epic Trap damage can be reduced by this spell. The damage is reduced by the same amount as the bush’s current HP."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 14,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Recover the HP of a target in range by 2d6 + 8 HP."
+                }
+            ]
+        }
+    ],
+    "wind": [
+        {
+            "name": "Wind Shear",
+            "attunement": "Wind",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Create violent cyclones to damage multiple enemies without hurting your allies.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 5,
+                    "range": "0-3 (Zone) (Target)",
+                    "duration": "-",
+                    "effect": "Zone Physical Effect Spell, size: 5m sphere (target zone). Choose a zone in the spell’s range and make a Physical Spell Effect Roll against all your chosen targets occupying the zone. The spell’s damage is the result of the roll plus a +5 Damage Bonus, reduced by each target’s Physical Fortitudes. The damage is HP Wind Spell damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 10,
+                    "range": "0-3 (Zone) (Target)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the Spell Damage Bonus is now +10."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 15,
+                    "range": "0-3 (Zone) (Target)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the Spell Damage Bonus is now +15."
+                }
+            ]
+        },
+        {
+            "name": "Ventomancy",
+            "attunement": "Wind",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Harness the arcane winds for various useful functions.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 0,
+                    "range": "0 (Touch)",
+                    "duration": "Continuous",
+                    "effect": "You can produce a 30cm wide harmless wind tunnel out of your palm that can topple objects weighing up to 1kg. You can use this wind to extinguish uncovered fire lamps and small campfires."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 3,
+                    "range": "0-3",
+                    "duration": "Instant",
+                    "effect": "Choose any number of falling creatures or objects of a Large (L) size category or smaller in range. Their fall is instantly slowed down and they will land safely without taking any damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "You can produce a 10m (1 zone) wide tunnel of strong wind from the zone the spell is first cast towards any direction of your choice in a line up to 30m (3 zones) away. This wind can blow away fogs and vapors and even suppress the effects of spells such as Fog or Befoul while the zones are affected by this spell. You can use your minor action to change the direction of the wind from the point of origin."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "You can choose any number of willing creatures within this spell’s range to drastically reduce their weight. Affected creatures can easily jump up to 3m high vertically and 10m (1 zone) horizontally. While the spell is in effect, they take no fall damage."
+                }
+            ]
+        },
+        {
+            "name": "Tailwind",
+            "attunement": "Wind",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Doubles your and your allies’ Movement Range with arcane wind.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 3,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose a willing unit within the spell’s range and that creature’s Movement Range & Maximum Movement Range doubles while the spell is in effect."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). You can now choose 2 willing units."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). You can now choose any number of willing units in the spell’s range."
+                }
+            ]
+        }
+    ],
+    "earth": [
+        {
+            "name": "Boulder Beat",
+            "attunement": "Earth",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Project a massive earthen fist to slam your enemy away.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 5,
+                    "range": "0",
+                    "duration": "-",
+                    "effect": "Make a Melee, Major Attack Roll at a target in range. This spell’s damage is 6 HP Earth Spell damage. You can choose to push Medium (M) or smaller sized units hit by this spell 10m (1 zone) away toward your chosen direction. Pushed units do not provoke Opportunity Strikes."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 10,
+                    "range": "0",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell now deals 12 HP Earth Spell damage. You can choose to push Large (L) or smaller sized units up to 10m (1 zone) away."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 15,
+                    "range": "0",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell now deals 18 HP Earth Spell damage. You can choose to push an Extra Large (XL) or smaller sized unit up to 20m (2 zones) away."
+                }
+            ]
+        },
+        {
+            "name": "Stonewall",
+            "attunement": "Earth",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Conjure sturdy earthen walls to block your enemies or for other purposes such as a bridge.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 0,
+                    "range": "0-3",
+                    "duration": "Continuous",
+                    "effect": "You can use this spell to move earth slowly, as if you have a floating invisible shovel."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 4,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Raise an earthen slab that’s up to 10m x 10m (1 zone) wide and high from the ground to separate two zones. It has 20 HP, 8 DEF, 8 P.Fort, and no MP. If reduced to 0 HP, the slab is destroyed and disappears. This structure can also be reoriented to be used for other purposes, such as a bridge."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 8,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can now create 2 sections of slabs instead. Each layer of slab has 20 HP, 9 DEF, 9 P.Fort, and no MP."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 2). But you can now create 3 sections of slabs. Each layer of slab has 20 HP, 10 DEF, 10 P.Fort, and no MP."
+                }
+            ]
+        },
+        {
+            "name": "Stone Body",
+            "attunement": "Earth",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create defensive stone barriers around targets you want to protect.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 7,
+                    "range": "0-3",
+                    "duration": "1 Hour",
+                    "effect": "Grant a target in range 1 Barrier Token. Barrier lasts for 1 hour from last gain."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "1 Hour",
+                    "effect": "See above (Rank 1). But the spell now grants 2 Barrier Tokens."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 14,
+                    "range": "0-3",
+                    "duration": "1 Hour",
+                    "effect": "See above (Rank 1). But the spell now grants 3 Barrier Tokens. It can bear up to 3,000kg of load. Epic Trap damage can be reduced by this spell. The damage is reduced by the same amount as the wall’s current HP."
+                }
+            ]
+        }
+    ],
+    "metal": [
+        {
+            "name": "Ferrokinesis",
+            "attunement": "Metal",
+            "glyph": "Yes",
+            "requirement": "M.Wpn",
+            "action": "minor",
+            "description": "Use your mastery over metal to turn metallic objects into flying weapons or wrest them away from your enemies.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 3,
+                    "range": "0-3",
+                    "duration": "1 Hr (Focus)",
+                    "effect": "Using your minor action, you can target metallic objects up to 1 kg in weight or a metallic Light (L) weapon within range to levitate it. Alternatively, you can target a metallic object or Light (L) weapon held by an enemy and make a Spell Attack Roll against your enemy’s Defense. If you match or beat their Defense, then you Disarm your enemy and the object or weapon is levitated by this spell."
+                }
+            ]
+        },
+        {
+            "name": "Satellite Shell",
+            "attunement": "Metal",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create floating metal panels in a zone that defends against Ranged Attacks.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 3,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create a dome protected by floating metal plates in a zone in range. The dome has 12 Defense. Any friendly units in the zone can choose to use 12 Defense instead of their original Defense when attacked by a Ranged Attack. The Defense provided by this spell cannot be increased by any other bonuses."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the dome now has 13 Defense."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 9,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the dome now has 14 Defense."
+                }
+            ]
+        },
+        {
+            "name": "Scan",
+            "attunement": "Metal",
+            "glyph": "No",
+            "requirement": "M.Wpn",
+            "action": "minor",
+            "description": "This magical radar can be used to detect and reveal metals and invisible creatures.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 0,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "You scan the area in the spell’s range. All creatures and metallic objects, even invisible ones and underground are revealed to your mind’s eye."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 3,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 0). But you can now choose to reveal 1 invisible creature within your scan range. It’s outlined with electromagnetic distortion."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 0). But you can now reveal all invisible creatures in a zone of your choice."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 9,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 0). But you can now reveal all invisible creatures in the spell’s range."
+                }
+            ]
+        }
+    ],
+    "order": [
+        {
+            "name": "Guiding Light",
+            "attunement": "Order",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Shine a guiding light upon your opponent and assist your allies’ attacks.",
+            "ranks": {
+                "0": {
+                    "level": "1+",
+                    "MP": 0,
+                    "range": "0 (Touch)",
+                    "duration": "1 hour",
+                    "effect": "When you touch an object and cast this spell, a fist sized glowing ball of light will appear on the surface of the object you touch. It provides up to a 10m (1 zone) radius of illumination. The spell ends early when you use your minor action to dismiss it or when you cast this spell again on another object."
+                },
+                "1": {
+                    "level": "1+",
+                    "MP": 4,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Single-Target Physical Effect Spell. Choose a target in the spell’s range and make a Physical Spell Effect Roll against it. The spell’s damage is the result of the roll plus a +4 Damage Bonus, reduced by the target’s Physical Fortitude. The damage is HP Order Spell damage. If a creature without HP, such as an apparition, is affected by this spell, then the HP damage is converted into double MP damage instead. The next single Attack Roll made against that target is made with Edge regardless of whether it’s afflicted or damaged by this spell."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 8,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the Spell Damage Bonus is now +8."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 12,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the Spell Damage Bonus is now +12."
+                }
+            }
+        },
+        {
+            "name": "Mend",
+            "attunement": "Order",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "This handy spell can be used to repair objects and heal wounds.",
+            "ranks": {
+                "0": {
+                    "level": "1+",
+                    "MP": 0,
+                    "range": "0 (Touch)",
+                    "duration": "-",
+                    "effect": "This spell can be used to reattach broken or torn objects perfectly, as long as the break is not wider than 30cm across any dimension."
+                },
+                "1": {
+                    "level": "1+",
+                    "MP": 7,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Recover the HP of a target in range by 2d6 HP. The target also gains 1 Barrier Token. Barrier lasts for 1 hour from last gain. (Arcane Boost) If you are also attuned with the Wind element, then you can double the MP cost to choose any number of targets in the spell’s range to be affected."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 10,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell now recovers 2d6 + 4 HP and gains 1 Barrier Token."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 14,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell now recovers 2d6 + 8 HP and gains 1 Barrier Token."
+                }
+            }
+        },
+        {
+            "name": "Blessed Arms",
+            "attunement": "Order",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Empowers the weapons wielded by you and your allies.",
+            "ranks": {
+                "1": {
+                    "level": "1+",
+                    "MP": 3,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Target weapon in the spell’s range becomes enchanted with Order element. The weapon gains +1 Combat Roll Bonus, a +2 base damage bonus, and now deals Order Spell damage. When a machinarms weapon is enchanted by this spell, the cinderblast trigger can’t be activated and it receives no bonuses from this spell. (Arcane Boost) If you are also attuned with the fire element, then you can double the MP cost of this spell to increase the bonuses to +1 attack and +4 damage."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can now choose 2 target weapons."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 9,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can now choose 3 target weapons."
+                }
+            }
+        },
+        {
+            "name": "Dispel",
+            "attunement": "Order",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Dispel spell effects and cures poisons. However, this spell can’t lift deep curses.",
+            "ranks": {
+                "1": {
+                    "level": "1+",
+                    "MP": 3,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "This spell cures a target from poison and Sick condition, dispels spell effects, and suppresses the effects of a disease for 1 hour. It cannot lift deep curses and can only suppress the persistent effects of magical items or contraptions for 1 minute."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 6,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1), you can now choose as many targets as you want in a single zone."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose a zone in the spell’s range and turn it into an anti-magic zone. All spell effects in this zone are dispelled. Additionally, creatures inside the zone cannot cast spells and spells cannot be cast through it. If you enter this zone yourself, this spell will end."
+                }
+            }
+        },
+        {
+            "name": "Rigid Mind",
+            "attunement": "Order",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Boosts Mental Fortitude & prevents lies from being told.",
+            "ranks": {
+                "0": {
+                    "level": "1+",
+                    "MP": 0,
+                    "range": "0 (Touch)",
+                    "duration": "Continuous",
+                    "effect": "While you touch a creature and focus on this spell, that creature is unable to tell any lies. However, it may choose to keep quiet."
+                },
+                "1": {
+                    "level": "1+",
+                    "MP": 4,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose any number of targets in the spell’s range. While this spell lasts, targets affected by this spell gain +5 Mental Fortitude Bonus."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 8,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s Mental Fortitude Bonus is +10."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 16,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s Mental Fortitude Bonus is +15."
+                }
+            }
+        }
+    ],
+    "chaos": [
+        {
+            "name": "Wither",
+            "attunement": "Chaos",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Use entropy for combat or to trash an object forever.",
+            "ranks": {
+                "0": {
+                    "level": "1+",
+                    "MP": 0,
+                    "range": "0 (Touch)",
+                    "duration": "5 min (Focus)",
+                    "effect": "When you touch a mundane object and cast this spell for a full minute, you can collapse an object until not a trace of it is left. The object must be no larger than 20cm across any dimension. This spell does not produce any sound or visual effects and the collapsed object is forever gone. Objects with spirits and souls, such as a spiritarm, are immune to this effect."
+                },
+                "1": {
+                    "level": "1+",
+                    "MP": 4,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Single-Target Mental Effect Spell. Choose a target in the spell’s range and make a Mental Spell Effect Roll against it. The spell’s damage is the result of the roll + 4 Damage Bonus, reduced by each target’s Mental Fortitude, the damage is HP and MP (both) Chaos Spell damage. Alternatively, you can choose to damage the creature’s MP only."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 8,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the Spell Damage Bonus is now +8."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 12,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the Spell Damage Bonus is now +12."
+                }
+            }
+        },
+        {
+            "name": "Muddle",
+            "attunement": "Chaos",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "You can muddle the flow of air and light to create a sphere of silence or darkness.",
+            "ranks": {
+                "0": {
+                    "level": "1+",
+                    "MP": 0,
+                    "range": "0 (Touch)",
+                    "duration": "Continuous",
+                    "effect": "While you touch a creature and focus on this spell, that creature makes all its Task Rolls with Setback. You can also make it speak nonsensical gibberish or prevent it from producing any noise at your will while the spell is in effect."
+                },
+                "1": {
+                    "level": "1+",
+                    "MP": 4,
+                    "range": "0-3 (Zone)",
+                    "duration": "5 min (Focus)",
+                    "effect": "Zone Spell, size: 5m sphere (target zone). Choose a zone in the spell’s range and create one of the following:\n‣ A Sphere of Silence - No noise can be produced or pass through the transparent sphere of silence. Spells with verbal requirements cannot be cast by creatures inside it.\n‣ A Sphere of Darkness - No light can travel through the sphere of darkness, which appears as an opaque ball of black gloom from outside. Creatures inside the sphere cannot see anything but pitch black. Without astral sight, or ability to perceive without sight, Attack Rolls made from inside or into the sphere are made with Setback.\n(Arcane Boost) If you are also attuned with the water element, then you can double the cost of this spell to create nightmarish illusions to deal 2d6 MP water damage to all creatures in the sphere at the end of your turn."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 8,
+                    "range": "0-3 (Zone +1)",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s sphere radius is increased to 10m (expanded 1 zone away from the target zone). (Arcane Boost) MP damage is increased to 2d6 +4 MP."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 16,
+                    "range": "0-3 (Zone +2)",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s sphere radius is increased to 20m (expanded 2 zones away from the target zone). (Arcane Boost) MP damage is increased to 2d6 +8 MP."
+                }
+            }
+        },
+        {
+            "name": "Curse",
+            "attunement": "Chaos",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create an invisible curse glyph that only you can see over your enemy and deal additional HP or MP damage.",
+            "ranks": {
+                "1": {
+                    "level": "1+",
+                    "MP": 4,
+                    "range": "0-3",
+                    "duration": "1 Round",
+                    "effect": "Choose a target you can see in the spell’s range and place an invisible curse glyph on it. When the target receives an instance of damage dealt by yourself or others, you can use your Free Action to make your curse glyph deal 2 HP or MP Chaos Spell damage to the target. A target cannot be affected by more than one Curse spell."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 8,
+                    "range": "0-3",
+                    "duration": "1 Round",
+                    "effect": "See above (Rank 1). But the spell now deals 3 damage."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 12,
+                    "range": "0-3",
+                    "duration": "1 Round",
+                    "effect": "See above (Rank 1). But the spell now deals 4 damage."
+                }
+            }
+        },
+        {
+            "name": "Terror",
+            "attunement": "Chaos",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Instill fear into your enemies and inhibit them from attacking you.",
+            "ranks": {
+                "1": {
+                    "level": "1+",
+                    "MP": 5,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Single-Target Mental Effect Spell. Choose a target in the spell’s range and make a Mental Spell Effect Roll against it. Target Afflicted by this effect suffers the “Frightened” condition while the spell lasts. The spell will end early if the target leaves the spell’s range. (Frightened creatures make their Combat Rolls with Setback, can’t approach the caster and Intimidation Skill Rolls made against it has Edge). (Arcane Boost) If you are also attuned with the earth element, then you can double the MP cost to inhibit the target’s movement. It now needs to spend double the amount of minor actions to make a move action."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 10,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But when you successfully frighten a target, it also falls Prone."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 15,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But when you successfully frighten a target, it falls Prone and takes 2d6 chaos MP damage at the end of your every turn while this spell is still active."
+                }
+            }
+        },
+        {
+            "name": "Dissipate Force",
+            "attunement": "Chaos",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Boosts Physical Fortitude by dissipating incoming physical force.",
+            "ranks": {
+                "1": {
+                    "level": "1+",
+                    "MP": 4,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose any number of targets in the spell’s range. While this spell lasts, the targets affected by this spell gain +5 Physical Fortitude Bonus."
+                },
+                "2": {
+                    "level": "5+",
+                    "MP": 8,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s Physical Fortitude Bonus is +10."
+                },
+                "3": {
+                    "level": "9+",
+                    "MP": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s Physical Fortitude Bonus is +15."
+                }
+            }
+        }
+    ],
+    "astral": [
+        {
+            "name": "Astral Window",
+            "attunement": "Astral",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create small portal windows to allow you to attack or interact with objects from a distance.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": 1,
+                    "mp": 3,
+                    "range": "0-3 (Sight)",
+                    "duration": "-",
+                    "effect": "Tear a small portal window in your zone that connects to another zone that you can see within this spell’s range. Attack with Edge through the portal. The damage you deal to targets using this spell can’t be reduced by Barrier Tokens. If the target you attack doesn’t have any HP, such as apparitions, you damage its MP instead. Interact with an object on the opposite side with your hands or Toolkits once. The portal disappears after you have used your other action to interact with a target on the opposite side once or after 3 seconds. If part of you or an object is caught in the portal as it closes, those objects are pushed back to their original position."
+                },
+                {
+                    "rank": 2,
+                    "level": 5,
+                    "mp": 9,
+                    "range": "0-3",
+                    "duration": "Instant",
+                    "effect": "When you are attacked, you can make a contested spellcasting Attack Roll against your enemy’s Attack Roll. If you roll higher, you catch the attack in your portal and reroute it to miss you. Or you can hit your attacker back, if your attacker is within the spell’s range. Your attacker takes the attack’s base damage without excess. If you tie or lose the roll, then the attack is carried out as normal. You can use this spell once per attack."
+                },
+                {
+                    "rank": 3,
+                    "level": 9,
+                    "mp": 12,
+                    "range": "0-3 (Sight)",
+                    "duration": "1 Round",
+                    "effect": "The window now lasts until the start of your next turn and anyone else can also use the portal."
+                }
+            ]
+        },
+        {
+            "name": "Astral Leap",
+            "attunement": "Astral",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Teleport your friends and yourself a short distance away. Great for getting out of trouble.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": 1,
+                    "mp": 6,
+                    "range": "0-2 (Sight)",
+                    "duration": "-",
+                    "effect": "You teleport up to 2 zones (20m) away to a location you can see. (Teleportation neither provokes Opportunity Strikes nor counts towards Maximum Movement Range.)"
+                },
+                {
+                    "rank": 2,
+                    "level": 5,
+                    "mp": 12,
+                    "range": "0-3 (Sight)",
+                    "duration": "-",
+                    "effect": "Your teleportation distance is increased to 3 zones (30m) and you have the option to bring another willing target in the same zone you currently occupy to the new location."
+                },
+                {
+                    "rank": 3,
+                    "level": 9,
+                    "mp": 24,
+                    "range": "0-5 (Sight)",
+                    "duration": "-",
+                    "effect": "Your teleportation distance is increased to 5 zones (50m) and you have the option to bring all your chosen willing targets in the zone you currently occupy to the new location."
+                }
+            ]
+        },
+        {
+            "name": "Vacuum",
+            "attunement": "Astral",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create vacuum spheres that rip at your enemies internally if they move.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": 1,
+                    "mp": 5,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose any number of targets in the spell’s range to be affected by a constricting vacuum sphere. Whenever those targets move one zone towards any direction, you can deal 5 HP Astral Spell damage to it with your Free Action. (Arcane Boost) If you are also attuned with the metal element, then you can double the cost of this spell to make creatures affected by the vacuum make their Ranged Attack Rolls with Setback."
+                },
+                {
+                    "rank": 2,
+                    "level": 5,
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "As Rank 1, but you now deal 10 damage."
+                },
+                {
+                    "rank": 3,
+                    "level": 9,
+                    "mp": 15,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "As Rank 1, but you now deal 15 damage."
+                }
+            ]
+        },
+        {
+            "name": "Astral Mind",
+            "attunement": "Astral",
+            "glyph": "No",
+            "requirement": "M.Wpn",
+            "action": "minor",
+            "description": "Grant yourself or your allies limited psychic abilities.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": 1,
+                    "mp": 0,
+                    "range": "0-3 (Sight)",
+                    "duration": "Continuous",
+                    "effect": "You can telepathically communicate with a sentient creature you can see within range, regardless of language barriers."
+                },
+                {
+                    "rank": 1,
+                    "level": 1,
+                    "mp": 4,
+                    "range": "Self and 0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Give yourself temporary psychokinetic power. Using your minor action, you can move objects weighing up to 5kg within the spell’s range limit. You can move the object by 10m (1 zone) with each minor action."
+                },
+                {
+                    "rank": 2,
+                    "level": 5,
+                    "mp": 8,
+                    "range": "Self",
+                    "duration": "5 min (Focus)",
+                    "effect": "Using this spell grants you, including the items you carry and wear, invisibility. While invisible, you can’t be targeted by Opportunity Strikes. Attacking a target or casting a spell will end this spell."
+                },
+                {
+                    "rank": 3,
+                    "level": 9,
+                    "mp": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Grant a target within this spell’s range astral sight. Astral sight grants the ability to see through material objects up to 30m (3 zones) away and reveal any invisible creatures or spirits."
+                }
+            ]
+        },
+        {
+            "name": "Portal",
+            "attunement": "Astral",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "Major",
+            "description": "Use a portal to teleport a long distance away or use it to blast pressurized deep sea water or magma at your enemies.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": 1,
+                    "mp": 0,
+                    "range": "0-3",
+                    "duration": "1 min (Focus)",
+                    "effect": "After casting this spell for a full minute, you can home in on portal stations in a cloudbreaker guild you have personally visited before and open an astral gate that leads there. The gate disappears after 12 seconds (1 round). (Arcane Boost) If you are also attuned to the wood element, then you can open a portal to the last tree you have resonated with within 10km range. To resonate with a tree, it needs to be taller than 2m and you need to cast vegetation on it for 1 full minute."
+                },
+                {
+                    "rank": 1,
+                    "level": 1,
+                    "mp": 5,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Contact the portal delivery service to do one of the following: Purchase one piece of item or equipment (Chapter 9). Take one of your stored items from a Cloudbreaker Guild. You have no access to your party members’ stored items unless they grant it to you while casting. You have to pay a portal delivery fee of 100 Cred."
+                },
+                {
+                    "rank": 2,
+                    "level": 5,
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Zone Physical Effect Spell, size: 5m sphere (target zone). You create an unstable portal into the depth of the Eastern ocean and blast heavily pressured water at a zone. Choose a zone in the spell’s range and make a Physical Spell Effect Roll against all your chosen targets occupying the zone. You can then choose to (A) knock all Afflicted targets Prone or (B) push them up to 20m (2 zones) away, in a direction of your choice. Pushed targets do not provoke Opportunity Strikes. The spell’s damage is the result of the roll + 4, reduced by each target’s Physical Fortitude, the damage dealt is HP Blunt Environment damage."
+                },
+                {
+                    "rank": 3,
+                    "level": 9,
+                    "mp": 20,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 2) but this time you create a portal to the volcanoes of the mountainous Northern Ranges, and blast the heavily pressured magma. The spell’s damage is the result of the roll + 12, reduced by each target’s Physical Fortitude, the damage dealt is HP Fire Environment damage. The portal also leaves a messy pool of magma in the zone. For the next 5 minutes, any target ending its turn in the magma filled zone that’s not flying or hovering will take 10 HP Fire Environment damage."
+                }
+            ]
+        }
+    ],
+    "fire_water": [
+        {
+            "name": "Fog",
+            "attunement": "Fire & Water",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create a sphere of thick suffocating fog that obscures vision and irritates the throats of spellcasters. Great for escapes!",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 6,
+                    "range": "0-3 (Zone)",
+                    "duration": "5 min (Focus)",
+                    "effect": "Zone Spell, size: 5m sphere (target zone). Choose a zone in the spell’s range and create a fog sphere that suffocates and obscures vision. Creatures inside the fog can’t fulfill their verbal spellcasting requirements and can’t see anything through the zone. Attack Rolls made by creatures in the sphere and attacks directed into the fog sphere are made with Setback unless the creatures have astral sight, or other abilities to perceive without sight. Strong winds, natural or those created by Ventomacy can blow this fog away."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 12,
+                    "range": "0-3 (Zone +1)",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s sphere radius is increased to 10m (expanded 1 zone away from the target zone)."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 18,
+                    "range": "0-3 (Zone +2)",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell’s sphere radius is increased to 20m (expanded 2 zones away from the target zone)."
+                }
+            ]
+        }
+    ],
+    "fire_wood": [
+        {
+            "name": "Burning Crown",
+            "attunement": "Fire & Wood",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create a burning crown of thorns over your enemy and exacerbate the damage they receive.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 4,
+                    "range": "0-3",
+                    "duration": "1 Round",
+                    "effect": "Choose a target you can see in the spell’s range and create a burning crown of thorns over it. When the target receives an instance of damage, dealt by yourself or others, you can use your Free Action to make your burning crown deal 2 HP Fire or Wood Spell damage to the target. This effect lasts until the start of your next turn. A target cannot be affected by more than one Burning Crown spell."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 8,
+                    "range": "0-3",
+                    "duration": "1 Round",
+                    "effect": "See above (Rank 1). But the spell now deals 3 damage."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 12,
+                    "range": "0-3",
+                    "duration": "1 Round",
+                    "effect": "See above (Rank 1). But the spell now deals 4 damage."
+                }
+            ]
+        }
+    ],
+    "fire_wind": [
+        {
+            "name": "Fire Blast",
+            "attunement": "Fire & Wind",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "A classic zone damage spell that reliably devastates a group of enemies with an explosion of Fire and Wind.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 8,
+                    "range": "0-3 (Zone)",
+                    "duration": "-",
+                    "effect": "Zone Physical Effect Spell, size: 5m sphere (target zone). Choose a zone in the spell’s range and make a Physical Spell Effect Roll against all targets occupying the zone. The spell’s damage is the result of the roll +8 Damage Bonus, reduced by each target’s Physical Fortitude. The damage is HP Fire Spell damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 16,
+                    "range": "0-3 (Zone)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the Spell Damage Bonus is now +16."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 20,
+                    "range": "0-3 (Zone +1)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell’s sphere radius is increased to 10m (expanded 1 zone away from the target zone). The Spell Damage Bonus is now +20."
+                }
+            ]
+        }
+    ],
+    "fire_earth": [
+        {
+            "name": "Meteor",
+            "attunement": "Fire & Earth",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Conjures a high velocity meteor that knocks enemies off their feet. At Rank 3, this spell creates a meteor shower.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 8,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Make a Middle Ranged, Major Attack Roll, at a target in range. This spell’s damage is 12 HP Earth Spell damage. If you hit a Medium (M) or smaller sized target, you can push it 10m (1 zone) toward your chosen direction. Pushed targets do not provoke Opportunity Strikes."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 16,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Make a Middle Ranged, Major Attack Roll, at a target in range. This spell’s damage is 20 HP Earth Spell damage. If you hit a Large (L) or smaller sized target, you can push it 10m (1 zone) towards your chosen direction. Pushed targets do not provoke Opportunity Strikes."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 24,
+                    "range": "0-3 (Zone)",
+                    "duration": "-",
+                    "effect": "This spell becomes a Zone Physical Effect Spell, size: 5m sphere (target zone). Choose a zone in the spell’s range and make a Physical Effect Roll against all the targets occupying the zone. All Large (L) or smaller sized targets Afflicted by this effect are pushed 20m (2 zones) away toward your chosen direction. The spell’s damage is the result of the roll + 24, reduced by each target’s Physical Fortitude. The damage is HP Earth Spell damage. Pushed targets do not provoke Opportunity Strikes."
+                }
+            ]
+        }
+    ],
+    "fire_metal": [
+        {
+            "name": "Burn Metal",
+            "attunement": "Fire & Metal",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Radiate intense heat from a metallic object and burn the creature in contact with it.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 4,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Target a metallic weapon or other metallic objects larger than the size of a fist that’s being held or worn by a creature. The holder or wearer receives 2d6 Fire Spell damage at the end of your turn while the spell is active. The creature can choose to instantly discard the affected weapon or object outside of its turn with its Free Action to avoid taking the damage. You can choose to have the metallic object be unaffected by the fire damage and only burn the holder. When a machinarms weapon is affected by this spell, the cinderblast trigger can’t be activated."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 8,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell now deals 2d6 + 4 damage."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the spell now deals 2d6 + 8 damage."
+                }
+            ]
+        }
+    ],
+    "water_wood": [
+        {
+            "name": "Cleanse",
+            "attunement": "Water & Wood",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "This spell cures poison and dispels most other spell effects except for deep curses.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 3,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "This spell cures a target from poison and Sick condition, dispels spell effects, and suppresses the effects of a disease for 1 hour. It cannot lift deep curses and can only suppress the persistent effects of magical items or contraptions for 1 minute."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 6,
+                    "range": "0-3 (Zone)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). You can now choose as many targets as you want in a single zone."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 12,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "The target you choose becomes immune to all spell and magical effects besides this one. This spell also cures and dispels all negative effects mentioned above."
+                }
+            ]
+        },
+        {
+            "name": "Healing Wind",
+            "attunement": "Wood & Wind",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create a swirl of healing wind that mends the wounds of all chosen targets in range.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Choose any number of targets in the spell’s range and recover their HP by 2d6."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 15,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Choose any number of targets in the spell’s range and recover their HP by 2d6 + 4."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 20,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Choose any number of targets in the spell’s range and recover their HP by 2d6 + 8."
+                }
+            ]
+        }
+    ],
+    "water_wind": [
+        {
+            "name": "Fly",
+            "attunement": "Water & Wind",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "This spell allows you to hover above ground and fly freely at higher ranks.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 4,
+                    "range": "0-1",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose a willing Large (L) sized unit or smaller. The unit can now hover up to 1m above ground or water and fly as fast as it can normally move. The unit doesn’t take fall damage while this spell is in effect."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 8,
+                    "range": "0-1",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose a willing unit. The unit can now fly and its movement becomes 30m/60m (3/6 zones) per turn. It may use its original movement range if it’s faster."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 16,
+                    "range": "0-1",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 2). You can now choose as many willing units in your spell’s range as you want."
+                }
+            ]
+        }
+    ],
+    "water_metal": [
+        {
+            "name": "Effect Dampener",
+            "attunement": "Water & Metal",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create a shimmering bubble around your enemy and reduce the potency of their Effect Rolls.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 4,
+                    "range": "0-3 (Sight)",
+                    "duration": "Instant",
+                    "effect": "When a target you can see makes an Effect Roll, you can instantly dampen the effect with this spell. Make a Spell Effect Roll against the target’s roll and reduce their result by yours. This reduced result becomes the target’s new Effect Roll result. If you reduce your opponent’s Effect Roll to 0 or below, their effect fizzles and disappears."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 8,
+                    "range": "0-3",
+                    "duration": "Instant",
+                    "effect": "See above (Rank 1). Additionally, reduce any HP or MP damage dealt by that spell by 5 points."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 16,
+                    "range": "0-3",
+                    "duration": "Instant",
+                    "effect": "See above (Rank 1). Additionally, reduce any HP or MP damage dealt by that spell by 10 points."
+                }
+            ]
+        },
+        {
+            "name": "Golem",
+            "attunement": "Water & Earth",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create a powerful mud golem that obeys all your commands.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 8,
+                    "range": "0-1",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create a Medium (M) sized golem within the spell’s range. The golem has 15 HP, 8 DEF, and 8 P.Fort. It doesn’t have any M.Fort or MP and it’s immune to MP damage. It uses your spellcasting Combat Roll Bonus to attack and deal 6 Blunt Unarmed Combat damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 16,
+                    "range": "0-1",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). The golem now has 25 HP, 9 DEF, 9 P.Fort, deals 8 Blunt Unarmed Combat damage, has 4 Strength and can carry up to 500kg."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 24,
+                    "range": "0-1",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). The golem now has 35 HP, 10 DEF, 10 P.Fort, deals 10 Blunt Unarmed Combat damage, has 5 Strength and can carry up to 1000kg, or one tonne."
+                }
+            ]
+        }
+    ],
+    "wood_wind": [
+        {
+            "name": "Barbed Chain",
+            "attunement": "Wood & Metal",
+            "glyph": "No",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create an arcane anchor in a zone and pull creatures towards it with barbed chains. Resisting creatures will be damaged.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 5,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Anchor: Place an arcane anchor in a zone within the spell’s range.\nBarbed Chain: Choose a target on a unit or a Medium (M) sized object within the spell’s range. Using your Major action, you can pull the object or unit 1 zone closer to the anchor. If it refuses, it takes 5 Metal Spell damage. (Objects can’t refuse.) Also, each time the unit moves into a zone further from the anchor, you can use your Free Action to deal the target 5 Metal Spell damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1), but the damage is increased to 10 and you can move Large (L) sized objects."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 15,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1), but the damage is increased to 15 and you can move Xtra Large (XL) sized objects."
+                }
+            ]
+        }
+    ],
+    "wood_earth": [
+        {
+            "name": "Burrow",
+            "attunement": "Wood & Earth",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create an air pocket around yourself and magically burrow into wood and soil. Burrowing can reduce Epic Trap damage by 10 HP.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 4,
+                    "range": "Self",
+                    "duration": "5 min (Focus)",
+                    "effect": "You create an air pocket around yourself and instantly burrow 30cm underground into the soil. While burrowed, you can’t be targeted by attacks and effects from the surface. You can breathe, but you are unable to move while you are focusing on this spell. You can’t burrow into other materials beside earth and stone. When this spell ends, you are pushed out to the nearest surface. This spell ends early if a unit in the same zone as you uses its minor action to dig."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 8,
+                    "range": "Self",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can now move up to 100m (10 zones). The spell also ends early after you have moved a total of 100m."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 16,
+                    "range": "Self",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 2). But when you cast the spell, you can choose to bring as many willing creatures within the same zone as you into your air pocket."
+                }
+            ]
+        }
+    ],
+    "wind_earth": [
+        {
+            "name": "Stone Bodies",
+            "attunement": "Wind & Earth",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Create a defensive layer of floating stone barriers around multiple targets you want to protect.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Choose any number of targets in the spell’s range and they gain 1 Barrier Token each. Barrier lasts for 1 hour from last gain."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 15,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But increased to 2 Barrier Tokens."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 20,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But increased to 3 Barrier Tokens."
+                }
+            ]
+        }
+    ],
+    "wind_metal": [
+        {
+            "name": "Dagger Cloud",
+            "attunement": "Wind & Metal",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Control a swarm of finger-sized daggers to attack your enemies.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create a cloud of daggers that occupies a zone. On your turn, you can use your minor action to move the dagger cloud by 10m (1 zone). At the end of your turn, you can choose to deal 5 HP Metal Spell damage to any number of targets or objects that have been in the same zone as the dagger cloud. You can also deal 5 HP Metal Spell damage as a Free Action whenever: (A) A target moves into the zone occupied by the daggers. (B) A target ends its turn in the zone occupied by the daggers."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 15,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1), but the damage is increased to 10."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 20,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1), but the damage is increased to 15."
+                }
+            ]
+        }
+    ],
+    "water_wind_metal": [
+        {
+            "name": "Chain Lightning",
+            "attunement": "Water, Wind, & Metal",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Launch a series of lightning bolts that emit electro-resonance if multiple enemies are hit.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 7,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Make a Middle Ranged, Major Attack Roll, at a target in range. This spell deals 12 HP Lightning Spell damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 14,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But you can now make one additional Follow-Up Attack with your Free Action that also deals 12 HP Lightning Spell damage (No excess). If the spell hits more than 1 different target, then each of those hit targets takes another instance of 6 HP Lightning Spell damage."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 21,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But you can now make two additional Follow-Up Attacks with your Free Action. If the spell hits more than 1 different target, then each of those hit targets takes another instance of 6 HP Lightning Spell damage."
+                }
+            ]
+        },
+        {
+            "name": "Energize",
+            "attunement": "Water, Wind, & Metal",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Energize devices or provide your allies with additional minor actions.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "LEVEL 1+",
+                    "mp": 0,
+                    "range": "0 (Touch)",
+                    "duration": "Continuous",
+                    "effect": "When you touch a device that requires energy to run, you can provide the energy to power it. This requires continuous focus and it doesn’t refill the device’s battery."
+                },
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose a willing target in range. The target will gain an additional minor action at the start of its turn while this spell is in effect."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 15,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can target up to 3 creatures at once."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 15,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose a willing target in range. The target will gain an additional minor action at the start of its turn while this spell is in effect. It will also receive a +1 bonus to its Combat Roll, Defense, Physical Fortitude, and Mental Fortitude."
+                }
+            ]
+        }
+    ],
+    "earth_metal": [
+        {
+            "name": "Sword & Shield",
+            "attunement": "Earth & Metal",
+            "glyph": "No",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "minor",
+            "description": "Transmute your spellcasting tools into magical weapons.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 4,
+                    "range": "0",
+                    "duration": "5 min (Focus)",
+                    "effect": "Turn the Mastered Weapon you’re casting this spell with into a single-handed sword. You can also create a shield in your other hand, which grants you +1 Defense (Defensive Armament), or turn the object in your other hand into a shield. These weapons can’t be machinarms. You have Mastery in this created weaponry and you can choose that they deal wood or metal damage when you create them. The weapon retains your Mastered Weapon’s Combat Roll Bonus and deals 6 HP Wood/Metal Spell Damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 8,
+                    "range": "0",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the weapon now deals 8 HP Wood/Metal Spell Damage."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 12,
+                    "range": "0",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But the weapon now deals 10 HP Wood/Metal Spell Damage."
+                }
+            ]
+        }
+    ],
+    "order_chaos": [
+        {
+            "name": "Transmute",
+            "attunement": "Order & Chaos",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "This spell allows you to transform your target into different creatures or objects.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 4,
+                    "range": "0 (Touch)",
+                    "duration": "1 hour (Focus)",
+                    "effect": "You can transform yourself or a willing creature you touch into the form of a random or specific person (sapienoid). To transform into a specific person, you must have touched the person you want to transform into in the last 24 hours and think of that person during the transformation process. The transformation is flawless and feels real to the touch, but the creature’s clothing remains the same."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 8,
+                    "range": "0 (Touch)",
+                    "duration": "1 hour (Focus)",
+                    "effect": "You can turn yourself or a willing allied target you touch into a range of forms from any Large (L) sized creature, such as a bear to Very Small (VS) ones, such as a carp. When a creature is transformed, all its clothing and belongings are melded into the new naked form. The temporary magical form has:\n- 1 HP and 8 Defense.\n- 20m / 40m max (2zone/4zone) movement distance.\n- Same Awareness & Empathy Attributes as you, but:\n  - STR 4, AGI 0, if Large (L) sized.\n  - STR 3, AGI 2, if Medium (M) sized.\n  - STR 1, AGI 2, if Small (S) sized.\n  - STR -1, AGI 4, if Very Small (VS) sized.\n- It can move as quickly in its natural medium of movement, such as fish in water and birds in the sky.\n- The transformation can draw suspicion when a creature rolls a 10 on its Psychology Roll.\nIf the animal form receives enough damage to reduce its HP to 0, it will revert back to its original form, and the surplus Damage is dealt to the original form."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 16,
+                    "range": "0 (Touch)",
+                    "duration": "1 hour (Focus)",
+                    "effect": "You can touch a willing target (or yourself) and turn the unit into an object it is currently imagining and had touched in the last 24 hours. The object can be of Medium (M) size or smaller up the size of a pea. The transformation is flawless and feels real to the touch. You can also replicate the technological functions of an object, such as the magnetic codes of keycards. But you can’t replicate the effects and abilities of Special Items. This spell loses effect when the transformed target receives any damage or dismisses it using its Free Action."
+                }
+            ]
+        }
+    ],
+    "fire_wood_earth": [
+        {
+            "name": "Befoul",
+            "attunement": "Fire, Wood, & Earth",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "Major",
+            "description": "Create a toxic vapor to choke and reduce the HP & MP of affected creatures.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 10,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Choose a target within range. A magical cloud of foul vapor follows the target and seeps into its respiratory system. Targets inside the vapor can’t fulfill the verbal spellcasting components. The target takes 2d6 HP & MP Toxic Spell damage at end of your turn."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 15,
+                    "range": "0-3 (Zone)",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create foul vapor in a chosen zone in the spell’s range. The vapor indiscriminately affects all targets in it. Targets inside the zone take 2d6 + 4 HP & MP Toxic Spell damage at end of your turn and can’t fulfill their verbal spellcasting components."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 20,
+                    "range": "0-3 (Zone +1)",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 2). But the spell’s sphere radius is increased by 10m (expanded 1 zone away from the target zone). Targets inside the zone take 2d6 + 8 HP & MP Toxic Spell damage at the end of your turn."
+                }
+            ]
+        },
+        {
+            "name": "Intoxicate",
+            "attunement": "Fire, Wood, & Earth",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "minor",
+            "description": "Use toxic vapor to Intoxicate creatures & order them to do your bidding.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 6,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Single-Target Mental Effect Spell. Choose a target in the spell’s range and make a Mental Spell Effect Roll against it. A target Afflicted by this effect becomes intoxicated and attacks made on this intoxicated target are made with Edge and the intoxicated target can’t make Opportunity Strikes unless you allow it to."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 12,
+                    "range": "0-3 (Zone)",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 1). But you can now order the intoxicated creature to follow these orders with your minor action once on your turn: Move 1 zone, Lie Prone."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 18,
+                    "range": "0-3 (Zone +1)",
+                    "duration": "5 min (Focus)",
+                    "effect": "See above (Rank 2). But you can now order the intoxicated creature to follow these orders with your Major Action once on your turn: Attack a target of your choice, besides itself."
+                }
+            ]
+        }
+    ],
+    "fire_water_wood_wind_earth_metal": [
+        {
+            "name": "Blizzard",
+            "attunement": "All 6 Basic Arcane Elements",
+            "glyph": "Yes",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Create a violent sphere of localized blizzard. This is the most powerful Arcane zone damage spell.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 12,
+                    "range": "0-5 (Zone)",
+                    "duration": "-",
+                    "effect": "Zone Physical Effect Spell, size: 5m sphere (target zone). Choose a zone in the spell’s range and make a Physical Spell Effect Roll against all targets in the zone. The spell’s damage is the result of the roll + 12 Damage Bonus, reduced by each target’s Physical Fortitudes. The damage is HP Ice Spell Damage."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 22,
+                    "range": "0-5 (Zone +1)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell’s sphere radius is increased to 10m (expanded 1 zone away from the target zone) and the Spell Damage Bonus is now +22."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 30,
+                    "range": "0-5 (Zone +2)",
+                    "duration": "-",
+                    "effect": "See above (Rank 1). But the spell’s sphere radius is increased to 20m (expanded 2 zones away from the target zone) and the Spell Damage Bonus is now +30."
+                }
+            ]
+        },
+        {
+            "name": "Form Ice",
+            "attunement": "All 6 Basic Arcane Elements",
+            "glyph": "No",
+            "requirement": "Verb, M.Wpn",
+            "action": "Major",
+            "description": "Conjure and shape ice structures to your will. These magical constructs can be used as shelter to reduce Epic Trap HP damage.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "LEVEL 1+",
+                    "mp": 0,
+                    "range": "0 (Touch)",
+                    "duration": "15 minutes",
+                    "effect": "You can build an ice hut that can house up to 10 people. It will start melting after 12 hours. It has 45 HP, 10 DEF, and 10 P.Fort. The hut absorbs all incoming HP damage to the occupants from outside using its HP. Surplus damage will be dealt to the occupants if the hut’s HP is reduced to 0. This hut can also absorb damage from traps and Epic Traps. (45 at full HP)"
+                },
+                {
+                    "rank": 1,
+                    "level": "LEVEL 1+",
+                    "mp": 8,
+                    "range": "0-1",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create a stationary floating circular ice platform up to 10m wide (1 zone). You can orient the platform in any direction you prefer. It can bear up to 1,000kg of load. It has the same Defense & Fortitude as you and 20 HP. The object will melt when you drop focus."
+                },
+                {
+                    "rank": 2,
+                    "level": "LEVEL 5+",
+                    "mp": 16,
+                    "range": "0 (Touch)",
+                    "duration": "5 min (Focus)",
+                    "effect": "Create a perfect duplicate of any Large (L) or smaller sized objects you have seen or imagined with ice. This spell cannot replicate the magical properties of the original object or the technological function, such as a key card, but a physical key can work. The object will melt when you drop focus."
+                },
+                {
+                    "rank": 3,
+                    "level": "LEVEL 9+",
+                    "mp": 32,
+                    "range": "0-1",
+                    "duration": "Instant",
+                    "effect": "Build the ice hut from Rank 0 in an instant around you, or in a zone within the spell’s range. You can use this spell as your last resort to mitigate the damage of an Epic Trap. It reduces Epic Trap damage by 45 HP at full."
+                }
+            ]
+        }
+    ],
+    "chaos_astral": [
+        {
+            "name": "Summon",
+            "attunement": "Chaos & Astral",
+            "glyph": "No",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "Call upon the various elemental forces to assist you and attack your enemies.",
+            "ranks": [
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 9,
+                    "range": "0-3",
+                    "duration": "5 min (Focus)",
+                    "effect": "Summon an elemental spirit to occupy yourself or a willing unit. The unit gains +1 bonuses to its Combat Roll, Defense, both Fortitudes. It also gains resistance to a chosen element you’re attuned to."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 18,
+                    "range": "0-3 (Zone)",
+                    "duration": "-",
+                    "effect": "Zone Physical/Mental Effect Spell, size: 5m sphere (target zone). You order an elemental guardian of one of your attuned elements to attack your enemies. Choose a zone in the spell’s range and make a Physical or Mental Spell Effect Roll against all your chosen targets occupying the zone. If you choose Physical Spell Effect Roll, you deal HP damage. If you choose Mental Spell Effect Roll, you deal MP damage. Add +18 to the result of the roll and reduce it with the target’s relevant Fortitude. You can choose the Spell damage Type to be any element you’re attuned to."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 24,
+                    "range": "0-3 (Zone)",
+                    "duration": "-",
+                    "effect": "See above (Rank 2). But the Spell Damage Bonus is now +24. You beseech an eldritch warden of one of your attuned elements to attack your enemies."
+                }
+            ]
+        },
+        {
+            "name": "Displace",
+            "attunement": "Chaos & Astral",
+            "glyph": "No",
+            "requirement": "Mov, Verb, S.Catalyst",
+            "action": "minor",
+            "description": "Teleport a unit in the spell’s range into another zone within the spell’s range.",
+            "ranks": [
+                {
+                    "rank": 4,
+                    "spirit_tokens": 3,
+                    "mp": 0,
+                    "range": "0-3 (Sight)",
+                    "duration": "Instant (1 Turn)",
+                    "effect": "Single-Target Mental Effect Spell. Choose a Large (L) sized unit or smaller you can see in the spell’s range and make a Mental Spell Effect Roll against it. The unit Afflicted by this effect is teleported to your chosen zone within the spell’s range. The unit may choose to let itself be Afflicted by this spell."
+                }
+            ]
+        }
+    ],
+    "order_astral_high": [
+        {
+            "name": "Revival",
+            "attunement": "Order, Chaos & Astral",
+            "glyph": "No",
+            "requirement": "Mov, Verb, M.Wpn",
+            "action": "Major",
+            "description": "This spell brings your allies back to consciousness and can even revive the dead.",
+            "ranks": [
+                {
+                    "rank": 0,
+                    "level": "1+",
+                    "mp": 0,
+                    "range": "0 (Touch)",
+                    "duration": "5 min (Focus)",
+                    "effect": "When you touch a target and cast this spell for five minutes, it will put its HP & MP to 1 if any of them are below 1."
+                },
+                {
+                    "rank": 1,
+                    "level": "1+",
+                    "mp": 9,
+                    "range": "0 (Touch)",
+                    "duration": "-",
+                    "effect": "When you touch a target and cast this spell, it will recover 1 HP, 1 MP, and 1 Resolve."
+                },
+                {
+                    "rank": 2,
+                    "level": "5+",
+                    "mp": 27,
+                    "range": "0 (Touch)",
+                    "duration": "-",
+                    "effect": "When you touch a target and cast this spell, it will instantly recover 10 HP, 10 MP, and 10 Resolve."
+                },
+                {
+                    "rank": 3,
+                    "level": "9+",
+                    "mp": 81,
+                    "range": "0 (Touch)",
+                    "duration": "1 hour (Focus)",
+                    "effect": "When you touch a creature that did not die of old age or natural causes and cast this spell for a full hour, you can potentially bring it back to life. The creature must not have died for longer than 30 days and should have enough body parts to live when brought back to life. Revival has a risk of failure. To bring a creature back from death, you need to roll 2d6, against the creature’s Destiny’s End Points and match or beat the number. Successful revival will increase the creature’s Destiny’s End Points by 4. Failure to revive the creature will sever its souls and spirits from its body forever and it can no longer be revived. See the Revival And Destiny’s End section of this chapter for more details."
+                }
+            ]
+        }
+    ],
+    "fire_lightning_high": [
+        {
+            "name": "Skyfire Redwood Uppercut",
+            "attunement": "Fire & Lightning",
+            "glyph": "No",
+            "requirement": "Mov, Verb, S.Catalyst",
+            "action": "Major",
+            "description": "Discharge burning red lightning at a target and maintain the burn with your minor actions.",
+            "ranks": [
+                {
+                    "rank": 4,
+                    "spirit_tokens": 3,
+                    "mp": 0,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Make a Middle Ranged, Major Attack Roll for 20 HP Fire Spell damage. You can follow up with a Major Attack Roll. Your opponent must now have the status effect of being Blinded for 1 rounds or more. To avoid this status effect, an opponent must roll 15+ on an Escape Roll."
+                }
+            ]
+        }
+    ],
+    "wood_earth_lightning_high": [
+        {
+            "name": "Redwood Uppercut",
+            "attunement": "Wood, Earth, & Lightning",
+            "glyph": "No",
+            "requirement": "Mov, Verb, S.Catalyst",
+            "action": "Major",
+            "description": "Grow a redwood tree rapidly and punch a target into the sky.",
+            "ranks": [
+                {
+                    "rank": 4,
+                    "spirit_tokens": 3,
+                    "mp": 0,
+                    "range": "0-3",
+                    "duration": "-",
+                    "effect": "Make a Middle Ranged, Major Attack Roll for 30 HP Wood Spell damage. Launch the target into the air."
+                }
+            ]
+        }
+    ],
+    "chaos_astral_high": [
+        {
+            "name": "Unstoppable Arm",
+            "attunement": "Chaos & Astral",
+            "glyph": "No",
+            "requirement": "Mov, Verb, S.Catalyst",
+            "action": "minor",
+            "description": "Enchant a weapon with potent cosmic energy, enhancing its attack power significantly.",
+            "ranks": [
+                {
+                    "rank": 4,
+                    "spirit_tokens": 5,
+                    "mp": 0,
+                    "range": "0-3",
+                    "duration": "Instant (1 Turn)",
+                    "effect": "Enchant a weapon with a +5 Combat Roll Bonus, +10 Damage Bonus, and additional Astral Spell effects until the end of your turn. This attack will ignore any immunities, reductions, or defences."
+                }
+            ]
+        }
+    ]
+}
