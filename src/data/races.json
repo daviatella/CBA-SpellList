@@ -213,12 +213,12 @@
                 "name": "Fearless",
                 "description": "Intimidation Skill Rolls made against you automatically fail and you are immune to being Frightened and fear related effects."
             },
-            "minor_trait": [
+            "minor_trait": 
                 {
                     "name": "Play Dead",
                     "description": "You can pretend to be dead at will. While doing so, all of your life signs are imperceptible by normal means. Your ruse can only be uncovered by features and magic."
                 }
-            ],
+            ,
             "extra_trait": {
                 "name": "Small",
                 "description": "Your size is Small. Smaller sized units make Cheap Shot Maneuver Rolls with Edge against larger units. But larger units make Scuffle Maneuver Rolls with Edge against smaller units."
@@ -232,12 +232,12 @@
                 "name": "Fearless",
                 "description": "Intimidation Skill Rolls made against you automatically fail and you are immune to being Frightened and fear related effects."
             },
-            "minor_trait": [
+            "minor_trait": 
                 {
                     "name": "Mechanical Affinity",
                     "description": "While remaining still and not making any noise, you can hear the faintest clicks & whirrs of any machinery and construct that’s currently active within 30m. You know their exact number and locations."
                 }
-            ],
+            ,
             "extra_trait": {
                 "name": "Small",
                 "description": "Your size is Small. Smaller sized units make Cheap Shot Maneuver Rolls with Edge against larger units. But larger units make Scuffle Maneuver Rolls with Edge against smaller units."
@@ -251,12 +251,12 @@
                 "name": "Static Sense",
                 "description": "Your hair is sensitive to the slightest movement of air and static electricity. You can use your minor action to detect the presence of creatures around you and the size of the largest one. This trait works on invisible creatures but not on incorporeal creatures."
             },
-            "minor_trait": [
+            "minor_trait": 
                 {
                     "name": "Sturdy",
                     "description": "You can make Endurance Skill Rolls with Edge when your body is exposed to sunlight."
                 }
-            ],
+            ,
             "description": "Trolls in Ulruk are valued for their sensitivity to environmental changes, making them excellent scouts. They have stone-like patches on their skin and hair that reacts to static and air movements."
         },
         {
@@ -266,12 +266,12 @@
                 "name": "Specialist",
                 "description": "You get an additional Toolkit Mastery during character creation."
             },
-            "minor_trait": [
+            "minor_trait": 
                 {
                     "name": "Traveler",
                     "description": "You can carry 1 additional Item Slot’s worth of items."
                 }
-            ],
+            ,
             "description": "Humans emerged mysteriously after the collapse of the cloud wall during Cloudbreak. They quickly adapted to become versatile traders and laborers across the four regions, remaining politically neutral."
         },
         {

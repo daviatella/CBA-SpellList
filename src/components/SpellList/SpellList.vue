@@ -150,42 +150,16 @@ export default {
 
                     let names = mult.split('_');
                     let show = true;
-                    let totalEls = []
 
                     for (let n of names) {
                         if (!this.checkboxElements.includes(n) && n != "high") {
                             if(!(this.checkboxElements.join("_").includes(lightning)&&n=="lightning")&&
-                            !(this.checkboxElements.join("_").includes(toxic)&&n=="toxic")
-                        )
+                            !(this.checkboxElements.join("_").includes(toxic)&&n=="toxic"))
                             show = false
                         } else if(n=='high'){
                             this.spells[el].map(sp=>sp.high=true)
                         }
                     }
-                    // if (this.checkboxElements.includes('lightning')) {
-                    //     show = true
-                    //     totalEls = lightning.split("_")
-                    //     totalEls.push(...names)
-                    //     for (let i of totalEls) {
-                           
-                    //         if (!this.checkboxElements.includes(i)&&!lightning.includes(i)&&i!="high") {
-                                
-                    //             show = false
-                    //         }
-                    //     }
-                    // }  
-                    // if (this.checkboxElements.includes('toxic')) {
-                    //     show = true
-                    //     totalEls = toxic.split("_")
-                    //     totalEls.push(...names)
-                    //     for (let i of totalEls) {
-                           
-                    //         if (!this.checkboxElements.includes(i)&&!toxic.includes(i)&&i!="high") {
-                                
-                    //             show = false
-                    //         }
-                    //     }
-                    // }
 
                     if (show == true) {
                         this.spellsToLoad.push(...this.spells[el]);

@@ -1,7 +1,7 @@
 <template>
     <v-container class="body">
-      <v-stepper editable :model-value="2">
-        <v-stepper-header class="stepheader">
+      <v-stepper editable :model-value="selected" style="background-color:  #2F2D3E;">
+        <v-stepper-header class="stepheader rounded-lg" style="background-color: whitesmoke;">
           <v-stepper-item  edit-icon="" class="step" title="Lifeform" value="1"></v-stepper-item>
           <v-divider color="black" :thickness="5"></v-divider>
           <v-stepper-item edit-icon="" class="step" title="Quirks" value="2"></v-stepper-item>
@@ -14,12 +14,20 @@
           <v-divider color="black" :thickness="5"></v-divider>
           <v-stepper-item edit-icon="" class="step" title="Finish" value="6"></v-stepper-item>
         </v-stepper-header>
-        <v-card color="#ffe4c4" class="charform">
+        
+        <div class="m-auto d-flex">
+          <v-btn class="mt-5 ml-12" @click="selected--" :disabled="selected==0">Previous</v-btn>
+          <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
+          <v-btn class="mt-5 mr-12" @click="selected++" :disabled="selected==5">Next</v-btn>
+        </div>
+
+        <div  style="background-color: #2F2D3E; width: 100%; height: 1em;"></div>
+
+        <v-card color="#ffe4c4" class="charform rounded-lg">
           <v-stepper-window>
-            <v-stepper-window-item value="1">
-              <div v-for="(race, index) in lifeforms" :key="index">
-                <Lifeforms :race="race" @toggle-selection="toggleLifeSelection(index)" />
-              </div>
+            <v-stepper-window-item value="1">             
+                <Lifeforms @toggle-selection="toggleLifeSelection(index)"/>
             </v-stepper-window-item>
             <v-stepper-window-item value="2">
                 <Quirks :points="2" @update-chosen-quirks="updateQuirks" />
@@ -36,7 +44,6 @@
 
   import { PDFDocument } from 'pdf-lib'
   import { saveAs } from 'file-saver';
-  import racesJson from '../../data/races.json'
 
   export default {
     components: {
@@ -46,25 +53,16 @@
       return {
         cats: ["Lifeform", "Quirks", "Class and Discipline", "Cred and Items", "Attributes and Masteries", "Finish"],
         lifeformNames: [],
-        selected: 2
+        selected: 0
       };
     },
     async mounted() {
       const formUrl = '../public/CBA Character Sheet Playtest Fillable.pdf';
-      try {
-        this.lifeforms = racesJson.races
-  
-        console.log(this.quirks)
-        for (let l of this.lifeforms) {
-          this.lifeformNames.push(l.name)
-        }
-      } catch (error) {
-        console.error('Error:', error);
-      }
+
     },
     methods: {
       toggleLifeSelection(index) {
-        this.selected = index;
+        this.lifeform = index;
       },
       updateQuirks(quirks) {
         this.chosenQuirks = quirks
@@ -83,6 +81,7 @@
   
   .charform {
     height: fit-content;
+    width: 100%;
   }
   </style>
   

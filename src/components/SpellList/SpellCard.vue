@@ -84,7 +84,7 @@ export default {
 .title {
     display: flex;
 
-    background-color: #2a2e52;
+    background-color:  #2a2e52;
 
     width: 100%;
     height: 110%;

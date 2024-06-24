@@ -60,7 +60,6 @@ let chosenQuirks = ref([])
 let loader = ref(0)
 const emit = defineEmits(['updateChosenQuirks']);
 
-
 function addQuirk(subquirk, quirk) {
   let i = chosenQuirks.value.findIndex(el => el.name == quirk.name)
   let newSub = []
