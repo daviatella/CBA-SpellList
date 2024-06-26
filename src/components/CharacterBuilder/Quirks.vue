@@ -138,7 +138,7 @@ watch(chosenQuirks, (newValue) => {
   text-align: center;
   font-family: 'Mosherif', sans-serif;
   font-size: x-large;
-  color: gray;
+  color: rgb(71, 66, 66);
 }
 
 .selected {
@@ -150,7 +150,7 @@ watch(chosenQuirks, (newValue) => {
 .points {
   font-family: 'Mosherif', sans-serif;
   font-size: xx-large;
-  color: rgb(79, 79, 79);
+  color: #4D1C0D;
   text-align: center;
 }
 
@@ -158,6 +158,7 @@ watch(chosenQuirks, (newValue) => {
   width: 18em;
   height: fit-content;
   margin: auto;
+  border: 2px solid black
 }
 
 .descrip {

@@ -113,23 +113,30 @@
             "description": "Floralian sapienoids originated from illuminated plants that fought against scourging fiends. They have a plant-like appearance with bark-like skin and may have crowns of branches on their heads, derived from various plant species."
         },
         {
-            "name": "Artificium",
+            "name": "Artificium Arma",
             "average_lifespan": "1 - ??? Years",
             "description": "Artificiums are beings born from objects infused with powerful dreams, hopes, and spirits, attracting souls to inhabit them and granting them life. These rare entities cannot reproduce or evolve in the traditional sense but are considered living beings nonetheless. Found mostly in the peaks of Illum where cosmic laws are potent, Artificiums can morph parts of their bodies into tools, store weapons within themselves, and even empathize with objects to experience their memories.",
             "major_trait": {
                 "name": "Living Toolbox",
                 "description": "You can morph part of your body into any type of Toolkit and use it for a single Task Roll. The Toolkit’s Quality Bonus is the same as your Mastery Bonus. You can use this trait once and it’s reusable after taking a Long Break or Full Rest."
             },
-            "minor_trait": [
-                {
-                    "name": "Weapon Eater",
-                    "description": "Using your minor action, you can swallow 1 Item Slot’s worth of weaponry and store it in a separate compartment in your body. You can turn your body parts into your swallowed weapons as a Free Action when you enter combat and use them as normal. Swapping weapons still requires a minor action, and you require Mastery in the weapon to get the Mastery Bonus. You can regurgitate the weapon with a minor action."
-                },
-                {
-                    "name": "Object Empathy",
-                    "description": "When you touch an object, you can experience part of its memory. You know the name and physical features of its owner and the last person besides yourself who touched it within the last 24 hours. You can use this trait once, and it’s reusable after taking a Long Break or Full Rest."
-                }
-            ]
+            "minor_trait": {
+                "name": "Weapon Eater",
+                "description": "Using your minor action, you can swallow 1 Item Slot’s worth of weaponry and store it in a separate compartment in your body. You can turn your body parts into your swallowed weapons as a Free Action when you enter combat and use them as normal. Swapping weapons still requires a minor action, and you require Mastery in the weapon to get the Mastery Bonus. You can regurgitate the weapon with a minor action."
+            }
+        },
+        {
+            "name": "Artificium Instrumentum",
+            "average_lifespan": "1 - ??? Years",
+            "description": "Artificiums are beings born from objects infused with powerful dreams, hopes, and spirits, attracting souls to inhabit them and granting them life. These rare entities cannot reproduce or evolve in the traditional sense but are considered living beings nonetheless. Found mostly in the peaks of Illum where cosmic laws are potent, Artificiums can morph parts of their bodies into tools, store weapons within themselves, and even empathize with objects to experience their memories.",
+            "major_trait": {
+                "name": "Living Toolbox",
+                "description": "You can morph part of your body into any type of Toolkit and use it for a single Task Roll. The Toolkit’s Quality Bonus is the same as your Mastery Bonus. You can use this trait once and it’s reusable after taking a Long Break or Full Rest."
+            },
+            "minor_trait": {
+                "name": "Object Empathy",
+                "description": "When you touch an object, you can experience part of its memory. You know the name and physical features of its owner and the last person besides yourself who touched it within the last 24 hours. You can use this trait once, and it’s reusable after taking a Long Break or Full Rest."
+            }
         },
         {
             "name": "Oni",
@@ -139,12 +146,10 @@
                 "name": "Sigil Mask",
                 "description": "Using your minor action, you can manifest an illusory mask of your design over your face. While this mask is manifested, no one can read your emotions or remember any details about you, such as your physical features, clothing, and voice. All they can remember is your mask pattern. Psychology Skill Rolls made against you while you have your mask on automatically fail. You can dismiss the mask or change its pattern using your minor action."
             },
-            "minor_trait": 
-                {
-                    "name": "Shadow Meld",
-                    "description": "You can make Thievery Skill Rolls with Edge to sneak and hide when the sun is not in the sky."
-                }
-            
+            "minor_trait": {
+                "name": "Shadow Meld",
+                "description": "You can make Thievery Skill Rolls with Edge to sneak and hide when the sun is not in the sky."
+            }
         },
         {
             "name": "Asura",
@@ -154,12 +159,10 @@
                 "name": "Phantom Arms",
                 "description": "You have four phantom arms and you can toggle their visibility with your minor action. While invisible, you can make Thievery Skill Rolls with Edge to pickpocket using them. While visible, you make all your Brute Skill Rolls with Edge. You can only use a pair of your arms effectively in combat. You can use your minor action to switch to which 2 out of your 6 arms to use in combat."
             },
-            "minor_trait": 
-                {
-                    "name": "Sense Violence",
-                    "description": "Using your minor action, you can sense if there was a fight or bloodshed within 30m (3 zones) of you in the last 24 hours. You know the rough number of the participants hurt or killed."
-                }
-            
+            "minor_trait": {
+                "name": "Sense Violence",
+                "description": "Using your minor action, you can sense if there was a fight or bloodshed within 30m (3 zones) of you in the last 24 hours. You know the rough number of the participants hurt or killed."
+            }
         },
         {
             "name": "Messenger Angel",
@@ -169,12 +172,10 @@
                 "name": "Angel’s Descent",
                 "description": "You can use your Free Action to instantly slow the speed of your fall and not take fall damage. (You will take fall damage if you’re prevented from taking action by certain conditions and effects)"
             },
-            "minor_trait": 
-                {
-                    "name": "Light Halo",
-                    "description": "Using your minor action, you can emit 30m of bright light from your halo and spectral wings. You can also turn off the light with a minor action."
-                }
-            
+            "minor_trait": {
+                "name": "Light Halo",
+                "description": "Using your minor action, you can emit 30m of bright light from your halo and spectral wings. You can also turn off the light with a minor action."
+            }
         },
         {
             "name": "Charioteer Angel",
@@ -184,12 +185,10 @@
                 "name": "Be Not Afraid",
                 "description": "Using your minor action, you can summon rings of light lined with countless rows of eyes to appear around you. While these rings are present, you can see in all directions around you at the same time, and no creatures can speak a lie within a 30m radius of you. This effect lasts for five minutes, and you can end it early by using your minor action."
             },
-            "minor_trait": 
-                {
-                    "name": "Light Halo",
-                    "description": "Using your minor action, you can emit 30m of bright light from your halo and spectral wings. You can also turn off the light with a minor action."
-                }
-            
+            "minor_trait": {
+                "name": "Light Halo",
+                "description": "Using your minor action, you can emit 30m of bright light from your halo and spectral wings. You can also turn off the light with a minor action."
+            }
         },
         {
             "name": "Orc",
@@ -199,10 +198,8 @@
                 "description": "You can carry 2 additional Item Slots’ worth of items."
             },
             "minor_trait": {
-                
-                    "name": "Explosive Voice",
-                    "description": "When you shout at the top of your lungs, you can make your Intimidation Skill Rolls with Edge. But all creatures within a 1 km radius can hear you."
-                
+                "name": "Explosive Voice",
+                "description": "When you shout at the top of your lungs, you can make your Intimidation Skill Rolls with Edge. But all creatures within a 1 km radius can hear you."
             },
             "description": "It takes a special kind of bloody-mindedness to survive the desolate wildlands of Ulruk. Orcs not only survived but thrived, often assuming leadership roles in warbands. They are distinguished by their greenish-blue skin and natural resilience."
         },
@@ -213,12 +210,10 @@
                 "name": "Fearless",
                 "description": "Intimidation Skill Rolls made against you automatically fail and you are immune to being Frightened and fear related effects."
             },
-            "minor_trait": 
-                {
-                    "name": "Play Dead",
-                    "description": "You can pretend to be dead at will. While doing so, all of your life signs are imperceptible by normal means. Your ruse can only be uncovered by features and magic."
-                }
-            ,
+            "minor_trait": {
+                "name": "Play Dead",
+                "description": "You can pretend to be dead at will. While doing so, all of your life signs are imperceptible by normal means. Your ruse can only be uncovered by features and magic."
+            },
             "extra_trait": {
                 "name": "Small",
                 "description": "Your size is Small. Smaller sized units make Cheap Shot Maneuver Rolls with Edge against larger units. But larger units make Scuffle Maneuver Rolls with Edge against smaller units."
@@ -232,12 +227,10 @@
                 "name": "Fearless",
                 "description": "Intimidation Skill Rolls made against you automatically fail and you are immune to being Frightened and fear related effects."
             },
-            "minor_trait": 
-                {
-                    "name": "Mechanical Affinity",
-                    "description": "While remaining still and not making any noise, you can hear the faintest clicks & whirrs of any machinery and construct that’s currently active within 30m. You know their exact number and locations."
-                }
-            ,
+            "minor_trait": {
+                "name": "Mechanical Affinity",
+                "description": "While remaining still and not making any noise, you can hear the faintest clicks & whirrs of any machinery and construct that’s currently active within 30m. You know their exact number and locations."
+            },
             "extra_trait": {
                 "name": "Small",
                 "description": "Your size is Small. Smaller sized units make Cheap Shot Maneuver Rolls with Edge against larger units. But larger units make Scuffle Maneuver Rolls with Edge against smaller units."
@@ -251,12 +244,10 @@
                 "name": "Static Sense",
                 "description": "Your hair is sensitive to the slightest movement of air and static electricity. You can use your minor action to detect the presence of creatures around you and the size of the largest one. This trait works on invisible creatures but not on incorporeal creatures."
             },
-            "minor_trait": 
-                {
-                    "name": "Sturdy",
-                    "description": "You can make Endurance Skill Rolls with Edge when your body is exposed to sunlight."
-                }
-            ,
+            "minor_trait": {
+                "name": "Sturdy",
+                "description": "You can make Endurance Skill Rolls with Edge when your body is exposed to sunlight."
+            },
             "description": "Trolls in Ulruk are valued for their sensitivity to environmental changes, making them excellent scouts. They have stone-like patches on their skin and hair that reacts to static and air movements."
         },
         {
@@ -266,12 +257,10 @@
                 "name": "Specialist",
                 "description": "You get an additional Toolkit Mastery during character creation."
             },
-            "minor_trait": 
-                {
-                    "name": "Traveler",
-                    "description": "You can carry 1 additional Item Slot’s worth of items."
-                }
-            ,
+            "minor_trait": {
+                "name": "Traveler",
+                "description": "You can carry 1 additional Item Slot’s worth of items."
+            },
             "description": "Humans emerged mysteriously after the collapse of the cloud wall during Cloudbreak. They quickly adapted to become versatile traders and laborers across the four regions, remaining politically neutral."
         },
         {
@@ -281,12 +270,10 @@
                 "name": "Armgeist Possession",
                 "description": "You start the game in a weapon form of your choice, such as a longsword, a bow, or other mundane weapons on the weapon list in Chapter 9, that are neither machinarm nor spiritarm. Then, choose a Lifeform or custom Lifeform to be your host. You can use their Lifeform Traits and control them as your own body while they’re within 10m (1 zone) of you. You still need the relevant Mastery to wield your weapon form.\n\nYour host Lifeform can be a corpse or someone who has willingly let you take complete control over their body. Your statistics, Masteries, and personality overwrite that person’s abilities. You cannot access their memory, but you may communicate with the willing host’s mind and personality if it’s still alive. If your host is reduced to 0 Resolve, you shatter while leaving your host barely alive. The revival process is the same, except that you need to have a host and spend an extra 100 Cred to hire a blacksmith.\n\nAs a weapon or a set of weapons, you occupy Item Slots as normal. You cannot be Disarmed unless you allow it. If you are placed 10m (1 zone) away from your host, the host will collapse into a lifeless puppet. After 24 hours, you will lose control of the body and shatter. As a disembodied armgeist, you can still see, hear, and communicate telepathically with creatures touching you."
             },
-            "minor_trait": [
-                {
-                    "name": "Living Weapon",
-                    "description": "You can use your Major Action to fold your host’s body and inventory into you and let yourself be wielded by another PC or NPC in the same zone as you. You need to be in weapon form and your wielder needs the proper Mastery to wield the weapon form you assume. You retain your HP, MP, Resolve, Defense, and Fortitudes and are considered as a separate target on the same unit.\n\nWhile being wielded, with your wielder’s consent, you can use your own actions to control your wielder on your own turn as if you were controlling that character. You can also use your own actions to activate the wielder’s instant features. You cannot use any of your own features or actions on yourself besides using your Major Action to return to your original form. You also transform back into your original form when you’re downed.\n\nWhile being wielded, you can use your minor action at any time to instantly transform into another weapon in your inventory and back to your original weapon form."
-                }
-            ],
+            "minor_trait": {
+                "name": "Living Weapon",
+                "description": "You can use your Major Action to fold your host’s body and inventory into you and let yourself be wielded by another PC or NPC in the same zone as you. You need to be in weapon form and your wielder needs the proper Mastery to wield the weapon form you assume. You retain your HP, MP, Resolve, Defense, and Fortitudes and are considered as a separate target on the same unit.\n\nWhile being wielded, with your wielder’s consent, you can use your own actions to control your wielder on your own turn as if you were controlling that character. You can also use your own actions to activate the wielder’s instant features. You cannot use any of your own features or actions on yourself besides using your Major Action to return to your original form. You also transform back into your original form when you’re downed.\n\nWhile being wielded, you can use your minor action at any time to instantly transform into another weapon in your inventory and back to your original weapon form."
+            },
             "description": "Armgeists are mysterious entities that inhabit the bodies of deceased creatures, fulfilling their hosts’ final wishes. They emerged as a phenomenon among the Cloudbreakers, wielding weapons and often returning from apparent death. Their origin remains unknown, and their ability to control hosts raises questions about their nature and purpose."
         },
         {
@@ -296,12 +283,10 @@
                 "name": "Kor-Pocles",
                 "description": "Your size category is Medium. You can split into three separate Very Small pocles or meld back into a single Korpocle. Each pocle acts independently but shares the same actions and resources."
             },
-            "minor_trait": [
-                {
-                    "name": "Multi-Personality",
-                    "description": "You get 1 additional Quirk Point during character creation, starting with 3 instead of 2."
-                }
-            ],
+            "minor_trait": {
+                "name": "Multi-Personality",
+                "description": "You get 1 additional Quirk Point during character creation, starting with 3 instead of 2."
+            },
             "description": "Korpocles are small, watermelon-sized sapienoids that can combine into a medium-sized form. Their origin is linked to legends of the Melus Islands and the magical properties of a dragon’s pearl."
         },
         {
@@ -311,12 +296,10 @@
                 "name": "Command Water",
                 "description": "You have power over water, allowing you to walk on water, breathe underwater, and manipulate water with three uses of water command per Full Rest."
             },
-            "minor_trait": [
-                {
-                    "name": "Majestic Horns",
-                    "description": "While a creature is within 10m of you and can clearly see your horn, you can roll Appeal against that creature with Edge."
-                }
-            ],
+            "minor_trait": {
+                "name": "Majestic Horns",
+                "description": "While a creature is within 10m of you and can clearly see your horn, you can roll Appeal against that creature with Edge."
+            },
             "description": "Dragoncasts of the Melus Islands have long, scaly tails and majestic branched horns. They are protected by the Jade Shrine and have unique abilities tied to their ancient lineage."
         }
     ]

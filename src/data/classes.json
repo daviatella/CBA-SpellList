@@ -20,6 +20,10 @@
                     "rank": "1",
                     "features": [
                         {
+                            "name": "weapon_drill",
+                            "description": "If your favored weapon has either the Machinarm A or Machinarm B tag, add an additional +2 to the weapon’s base damage. This bonus stacks with the original Weapon Drill feature."
+                        },
+                        {
                             "name": "identify_threat",
                             "class": "1",
                             "description": "When you’re examining a wound, you can immediately know if it’s caused by a weapon and its type. You immediately recognize the weapon when you see it."
@@ -28,11 +32,8 @@
                             "name": "scout_operative",
                             "class": "2",
                             "description": "You only need the bare essentials to survive and have learned to pack light. You gain an additional Item Slot as long as you have this feature."
-                        },
-                        {
-                            "name": "weapon_drill",
-                            "description": "If your favored weapon has either the Machinarm A or Machinarm B tag, add an additional +2 to the weapon’s base damage. This bonus stacks with the original Weapon Drill feature."
                         }
+                       
                     ]
                 },
                 {
@@ -844,7 +845,7 @@
             ]
         },
         {
-            "discipline": "Trickster",
+            "name": "Trickster",
             "advanced_path": [
                 "Assassin Discipline",
                 "Mirage Discipline"
