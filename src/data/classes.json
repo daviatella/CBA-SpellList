@@ -20,27 +20,26 @@
                     "rank": "1",
                     "features": [
                         {
-                            "name": "weapon_drill",
+                            "name": "Weapon Drill",
                             "description": "If your favored weapon has either the Machinarm A or Machinarm B tag, add an additional +2 to the weapon’s base damage. This bonus stacks with the original Weapon Drill feature."
                         },
                         {
-                            "name": "identify_threat",
+                            "name": "Identify Threat",
                             "class": "1",
                             "description": "When you’re examining a wound, you can immediately know if it’s caused by a weapon and its type. You immediately recognize the weapon when you see it."
                         },
                         {
-                            "name": "scout_operative",
+                            "name": "Scout Operative",
                             "class": "2",
                             "description": "You only need the bare essentials to survive and have learned to pack light. You gain an additional Item Slot as long as you have this feature."
                         }
-                       
                     ]
                 },
                 {
                     "rank": "2",
                     "features": [
                         {
-                            "name": "multistrike",
+                            "name": "Multistrike",
                             "sb": "true",
                             "description": "When you make a Major Attack, you can spend 3 Spirit Tokens to make an additional Major Attack. After spending the initial 3 Spirit Tokens, the cost of each subsequent Major Attack is reduced to 2 Spirit Tokens until the end of the turn. You can make as many additional Major Attacks as you want, as long as you fulfill the Spirit Token cost."
                         }
@@ -50,12 +49,12 @@
                     "rank": "3",
                     "features": [
                         {
-                            "name": "emergency_medication",
+                            "name": "Emergency Medication",
                             "class": "1",
                             "description": "When receiving the effects of medicines, such as Healing Powder or Refresh Dust of any grade, your HP or MP recovery is increased by +10."
                         },
                         {
-                            "name": "adaptable_shot",
+                            "name": "Adaptable Shot",
                             "class": "2",
                             "description": "Using your Major Action, you can perform the Run & Gun action, allowing you to make a Ranged Attack and move, in whichever order you prefer. A target hit by this Ranged Attack cannot make an Opportunity Strike until the end of the turn."
                         }
@@ -147,6 +146,16 @@
                 "Shield (0.5)",
                 "Longsword (0.5)"
             ],
+            "advanced_path": "Commander Discipline or Paragon Discipline when you reach rank 4 in either of the Classes above.",
+            "turn_speed": "6",
+            "defense": "6 + Mastery",
+            "weapon_mastery": "Light, Medium & Heavy",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "4 + Mastery",
+            "armor_mastery": "Light, Medium & Heavy",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "6 + Mastery",
+            "maneuver_mastery": "Scuffle",
             "strengths": "Champions are durable and versatile team players and defenders. They improve the effectiveness of their wards and have the toughness to absorb plenty of damage for their comrades. Templar’s protection improves damage, while Samurai’s improves accuracy.",
             "weaknesses": "Champions work best in a group and struggle when alone. They can’t deal burst damage, so they will have trouble fighting enemies that grow progressively more powerful over time.",
             "features": [
@@ -1161,6 +1170,187 @@
                         {
                             "name": "Spirit Burst: Quick Command +",
                             "description": "(3 Spirit Tokens) (Instant) (This feature augments the Quick Command feature with new functions.) You can now use this Spirit Burst at any instant, even outside of your turn. If you hit a target while it’s performing an action, the action is canceled and expended."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "advanced_disciplines": [
+        {
+            "name": "Weapon Master",
+            "class_1": "Duelist",
+            "class_2": "Deadshot",
+            "turn_speed": 5,
+            "defense": "6 + Mastery",
+            "weapon_mastery": "Light, Medium & Heavy",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "4 + Mastery",
+            "armor_mastery": "Light & Medium",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "6 + Mastery",
+            "maneuver_mastery": "Scuffle & Cheap Shot",
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Martial Weaponry",
+                            "description": "Weapons you have Mastery in become part of your martial arts repertoire. Your Weapon Combat Rolls can be considered Martial Arts Combat Rolls. Your base Martial Arts damage is 4 HP. When you deal damage with your weapon, you can choose to deal the weapon’s damage or your Martial Arts damage. The damage Type is the same as your weapon and you may choose the damage Method that benefits you the most."
+                        },
+                        {
+                            "name": "Battle Instinct",
+                            "class": "1",
+                            "description": "Gauge other creature’s willingness to fight. By looking into the eyes of a creature within 10m (1 zone) of you for 12 seconds (1 round), you know if that creature will fight you or flee if you ready yourself to fight it."
+                        },
+                        {
+                            "name": "Dueling Stance",
+                            "class": "1",
+                            "description": "Assume a dueling stance to optimize your Melee Attack’s lethality. When you make a Melee Attack at a target, but before you roll your dice, you can use your minor action to swiftly assume a duelling stance. Double the damage of the first instance of damage you deal with that attack. This effect wears off after you make your attack, regardless of whether you hit or miss. You can only use this feature once per turn."
+                        },
+                        {
+                            "name": "Clear Vision",
+                            "class": "2",
+                            "description": "Your highly trained eyesight reveals more Information to you. You roll with Edge to Detect things by sight. All your Ranged Attacks against stationary targets that are not part of an enemy unit are made with Edge."
+                        },
+                        {
+                            "name": "Trick Shot",
+                            "class": "2",
+                            "description": "Curve or bounce projectiles to hit multiple targets with one shot. You can use a minor action to mark two separate targets. When you make your next Ranged Attack, your projectile can curve and ignore zone cover to home into your marked targets in your preferred sequence as long as they’re within the range of your weapon. Make a Simultaneous Ranged Attack Roll against all the marked targets. You can mark a Horde unit target up to two times, counting each mark as separate targets. The marks disappear after you make an attack. You can also use your Free Action to unmark your targets at any time. You can only use this feature once per turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "Eagle Eyes",
+                            "description": "Exploit your enemies’ openings and strike their weak spots. When you make an Attack Roll and both your dice display the same number (such as 4 and 4, 2 and 2, etc), with the exception of fumble (1 and 1, or snake eyes), your attack automatically hits, and becomes a critical hit. If you hit your enemy with this feature and your Attack Roll is below your enemy’s Defense, you deal 0 Excess Damage (You cannot deal negative Excess Damage)."
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Seen It All",
+                            "description": "You are always ready for trouble and can’t be Surprised. Additionally, you can’t be Disarmed of the weapon you wield by Maneuvers or other effects."
+                        }
+                    ]
+                },
+                {
+                    "rank": 4,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Skill Over Luck",
+                            "description": "(3 Spirit Tokens) (Instant) Skilled warriors create their luck. After making an Attack Roll, you can spend 3 Spirit Tokens as a Free Action to increase or decrease the result on the face of one of the dice by 1 point."
+                        }
+                    ]
+                },
+                {
+                    "rank": 5,
+                    "features": [
+                        {
+                            "name": "Battle Instinct +",
+                            "class": "1",
+                            "description": "(This feature augments the Battle Instinct feature with new functions.) When there are hostile creatures within 20m (2 zones) of you, even if they’re invisible and inaudible, you will be alerted of their presence by your instinct. If you’re asleep, you will be awakened immediately. You know the rough position (zone) of the nearest hostile creature."
+                        },
+                        {
+                            "name": "Counter Stance",
+                            "class": "1",
+                            "description": "(Instant) Anticipate enemy attacks and strike them first. When you or the zone you occupy become the target of an attack or effect, you can use your minor action to instantly make a Major Melee Attack against your assailant first. Your opponent can continue its action if it survives. Obviously, your assailant needs to be within your Melee Attack’s range for you to perform this."
+                        },
+                        {
+                            "name": "Clear Vision +",
+                            "class": "2",
+                            "description": "(Adventuring Feature)(This feature augments the Clear Vision feature with new functions.) While not in combat, you can immediately recognize visual illusions created by practical or magical means."
+                        },
+                        {
+                            "name": "Trick Shot +",
+                            "class": "2",
+                            "description": "(This feature augments the Trick Shot feature with new functions.) You can now use two minor actions to mark three separate targets for your trickshot. You can mark a Horde unit target up to three times, counting each mark as a separate target."
+                        }
+                    ]
+                },
+                {
+                    "rank": 6,
+                    "features": [
+                        {
+                            "name": "Eagle Eyes +",
+                            "description": "(This feature augments the Eagle Eyes feature with new functions.) Whenever your Eagle Eyes feature is activated, you gain 1 Spirit Token."
+                        }
+                    ]
+                },
+                {
+                    "rank": 7,
+                    "features": [
+                        {
+                            "name": "Seen It All +",
+                            "description": "(Instant) (This feature augments the Seen It All feature with new functions.) You can instantly spend any amount of Spirit Tokens as Free Action to increase your Turn Speed. You increase your Turn Order by 1 for every Spirit Token spent and the maximum Turn Order attainable with this feature is 9."
+                        }
+                    ]
+                },
+                {
+                    "rank": 8,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Skill Over Luck +",
+                            "description": "(3 Spirit Tokens) (Instant) (This feature augments the Skill Over Luck feature with new functions.) After making an Attack Roll, you can spend 3 Spirit Tokens to increase or decrease the result on the face of both dice by one point."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Commander",
+            "class_1": "General",
+            "class_2": "Warlord",
+            "turn_speed": 6,
+            "defense": "6 + Mastery",
+            "weapon_mastery": "Light, Medium & Heavy",
+            "movement": "10m (1 zone / minor action)",
+            "physical_fortitude": "7 + Mastery",
+            "armor_mastery": "Light, Medium & Heavy",
+            "max_movement": "20m (2 zones / turn)",
+            "mental_fortitude": "3 + Mastery",
+            "maneuver_mastery": "Scuffle",
+            "features": [
+                {
+                    "rank": 1,
+                    "features": [
+                        {
+                            "name": "Vanguard Commander",
+                            "description": "Your expertise in melee combat lets you dominate the frontlines. All melee weapons you use receive a +2 bonus to their base weapon damage. (Also applies to your rides’ melee damage.)"
+                        },
+                        {
+                            "name": "Leadership Aura",
+                            "description": "Instill awe and confidence with your inspiring presence. Using your minor action, you can emanate your leadership aura 30m (3 zones) out from you. Any Appeal Rolls made by you or your allies inside the aura are made with Edge. Your aura lasts for 12 seconds (1 round), and ends at the start of your next turn if used during combat. This feature can be used once and is reusable after taking a Full Rest."
+                        },
+                        {
+                            "name": "General’s Pressure",
+                            "description": "Suppress your enemy’s combat effectiveness. When a target in the same zone as you deals an instance of HP or MP damage to your allies, whether it affects a single target or multiple other targets through a Zone Effect or a Simultaneous Attack, you can use your minor action to reduce the damage by 3, or 6 if you also spend a Spirit Token. This feature can be used outside of your own turn."
+                        }
+                    ]
+                },
+                {
+                    "rank": 2,
+                    "features": [
+                        {
+                            "name": "Whirlwind Strike",
+                            "description": "Mercilessly sweep through enemies like a whirlwind. After making your Major Attack, you can use your minor action to make a Follow-Up Melee Attack called a Whirlwind Strike at a target you have not already damaged in the same turn, including those on the same enemy unit. You can make as many Follow-Up Attacks as you want, as long as each target is separate and you have the minor actions to perform them. You can target enemy Horde units as many times as you want with this feature since they provide an endless amount of new targets."
+                        },
+                        {
+                            "name": "Battle Rider",
+                            "description": "While you’re riding a mount or vehicle, you and your ride form a singular unit with one target, centered on you. You become the sole target of the unit and your vehicle cannot be targeted by attacks or effects unless you allow it. You can now use both hands to wield your weapons even when riding. You receive an additional +2 weapon Damage Bonus on all damage done using your rides. (Stacks with the Vanguard Commander feature.)"
+                        }
+                    ]
+                },
+                {
+                    "rank": 3,
+                    "features": [
+                        {
+                            "name": "Spirit Burst: Blazing Spirit",
+                            "description": "Raise your spirit at the cost of your own health. Once during your turn, you can use your Free Action to gain a Spirit Token by taking 5 HP Damage. This damage cannot be reduced by features, barriers spells, or any other means."
                         }
                     ]
                 }
