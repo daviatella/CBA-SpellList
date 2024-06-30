@@ -110,6 +110,7 @@ export default {
     width: 100%;
     max-width: 1800px;
     border: 2px solid black;
+    overflow-x: auto;
   }
 
   .stepper {
