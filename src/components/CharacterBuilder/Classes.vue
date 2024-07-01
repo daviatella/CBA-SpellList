@@ -93,27 +93,68 @@
             </div>
         </v-col>
         <v-col>
+            <div class="total-rank d-flex">
+                <v-spacer></v-spacer>
+                <p> Total Rank:</p>
+                <p class="ml-2 text-black"> {{ getTotalRank() }}</p>
+                <v-spacer></v-spacer>
+            </div>
             <div class="chosen-container">
-                <Accordion value="0">
-                    <AccordionPanel v-for="cl in playerList" :key="cl.class + ' | ' + cl.rank" :value="cl.class">
-                        <AccordionHeader>{{ cl.class + ' | ' + cl.rank }}</AccordionHeader>
+                <Accordion unstyled="true" multiple="true">
+                    <template v-slot:expandicon>
+                        <v-spacer></v-spacer>
+                        <v-icon class="toggle-btn" icon="mdi-chevron-up"></v-icon>
+                    </template>
+                    <template v-slot:collapseicon>
+                        <v-spacer></v-spacer>
+                        <v-icon class="toggle-btn" icon="mdi-chevron-down"></v-icon>
+
+                    </template>
+                    <AccordionPanel v-for="(cl, index) in playerList" :value="index">
+                        <AccordionHeader class="title">
+                            <v-hover v-slot:default="{ isHovering, props }">
+                                <v-icon @click.prevent="removeDialog = true; clToRem=index" v-bind="props" size="x-small" class="ml-1" style="margin-top: 6px;" :color="isHovering ? 'white' : 'black'"
+                                    icon="mdi-window-close"/>
+                            </v-hover>
+                            <v-spacer></v-spacer>
+                            {{ cl.class + ' | ' + cl.rank }}
+                        </AccordionHeader>
                         <AccordionContent>
-                            <div class="pclass-feat" v-for="feat in cl.features"> {{ feat.name + ' - ' + feat.description }}
+                            <div class="feats">
+                                <div class="pclass-feat" v-for="feat in cl.features">
+                                    <div class="pclass-title">
+                                        <v-spacer></v-spacer>
+                                        <p class="ml-4">{{ feat.name }}</p>
+                                        <v-spacer></v-spacer>
+                                        <p class="mr-2"> Rank {{ feat.rank }}</p>
+                                    </div>
+                                    <div class="pclass-desc">
+                                        {{ feat.description }}
+                                    </div>
+
+                                </div>
                             </div>
+                            <br>
                         </AccordionContent>
                     </AccordionPanel>
                 </Accordion>
-                <!-- <div class="player-class" v-for="cl in playerList">
-                    <div class="pclass-header"> {{ cl.class + ' | ' + cl.rank }}</div>
-                    <div class="pclass-feat" v-for="feat in cl.features"> {{ feat.name + ' - ' + feat.description }}
-                    </div>
-                </div> -->
             </div>
         </v-col>
     </div>
     <v-snackbar v-model="error" :timeout="4000" color="error" attach="#tablet" class="mb-16 text-center" rounded="pill">
-        Please select a Rank before adding class
+        {{ errorMsg }}
     </v-snackbar>
+    <v-dialog v-model="removeDialog" width="auto">
+        <v-card style="width: 20em; margin: auto;">
+            <v-card-title class="bg-red w-100 text-center" style="margin: auto;">
+                Remove Class?
+            </v-card-title>
+            <v-card-actions class="mt-5" style="margin: auto; display: flex">
+                <v-btn variant="outlined" @click="removeClass" class="bg-red mr-10"> Remove</v-btn>
+                <v-btn variant="outlined" @click="removeDialog=false"> Cancel </v-btn>
+            </v-card-actions>
+        </v-card>
+    </v-dialog>
 </template>
 
 <script>
@@ -137,12 +178,15 @@ export default {
             chosenRank: 0,
             chosenFeatures: [],
             movAtt: [],
+            errorMsg: '',
             ranks: [1, 2, 3, 4, 5, 6, 7, 8],
             playerList: [],
-            btnSize
+            btnSize,
+            removeDialog: false,
+            clToRem: -1,
         };
     },
-    components: { Select },
+    components: { Select, Accordion, AccordionContent, AccordionPanel, AccordionHeader },
     methods: {
         chooseDiscipline(disc, cl) {
             this.chosenDisc = disc;
@@ -175,7 +219,12 @@ export default {
         chooseClass() {
             if (!this.chosenRank) {
                 this.error = true;
+                this.errorMsg = "Please select a Rank before adding class"
                 return;
+            } else if (this.playerList.length > 0 && this.getTotalRank() < 4) {
+                this.error = true;
+                this.errorMsg = "You need Rank 4 before adding another class"
+                return
             }
             let attName = "class_" + this.chosenClass
             console.log(this.chosenDisc, this.chosenDisc[attName])
@@ -194,6 +243,15 @@ export default {
                     feat.selected = false
                 }
             })
+        },
+        getTotalRank() {
+            let rank = 0
+            this.playerList.map((el) => rank += el.rank)
+            return rank
+        },
+        removeClass(){
+            this.playerList.splice(this.clToRem, 1)
+            this.removeDialog=false
         }
     },
 };
@@ -294,7 +352,6 @@ export default {
         width: 760px;
     }
 
-    /* Designing for scroll-bar */
     .skills-container {
         overflow-y: inherit;
         padding: 20px;
@@ -415,7 +472,8 @@ export default {
         background-color: rgb(38, 35, 35);
         border-radius: 20px;
         border: 10px solid black;
-        height: 50em;
+        height: 47em;
+        overflow-y: auto;
     }
 }
 
@@ -644,5 +702,58 @@ export default {
         border: 10px solid black;
         height: 35em;
     }
+}
+
+.total-rank {
+    font-family: Mosherif;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.title {
+
+    font-family: 'Mosherif', sans-serif;
+    font-size: x-large;
+    background-color: #424874;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #F4EEFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title p {
+    margin-left: 0.5em;
+    text-align: center;
+}
+
+.feats {
+    padding: 5px;
+}
+
+.pclass-feat {
+    font-family: Acre;
+    background-color: #A6B1E1;
+    color: black;
+    margin-bottom: 15px;
+    border: 1px solid black
+}
+
+.pclass-title {
+    background-color: #737eae;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+}
+
+.pclass-desc {
+    border: 1px solid black;
+    text-align: justify;
+    padding: 15px;
 }
 </style>
